@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="AGRILEAD">
+  <rect width="64" height="64" rx="13" fill="#0D2B4D"/>
+  <path d="M32 50V30" fill="none" stroke="#F3F4F6" stroke-width="3.4" stroke-linecap="round"/>
+  <path d="M32 34c-9 0-15-4-16-13 9-1 15 3 16 13z" fill="#2E7D32"/>
+  <path d="M32 30c7-1 12-5 13-12-7 0-12 3-13 12z" fill="#4a9d4e"/>
+  <path d="M18 50h28" fill="none" stroke="#7A4E24" stroke-width="3.4" stroke-linecap="round"/>
+</svg>

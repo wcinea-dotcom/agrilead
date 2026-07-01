@@ -1,8 +1,10 @@
 # Netlify configuration for AGRILEAD Training & Consulting LLC
-# The site is plain static HTML/CSS/JS served from the repository root.
+# The site is plain static HTML/CSS/JS. Only the public/ folder is published,
+# so internal files (README, HANDOFF-CHECKLIST, _build_*.py) stay in the repo
+# but are never served on the live site.
 
 [build]
-  publish = "."
+  publish = "public"
   # No build step is required — the pages are pre-built.
 
 # Security & caching headers
