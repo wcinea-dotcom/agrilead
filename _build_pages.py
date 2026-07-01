@@ -579,4 +579,86 @@ page("privacy.html",
      "Privacy Policy for AGRILEAD Training & Consulting LLC.",
      "", privacy)
 
+# ===========================================================================
+# BLOG
+# ===========================================================================
+# To add an article: write its page (see the example below) and add one entry
+# to POSTS — newest first. The listing page and nav update automatically.
+POSTS = [
+    ("blog-soil-health-starter.html", "Applied Agronomy",
+     "Five Practical Habits for Healthier Farm Soil",
+     "July 1, 2026", "4 min read",
+     "Simple, low-cost practices — keeping soil covered, reducing tillage, "
+     "building organic matter, testing before treating, and keeping living roots "
+     "in the ground — that beginning and small-scale producers can start this season."),
+]
+
+def post_cards(posts):
+    out = '<div class="grid grid-3">'
+    for fn, cat, title, date, read, excerpt in posts:
+        out += (
+            f'<article class="card reveal">'
+            f'<p class="eyebrow">{cat}</p>'
+            f'<h3>{title}</h3>'
+            f'<p class="form-note" style="margin:.2rem 0 .6rem">{date} &middot; {read}</p>'
+            f'<p>{excerpt}</p>'
+            f'<a class="link-arrow" href="{fn}">Read article {ICONS["arrow"]}</a>'
+            f'</article>')
+    out += '</div>'
+    return out
+
+blog = f'''
+<section class="section section--tight">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Insights &amp; Updates</p>
+      <h1>AGRILEAD Blog</h1>
+      <p>Practical notes on agricultural training, applied agronomy, and language-accessible learning for beginning farmers, small-scale producers, and the organizations that support them.</p>
+    </div>
+    {post_cards(POSTS)}
+    <div class="notice reveal" style="margin-top:2.2rem">More articles are on the way. Have a topic you would like us to cover? <a href="contact.html">Get in touch</a>.</div>
+  </div>
+</section>
+'''
+page("blog.html",
+     "Blog | AGRILEAD Training & Consulting LLC",
+     "Practical articles on agricultural training, applied agronomy, and bilingual farmer education from AGRILEAD Training & Consulting LLC.",
+     "blog.html", blog)
+
+# --- Example article --------------------------------------------------------
+article_soil = f'''
+<article class="section section--tight">
+  <div class="container narrow">
+    <p class="eyebrow">Applied Agronomy</p>
+    <h1>Five Practical Habits for Healthier Farm Soil</h1>
+    <p class="form-note">July 1, 2026 &middot; 4 min read</p>
+
+    <p>Healthy soil is the foundation of a resilient farm. It holds water, feeds crops, resists erosion, and recovers more quickly after a hard season. The good news for beginning and small-scale producers is that better soil rarely requires expensive equipment — it comes from a few consistent habits practiced over time.</p>
+
+    <h3 style="margin-top:2rem">1. Keep the soil covered</h3>
+    <p>Bare soil bakes in the sun, crusts over, and washes away in heavy rain. Cover crops, crop residues, or mulch protect the surface, moderate soil temperature, and feed soil life. Even a simple cover between cash crops helps.</p>
+
+    <h3>2. Disturb the soil less</h3>
+    <p>Frequent, deep tillage breaks down soil structure and burns through organic matter. Where practical, reducing tillage helps keep the soil&rsquo;s natural channels intact so water and roots can move freely.</p>
+
+    <h3>3. Build organic matter</h3>
+    <p>Compost, well-managed manure, and returned crop residues add organic matter, which improves water-holding capacity and nutrient availability. Small, regular additions add up season after season.</p>
+
+    <h3>4. Test before you treat</h3>
+    <p>A basic soil test takes the guesswork out of fertility. Knowing your soil&rsquo;s pH and nutrient levels helps you apply what the field actually needs — and avoid spending on what it does not.</p>
+
+    <h3>5. Keep living roots in the ground</h3>
+    <p>Living roots feed the microbes that build healthy soil. Rotations and cover crops that keep something growing for more of the year support that underground community and help break pest and disease cycles.</p>
+
+    <p class="footer-disclaimer" style="margin-top:2.2rem">This article is general educational information and is not a substitute for site-specific technical advice. Practices and results vary by soil type, climate, crop, and management.</p>
+
+    <p style="margin-top:1.6rem"><a href="blog.html">&larr; Back to all articles</a></p>
+  </div>
+</article>
+'''
+page("blog-soil-health-starter.html",
+     "Five Practical Habits for Healthier Farm Soil | AGRILEAD",
+     "Five simple, low-cost soil health practices for beginning and small-scale farmers: soil cover, reduced tillage, organic matter, soil testing, and living roots.",
+     "blog.html", article_soil)
+
 print("ALL PAGES BUILT")

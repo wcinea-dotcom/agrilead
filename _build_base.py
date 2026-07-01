@@ -7,7 +7,9 @@ until final details are confirmed, per the brand handoff."""
 
 import os
 
-OUT = os.path.dirname(os.path.abspath(__file__))
+# The publishable site lives in public/ (Netlify's publish directory).
+OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "public")
+os.makedirs(OUT, exist_ok=True)
 
 # ---- Shared bits -----------------------------------------------------------
 
@@ -93,6 +95,7 @@ NAV_ITEMS = [
     ("services.html", "Services"),
     ("signature-initiative.html", "Signature Initiative"),
     ("collaboration-opportunities.html", "Collaboration"),
+    ("blog.html", "Blog"),
     ("contact.html", "Contact"),
 ]
 
@@ -134,6 +137,7 @@ FOOTER = f'''<footer class="site-footer">
           <li><a href="services.html">Services</a></li>
           <li><a href="signature-initiative.html">Signature Initiative</a></li>
           <li><a href="collaboration-opportunities.html">Collaboration Opportunities</a></li>
+          <li><a href="blog.html">Blog</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
