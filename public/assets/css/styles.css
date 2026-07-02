@@ -593,3 +593,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .nav-lang{display:flex;padding-top:.9rem;justify-content:flex-start}
 }
 .hero--banner{min-height:clamp(380px,46vw,560px)}
+
+/* === Editorial serif type + link grid (nature.org model) === */
+:root{--font-display:"Merriweather",Georgia,"Times New Roman",serif}
+h1,h2,h3{font-family:var(--font-display)}
+h1{font-weight:700}
+.hero--banner h1{font-weight:700;font-size:clamp(2.1rem,4.6vw,3.2rem)}
+.lead-statement{font-family:var(--font-display);font-weight:400;font-size:clamp(1.25rem,2.2vw,1.65rem);line-height:1.5;color:var(--navy);max-width:42rem;margin:0 auto 1.6rem;text-align:center}
+.linkgrid{display:grid;grid-template-columns:1fr 1fr;gap:1.8rem 3rem;margin-top:.5rem}
+.lg-item p{color:var(--ink-soft);margin:.35rem 0 0;line-height:1.6}
+.lg-title{font-family:var(--font-display);font-weight:700;font-size:1.3rem;color:var(--green);display:inline-flex;align-items:center;gap:.35rem}
+.lg-title svg{width:18px;height:18px}
+.lg-title:hover{text-decoration:underline}
+@media(max-width:700px){.linkgrid{grid-template-columns:1fr;gap:1.6rem}}

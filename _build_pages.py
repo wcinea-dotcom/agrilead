@@ -72,6 +72,12 @@ CONTENT = {
       ("sprout","Applied Agronomy Support","Technical guidance related to soil health, crop production, crop diversification, sustainable practices, and climate-smart agriculture."),
       ("globe","Bilingual &amp; Multilingual Outreach","Training materials and outreach designed to improve language access for Haitian/Creole-speaking, Hispanic, immigrant, and multilingual producer communities."),
     ],
+    "explore": [
+      ("Services", "Agricultural training, applied agronomy, bilingual materials, and technical assistance.", "services.html"),
+      ("Signature Initiative", "Our developing bilingual agricultural workforce and extension training initiative.", "signature-initiative.html"),
+      ("Collaboration", "Ways to explore working together with producer groups and organizations.", "collaboration-opportunities.html"),
+      ("Blog", "Practical notes on soil health, applied agronomy, and farmer education.", "blog.html"),
+    ],
     "serve_eyebrow": "Who we serve",
     "serve_h2": "Designed for producers and the organizations that support them",
     "serve_p": "AGRILEAD is designed to serve a range of producers, community groups, and training stakeholders.",
@@ -332,6 +338,12 @@ CONTENT = {
       ("sprout","Appui en agronomie appliquée","Conseils techniques sur la santé des sols, la production, la diversification des cultures, les pratiques durables et l'agriculture intelligente face au climat."),
       ("globe","Sensibilisation bilingue et multilingue","Supports de formation et actions de sensibilisation conçus pour améliorer l'accès linguistique des communautés créolophones/haïtiennes, hispaniques, immigrantes et multilingues."),
     ],
+    "explore": [
+      ("Services", "Formation agricole, agronomie appliquée, supports bilingues et assistance technique.", "services.html"),
+      ("Initiative phare", "Notre initiative bilingue de formation de la main-d'œuvre agricole et de vulgarisation.", "signature-initiative.html"),
+      ("Collaboration", "Des façons d'explorer une collaboration avec les groupes de producteurs et les organisations.", "collaboration-opportunities.html"),
+      ("Blog", "Des notes pratiques sur la santé des sols, l'agronomie appliquée et l'éducation des agriculteurs.", "blog.html"),
+    ],
     "serve_eyebrow": "Qui nous servons",
     "serve_h2": "Conçu pour les producteurs et les organisations qui les accompagnent",
     "serve_p": "AGRILEAD est conçue pour servir un large éventail de producteurs, de groupes communautaires et d'acteurs de la formation.",
@@ -573,7 +585,9 @@ def build(lang):
 
     # ---- HOME ----
     h = d["home"]
-    cards = cards3(h["cards"])
+    explore_grid = '<div class="linkgrid">' + "".join(
+        f'<div class="lg-item reveal"><a class="lg-title" href="{href}">{title} {ICONS["arrow"]}</a><p>{desc}</p></div>'
+        for title, desc, href in h["explore"]) + '</div>'
     sig_list = "".join(f'<li>{ICONS["check"]}{x}</li>' for x in h["sig_list"])
     docs = "".join(
         f'<div class="doc-card reveal"><span class="icon icon--navy">{ICONS["doc"]}</span>'
@@ -593,7 +607,7 @@ def build(lang):
 
 <section class="section section--tight">
   <div class="container narrow center">
-    <p class="hero-lead" style="margin-inline:auto">{h["lead"]}</p>
+    <p class="lead-statement">{h["lead"]}</p>
     <div class="hero-cta" style="justify-content:center">
       <a class="btn btn--primary" href="services.html">{d["cta_services"]} {ICONS["arrow"]}</a>
       <a class="btn btn--secondary" href="contact.html">{d["cta_contact"]}</a>
@@ -625,8 +639,7 @@ def build(lang):
       <p class="eyebrow">{h["do_eyebrow"]}</p>
       <h2>{h["do_h2"]}</h2>
     </div>
-    {cards}
-    <div style="margin-top:2rem" class="reveal"><a class="link-arrow" href="services.html">{d["see_all_services"]} {ICONS["arrow"]}</a></div>
+    {explore_grid}
   </div>
 </section>
 
