@@ -39,7 +39,7 @@ home = f'''
         <div>{ICONS["sprout"]}<span>Field-oriented, practical learning</span></div>
       </div>
     </div>
-    <div class="hero-visual">{field_panel("Field-based farmer training session", note="Replace with photo")}</div>
+    <div class="hero-visual">{field_panel("Field-based farmer training session", img="https://images.pexels.com/photos/30822728/pexels-photo-30822728.jpeg?auto=compress&cs=tinysrgb&w=1400", alt="Lush garden pathway with green plants")}</div>
   </div>
 </section>
 
@@ -167,7 +167,7 @@ about = f'''
       <p>AGRILEAD Training &amp; Consulting LLC is based in Naples, Florida, United States. The company supports practical, field-oriented agricultural learning for farmers, producer groups, community-based organizations, and agricultural stakeholders.</p>
       <p>Its work focuses on applied agronomy, technical assistance, bilingual and multilingual outreach, curriculum development, training materials, and farmer capacity-building &mdash; designed to make agricultural knowledge more accessible, practical, and adaptable to producer and community needs.</p>
     </div>
-    <div class="reveal">{field_panel("Agricultural learning setting", note="Replace with photo")}</div>
+    <div class="reveal">{field_panel("Agricultural learning setting", img="https://images.pexels.com/photos/27176769/pexels-photo-27176769.jpeg?auto=compress&cs=tinysrgb&w=1400", alt="Hands planting seedlings in a garden")}</div>
   </div>
 </section>
 
@@ -321,7 +321,7 @@ initiative = f'''
       <p>The AgriLead Bilingual Agricultural Workforce and Extension Training Initiative is a developing initiative focused on supporting beginning farmers, small-scale producers, immigrant and multilingual producers, and underserved agricultural communities through practical training and language-accessible learning resources.</p>
       <p>Its purpose is to support practical agricultural education, applied agronomy learning, bilingual outreach, and producer capacity-building.</p>
     </div>
-    <div class="reveal">{field_panel("Multilingual farmer education", note="Replace with photo")}</div>
+    <div class="reveal">{field_panel("Multilingual farmer education", img="https://images.pexels.com/photos/9890612/pexels-photo-9890612.jpeg?auto=compress&cs=tinysrgb&w=1400", alt="Garden path between green plants and flowers")}</div>
   </div>
 </section>
 

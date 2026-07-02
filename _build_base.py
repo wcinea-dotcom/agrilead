@@ -55,8 +55,13 @@ ICONS = {
     "list":   ic('<path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/>'),
 }
 
-def field_panel(caption="Field-based agricultural training", ratio_class="", note="Photo"):
-    """Signature soil-horizon / crop-row motif used where a real photo will go."""
+def field_panel(caption="Field-based agricultural training", ratio_class="", note="Photo", img="", alt=""):
+    """Signature soil-horizon / crop-row motif used where a real photo will go.
+    If img (a URL) is provided, a real photo is rendered instead of the SVG placeholder."""
+    if img:
+        return (f'<div class="field-panel {ratio_class}">'
+                f'<img src="{img}" alt="{alt or caption}" loading="lazy" decoding="async">'
+                f'<span class="panel-caption">{caption}</span></div>')
     svg = '''<svg viewBox="0 0 400 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
