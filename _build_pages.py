@@ -60,6 +60,7 @@ CONTENT = {
     "meta2": "Bilingual &amp; multilingual outreach",
     "meta3": "Field-oriented, practical learning",
     "panel_cap": "Field-based farmer training session",
+    "hero_alt": "Garden in bloom",
     "who_eyebrow": "Who we are",
     "who_h2": "Practical, field-oriented agricultural learning",
     "who_p1": "AGRILEAD Training &amp; Consulting LLC is based in Naples, Florida, United States. The company is designed to support accessible, practical, and field-oriented agricultural learning through training, technical assistance, curriculum development, bilingual outreach, and community-centered capacity-building.",
@@ -319,6 +320,7 @@ CONTENT = {
     "meta2": "Sensibilisation bilingue et multilingue",
     "meta3": "Apprentissage pratique, orienté terrain",
     "panel_cap": "Session de formation au champ",
+    "hero_alt": "Jardin en fleurs",
     "who_eyebrow": "Qui nous sommes",
     "who_h2": "Un apprentissage agricole pratique et orienté terrain",
     "who_p1": "AGRILEAD Training &amp; Consulting LLC est basée à Naples, en Floride (États-Unis). La société vise à soutenir un apprentissage agricole accessible, pratique et orienté terrain, à travers la formation, l'assistance technique, l'élaboration de programmes, la sensibilisation bilingue et le renforcement des capacités centré sur la communauté.",
@@ -581,7 +583,7 @@ def build(lang):
     home = f'''
 <section class="hero hero--banner">
   <div class="hero-banner-media">
-    <img src="https://images.pexels.com/photos/30822728/pexels-photo-30822728.jpeg?auto=compress&cs=tinysrgb&w=1900" alt="{h["panel_cap"]}" loading="eager" decoding="async">
+    <img src="https://images.pexels.com/photos/4944058/pexels-photo-4944058.jpeg?auto=compress&cs=tinysrgb&w=1900" alt="{h["hero_alt"]}" loading="eager" decoding="async">
   </div>
   <div class="container hero-banner-inner">
     <p class="eyebrow">{h["eyebrow"]}</p>
