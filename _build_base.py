@@ -8,6 +8,10 @@ until final details are confirmed, per the brand handoff."""
 
 import os
 
+# Bump ASSET_VER whenever CSS/JS changes — it cache-busts the year-long
+# immutable asset cache so returning visitors get the new styles.
+ASSET_VER = "20260702c"
+
 # The publishable site lives in public/ (Netlify's publish directory).
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "public")
 os.makedirs(OUT, exist_ok=True)
@@ -284,7 +288,7 @@ def footer(lang, prefix):
     </div>
   </div>
 </footer>
-<script src="{prefix}assets/js/main.js"></script>
+<script src="{prefix}assets/js/main.js?v={ASSET_VER}"></script>
 <script>document.getElementById("year").textContent = new Date().getFullYear();</script>'''
 
 
@@ -312,7 +316,7 @@ def page(filename, title, description, active, main_html, lang="en"):
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Lato:wght@400;700&family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{prefix}assets/css/styles.css">
+  <link rel="stylesheet" href="{prefix}assets/css/styles.css?v={ASSET_VER}">
 </head>
 <body>
 {header(active, lang, filename)}
