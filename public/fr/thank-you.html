@@ -19,17 +19,14 @@
 <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href="index.html" aria-label="AGRILEAD Training and Consulting home"><svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="13" fill="#0D2B4D"/><path d="M32 50V30" fill="none" stroke="#F3F4F6" stroke-width="3.4" stroke-linecap="round"/><path d="M32 34c-9 0-15-4-16-13 9-1 15 3 16 13z" fill="#2E7D32"/><path d="M32 30c7-1 12-5 13-12-7 0-12 3-13 12z" fill="#4a9d4e"/><path d="M18 50h28" fill="none" stroke="#7A4E24" stroke-width="3.4" stroke-linecap="round"/></svg><span class="brand-word">AGRI<span class="lead">LEAD</span></span></a>
-    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="primary-nav">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/></svg>
-    </button>
     <nav class="nav" id="primary-nav" aria-label="Navigation principale">
-      <a href="index.html">Accueil</a><a href="about.html">À propos</a><a href="services.html">Services</a><a href="signature-initiative.html">Initiative phare</a><a href="collaboration-opportunities.html">Collaboration</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a>
-      <a class="lang-switch" href="../thank-you.html" hreflang="en" aria-label="Switch to English">EN</a>
-      <a class="btn btn--primary" href="collaboration-opportunities.html">Discuter d'une collaboration</a>
+      <div class="nav-item has-sub"><a class="nav-top" href="index.html">Accueil<span class="caret" aria-hidden="true">&#9662;</span></a><div class="submenu"><a href="about.html">À propos</a><a href="collaboration-opportunities.html">Collaboration</a></div></div><div class="nav-item has-sub"><a class="nav-top" href="services.html">Services<span class="caret" aria-hidden="true">&#9662;</span></a><div class="submenu"><a href="signature-initiative.html">Initiative phare</a></div></div><div class="nav-item has-sub"><a class="nav-top" href="blog.html">Médias<span class="caret" aria-hidden="true">&#9662;</span></a><div class="submenu"><a href="blog.html">Blog</a></div></div><a class="nav-top" href="contact.html">Contact</a>
     </nav>
     <div class="header-actions">
-      <a class="lang-switch" href="../thank-you.html" hreflang="en" aria-label="Switch to English">EN</a>
-      <a class="btn btn--primary" href="collaboration-opportunities.html">Discuter d'une collaboration</a>
+      <select class="lang-select" aria-label="Language / Langue" onchange="if(this.value)window.location.href=this.value"><option value="../thank-you.html">EN</option><option value="thank-you.html" selected>FR</option></select>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="primary-nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/></svg>
+      </button>
     </div>
   </div>
 </header>

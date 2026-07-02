@@ -579,23 +579,23 @@ def build(lang):
         f'<a class="link-arrow" href="#" aria-disabled="true">{d["download_soon"]}</a></div>'
         for t, b in h["docs"])
     home = f'''
-<section class="hero">
-  <div class="container hero-grid">
-    <div>
-      <p class="eyebrow">{h["eyebrow"]}</p>
-      <h1>{h["h1"]}</h1>
-      <p class="hero-lead">{h["lead"]}</p>
-      <div class="hero-cta">
-        <a class="btn btn--primary" href="collaboration-opportunities.html">{d["cta_collab"]} {ICONS["arrow"]}</a>
-        <a class="btn btn--secondary" href="services.html">{d["cta_services"]}</a>
-      </div>
-      <div class="hero-meta">
-        <div>{ICONS["pin"]}<span>{h["meta1"]}</span></div>
-        <div>{ICONS["globe"]}<span>{h["meta2"]}</span></div>
-        <div>{ICONS["sprout"]}<span>{h["meta3"]}</span></div>
-      </div>
+<section class="hero hero--banner">
+  <div class="hero-banner-media">
+    <img src="https://images.pexels.com/photos/30822728/pexels-photo-30822728.jpeg?auto=compress&cs=tinysrgb&w=1900" alt="{h["panel_cap"]}" loading="eager" decoding="async">
+  </div>
+  <div class="container hero-banner-inner">
+    <p class="eyebrow">{h["eyebrow"]}</p>
+    <h1>{h["h1"]}</h1>
+    <p class="hero-lead">{h["lead"]}</p>
+    <div class="hero-cta">
+      <a class="btn btn--primary" href="services.html">{d["cta_services"]} {ICONS["arrow"]}</a>
+      <a class="btn btn--secondary" href="contact.html">{d["cta_contact"]}</a>
     </div>
-    <div class="hero-visual">{field_panel(h["panel_cap"], img="https://images.pexels.com/photos/30822728/pexels-photo-30822728.jpeg?auto=compress&cs=tinysrgb&w=1400", alt=h["panel_cap"])}</div>
+    <div class="hero-meta">
+      <div>{ICONS["pin"]}<span>{h["meta1"]}</span></div>
+      <div>{ICONS["globe"]}<span>{h["meta2"]}</span></div>
+      <div>{ICONS["sprout"]}<span>{h["meta3"]}</span></div>
+    </div>
   </div>
 </section>
 

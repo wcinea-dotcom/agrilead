@@ -104,14 +104,18 @@ TR = {
         "skip": "Skip to content",
         "menu": "Open menu",
         "nav_aria": "Primary",
-        "nav": [
-            ("index.html", "Home"),
-            ("about.html", "About"),
-            ("services.html", "Services"),
-            ("signature-initiative.html", "Signature Initiative"),
-            ("collaboration-opportunities.html", "Collaboration"),
-            ("blog.html", "Blog"),
-            ("contact.html", "Contact"),
+        "nav_tree": [
+            ("index.html", "Home", [
+                ("about.html", "About"),
+                ("collaboration-opportunities.html", "Collaboration"),
+            ]),
+            ("services.html", "Services", [
+                ("signature-initiative.html", "Signature Initiative"),
+            ]),
+            ("blog.html", "Media", [
+                ("blog.html", "Blog"),
+            ]),
+            ("contact.html", "Contact", []),
         ],
         "cta": "Discuss a Potential Collaboration",
         "switch_label": "FR",
@@ -144,14 +148,18 @@ TR = {
         "skip": "Aller au contenu",
         "menu": "Ouvrir le menu",
         "nav_aria": "Navigation principale",
-        "nav": [
-            ("index.html", "Accueil"),
-            ("about.html", "À propos"),
-            ("services.html", "Services"),
-            ("signature-initiative.html", "Initiative phare"),
-            ("collaboration-opportunities.html", "Collaboration"),
-            ("blog.html", "Blog"),
-            ("contact.html", "Contact"),
+        "nav_tree": [
+            ("index.html", "Accueil", [
+                ("about.html", "À propos"),
+                ("collaboration-opportunities.html", "Collaboration"),
+            ]),
+            ("services.html", "Services", [
+                ("signature-initiative.html", "Initiative phare"),
+            ]),
+            ("blog.html", "Médias", [
+                ("blog.html", "Blog"),
+            ]),
+            ("contact.html", "Contact", []),
         ],
         "cta": "Discuter d'une collaboration",
         "switch_label": "EN",
@@ -183,30 +191,56 @@ TR = {
 }
 
 
-def header(active, lang, switch_href):
+def _nav_links(t, active):
+    out = ""
+    for href, label, children in t["nav_tree"]:
+        child_hrefs = [c[0] for c in children]
+        is_active = (href == active) or (active in child_hrefs)
+        cur = ' aria-current="page"' if is_active else ""
+        if children:
+            subs = ""
+            for ch, cl in children:
+                ccur = ' aria-current="page"' if ch == active else ""
+                subs += f'<a href="{ch}"{ccur}>{cl}</a>'
+            out += (f'<div class="nav-item has-sub">'
+                    f'<a class="nav-top" href="{href}"{cur}>{label}'
+                    f'<span class="caret" aria-hidden="true">&#9662;</span></a>'
+                    f'<div class="submenu">{subs}</div></div>')
+        else:
+            out += f'<a class="nav-top" href="{href}"{cur}>{label}</a>'
+    return out
+
+
+def lang_select(lang, filename):
+    """Language filter (dropdown) linking to the equivalent page in the other language."""
+    if lang == "en":
+        en_url, fr_url = filename, "fr/" + filename
+    else:
+        en_url, fr_url = "../" + filename, filename
+    en_sel = " selected" if lang == "en" else ""
+    fr_sel = " selected" if lang == "fr" else ""
+    return (f'<select class="lang-select" aria-label="Language / Langue" '
+            f'onchange="if(this.value)window.location.href=this.value">'
+            f'<option value="{en_url}"{en_sel}>EN</option>'
+            f'<option value="{fr_url}"{fr_sel}>FR</option>'
+            f'</select>')
+
+
+def header(active, lang, filename):
     t = TR[lang]
-    other = "fr" if lang == "en" else "en"
-    links = ""
-    for href, label in t["nav"]:
-        cur = ' aria-current="page"' if href == active else ""
-        links += f'<a href="{href}"{cur}>{label}</a>'
-    switch = (f'<a class="lang-switch" href="{switch_href}" hreflang="{other}" '
-              f'aria-label="{t["switch_aria"]}">{t["switch_label"]}</a>')
+    links = _nav_links(t, active)
     return f'''<a class="skip-link" href="#main">{t["skip"]}</a>
 <header class="site-header">
   <div class="container header-inner">
     {BRAND}
-    <button class="nav-toggle" aria-label="{t["menu"]}" aria-expanded="false" aria-controls="primary-nav">
-      {ICONS["list"]}
-    </button>
     <nav class="nav" id="primary-nav" aria-label="{t["nav_aria"]}">
       {links}
-      {switch}
-      <a class="btn btn--primary" href="collaboration-opportunities.html">{t["cta"]}</a>
     </nav>
     <div class="header-actions">
-      {switch}
-      <a class="btn btn--primary" href="collaboration-opportunities.html">{t["cta"]}</a>
+      {lang_select(lang, filename)}
+      <button class="nav-toggle" aria-label="{t["menu"]}" aria-expanded="false" aria-controls="primary-nav">
+        {ICONS["list"]}
+      </button>
     </div>
   </div>
 </header>'''
@@ -257,10 +291,8 @@ def page(filename, title, description, active, main_html, lang="en"):
     # Alternate-language URLs (relative) for hreflang + switcher
     if lang == "en":
         alt_en, alt_fr = filename, "fr/" + filename
-        switch_href = "fr/" + filename
     else:
         alt_en, alt_fr = "../" + filename, filename
-        switch_href = "../" + filename
     hreflang = (f'<link rel="alternate" hreflang="en" href="{alt_en}">\n'
                 f'  <link rel="alternate" hreflang="fr" href="{alt_fr}">\n'
                 f'  <link rel="alternate" hreflang="x-default" href="{alt_en}">')
@@ -279,7 +311,7 @@ def page(filename, title, description, active, main_html, lang="en"):
   <link rel="stylesheet" href="{prefix}assets/css/styles.css">
 </head>
 <body>
-{header(active, lang, switch_href)}
+{header(active, lang, filename)}
 <main id="main">
 {main_html}
 </main>
