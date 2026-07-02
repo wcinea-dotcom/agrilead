@@ -220,23 +220,28 @@ def lang_toggle(lang, filename):
     en_cls = ' class="is-active"' if lang == "en" else ""
     fr_cls = ' class="is-active"' if lang == "fr" else ""
     return (f'<div class="lang-toggle">{ICONS["globe"]}'
-            f'<a href="{en_url}"{en_cls} hreflang="en">EN</a>'
+            f'<a href="{en_url}"{en_cls} hreflang="en">English</a>'
             f'<span class="sep">|</span>'
-            f'<a href="{fr_url}"{fr_cls} hreflang="fr">FR</a></div>')
+            f'<a href="{fr_url}"{fr_cls} hreflang="fr">Français</a></div>')
 
 
 def header(active, lang, filename):
     t = TR[lang]
     links = _nav_links(t, active)
     return f'''<a class="skip-link" href="#main">{t["skip"]}</a>
+<div class="topbar">
+  <div class="container topbar-inner">
+    {lang_toggle(lang, filename)}
+  </div>
+</div>
 <header class="site-header">
   <div class="container header-inner">
     {BRAND}
     <nav class="nav" id="primary-nav" aria-label="{t["nav_aria"]}">
       {links}
+      <div class="nav-lang">{lang_toggle(lang, filename)}</div>
     </nav>
     <div class="header-actions">
-      {lang_toggle(lang, filename)}
       <button class="nav-toggle" aria-label="{t["menu"]}" aria-expanded="false" aria-controls="primary-nav">
         {ICONS["list"]}
       </button>

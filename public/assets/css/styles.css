@@ -579,3 +579,17 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .hero--banner .eyebrow{display:flex;justify-content:center;color:#eaf1e8}
 .hero--banner .eyebrow::before{display:none}
 .hero--banner h1{color:#fff;font-size:clamp(2rem,4.6vw,3.25rem);margin:0;max-width:22ch;margin-inline:auto}
+
+/* === TNC model: utility topbar + uppercase nav + bigger banner === */
+.topbar{background:var(--white);border-bottom:1px solid var(--border-soft)}
+.topbar-inner{display:flex;justify-content:flex-end;align-items:center;min-height:40px}
+.header-inner .nav{margin-right:auto;margin-left:.5rem}
+.nav-top{text-transform:uppercase;letter-spacing:.07em;font-size:.8rem;font-weight:700}
+.submenu a{text-transform:none;letter-spacing:0}
+.nav-lang{display:none}
+@media (max-width:940px){
+  .topbar{display:none}
+  .header-inner .nav{margin:0}
+  .nav-lang{display:flex;padding-top:.9rem;justify-content:flex-start}
+}
+.hero--banner{min-height:clamp(380px,46vw,560px)}
