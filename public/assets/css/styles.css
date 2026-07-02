@@ -564,3 +564,18 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .nav{gap:1.35rem}
 .header-actions{gap:.7rem}
 .lang-select{padding:.38rem 1.6rem .38rem .62rem}
+
+/* === Model (nature.org): text language toggle + centered banner hero === */
+.lang-toggle{display:inline-flex;align-items:center;gap:.35rem;font-family:var(--font-head);font-weight:700;font-size:.82rem;letter-spacing:.02em}
+.lang-toggle svg{width:15px;height:15px;color:var(--ink-soft);flex:none}
+.lang-toggle a{color:var(--navy);opacity:.55;padding:.1rem .12rem}
+.lang-toggle a.is-active{color:var(--green);opacity:1}
+.lang-toggle a:hover{opacity:1}
+.lang-toggle .sep{color:var(--border)}
+
+.hero--banner{display:flex;align-items:center;justify-content:center;text-align:center;min-height:clamp(330px,42vw,500px)}
+.hero--banner::after{background:linear-gradient(rgba(9,26,46,.40),rgba(9,26,46,.60))}
+.hero-banner-inner{max-width:840px;margin-inline:auto;padding:2.4rem 0}
+.hero--banner .eyebrow{display:flex;justify-content:center;color:#eaf1e8}
+.hero--banner .eyebrow::before{display:none}
+.hero--banner h1{color:#fff;font-size:clamp(2rem,4.6vw,3.25rem);margin:0;max-width:22ch;margin-inline:auto}

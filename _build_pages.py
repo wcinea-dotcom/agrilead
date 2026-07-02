@@ -588,12 +588,17 @@ def build(lang):
   <div class="container hero-banner-inner">
     <p class="eyebrow">{h["eyebrow"]}</p>
     <h1>{h["h1"]}</h1>
-    <p class="hero-lead">{h["lead"]}</p>
-    <div class="hero-cta">
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container narrow center">
+    <p class="hero-lead" style="margin-inline:auto">{h["lead"]}</p>
+    <div class="hero-cta" style="justify-content:center">
       <a class="btn btn--primary" href="services.html">{d["cta_services"]} {ICONS["arrow"]}</a>
       <a class="btn btn--secondary" href="contact.html">{d["cta_contact"]}</a>
     </div>
-    <div class="hero-meta">
+    <div class="hero-meta" style="justify-content:center">
       <div>{ICONS["pin"]}<span>{h["meta1"]}</span></div>
       <div>{ICONS["globe"]}<span>{h["meta2"]}</span></div>
       <div>{ICONS["sprout"]}<span>{h["meta3"]}</span></div>

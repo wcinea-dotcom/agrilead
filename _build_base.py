@@ -211,19 +211,18 @@ def _nav_links(t, active):
     return out
 
 
-def lang_select(lang, filename):
-    """Language filter (dropdown) linking to the equivalent page in the other language."""
+def lang_toggle(lang, filename):
+    """Language toggle: globe + EN | FR text links (nature.org style)."""
     if lang == "en":
         en_url, fr_url = filename, "fr/" + filename
     else:
         en_url, fr_url = "../" + filename, filename
-    en_sel = " selected" if lang == "en" else ""
-    fr_sel = " selected" if lang == "fr" else ""
-    return (f'<select class="lang-select" aria-label="Language / Langue" '
-            f'onchange="if(this.value)window.location.href=this.value">'
-            f'<option value="{en_url}"{en_sel}>EN</option>'
-            f'<option value="{fr_url}"{fr_sel}>FR</option>'
-            f'</select>')
+    en_cls = ' class="is-active"' if lang == "en" else ""
+    fr_cls = ' class="is-active"' if lang == "fr" else ""
+    return (f'<div class="lang-toggle">{ICONS["globe"]}'
+            f'<a href="{en_url}"{en_cls} hreflang="en">EN</a>'
+            f'<span class="sep">|</span>'
+            f'<a href="{fr_url}"{fr_cls} hreflang="fr">FR</a></div>')
 
 
 def header(active, lang, filename):
@@ -237,7 +236,7 @@ def header(active, lang, filename):
       {links}
     </nav>
     <div class="header-actions">
-      {lang_select(lang, filename)}
+      {lang_toggle(lang, filename)}
       <button class="nav-toggle" aria-label="{t["menu"]}" aria-expanded="false" aria-controls="primary-nav">
         {ICONS["list"]}
       </button>
