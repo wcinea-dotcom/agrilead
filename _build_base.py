@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """Static site generator for AGRILEAD Training & Consulting LLC.
-Writes English-only HTML pages sharing a common header/footer.
+Bilingual (English + French). English pages live in public/, French pages in
+public/fr/. A language switcher (EN/FR) and hreflang tags link the two.
 All contact details use [Phone] / [Email] / [Website] placeholders
 until final details are confirmed, per the brand handoff."""
 
@@ -10,6 +11,7 @@ import os
 # The publishable site lives in public/ (Netlify's publish directory).
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "public")
 os.makedirs(OUT, exist_ok=True)
+os.makedirs(os.path.join(OUT, "fr"), exist_ok=True)
 
 # ---- Shared bits -----------------------------------------------------------
 
@@ -94,140 +96,216 @@ def field_panel(caption="Field-based agricultural training", ratio_class="", not
             f'<span class="photo-note">{note}</span>'
             f'<span class="panel-caption">{caption}</span></div>')
 
-NAV_ITEMS = [
-    ("index.html", "Home"),
-    ("about.html", "About"),
-    ("services.html", "Services"),
-    ("signature-initiative.html", "Signature Initiative"),
-    ("collaboration-opportunities.html", "Collaboration"),
-    ("blog.html", "Blog"),
-    ("contact.html", "Contact"),
-]
+# ---- Translatable chrome (header / footer / meta) --------------------------
 
-def header(active):
+TR = {
+    "en": {
+        "html_lang": "en",
+        "skip": "Skip to content",
+        "menu": "Open menu",
+        "nav_aria": "Primary",
+        "nav": [
+            ("index.html", "Home"),
+            ("about.html", "About"),
+            ("services.html", "Services"),
+            ("signature-initiative.html", "Signature Initiative"),
+            ("collaboration-opportunities.html", "Collaboration"),
+            ("blog.html", "Blog"),
+            ("contact.html", "Contact"),
+        ],
+        "cta": "Discuss a Potential Collaboration",
+        "switch_label": "FR",
+        "switch_aria": "Passer en français",
+        "foot_tag": "Practical Training for Resilient Agriculture",
+        "foot_desc": ("AGRILEAD Training &amp; Consulting LLC is a Florida-based agricultural training and "
+                      "consulting company focused on practical agricultural education, applied agronomy support, "
+                      "bilingual outreach, technical assistance, curriculum development, and farmer capacity-building."),
+        "foot_quick": "Quick links",
+        "foot_quick_links": [
+            ("index.html", "Home"),
+            ("about.html", "About"),
+            ("services.html", "Services"),
+            ("signature-initiative.html", "Signature Initiative"),
+            ("collaboration-opportunities.html", "Collaboration Opportunities"),
+            ("blog.html", "Blog"),
+            ("contact.html", "Contact"),
+        ],
+        "foot_contact": "Contact",
+        "foot_loc": "Naples, Florida, United States",
+        "foot_disclaimer": ("Potential collaboration does not imply a confirmed partnership unless formally documented. "
+                            "AGRILEAD is not presenting itself as an official representative, affiliate, or partner of any "
+                            "public agency, university, Extension office, or external institution unless such a relationship "
+                            "is formally documented in writing."),
+        "rights": "All rights reserved.",
+        "privacy": "Privacy Policy",
+    },
+    "fr": {
+        "html_lang": "fr",
+        "skip": "Aller au contenu",
+        "menu": "Ouvrir le menu",
+        "nav_aria": "Navigation principale",
+        "nav": [
+            ("index.html", "Accueil"),
+            ("about.html", "À propos"),
+            ("services.html", "Services"),
+            ("signature-initiative.html", "Initiative phare"),
+            ("collaboration-opportunities.html", "Collaboration"),
+            ("blog.html", "Blog"),
+            ("contact.html", "Contact"),
+        ],
+        "cta": "Discuter d'une collaboration",
+        "switch_label": "EN",
+        "switch_aria": "Switch to English",
+        "foot_tag": "Formation pratique pour une agriculture résiliente",
+        "foot_desc": ("AGRILEAD Training &amp; Consulting LLC est une société de formation et de conseil agricoles "
+                      "basée en Floride, axée sur l'éducation agricole pratique, l'appui en agronomie appliquée, la "
+                      "sensibilisation bilingue, l'assistance technique, l'élaboration de programmes et le renforcement "
+                      "des capacités des agriculteurs."),
+        "foot_quick": "Liens rapides",
+        "foot_quick_links": [
+            ("index.html", "Accueil"),
+            ("about.html", "À propos"),
+            ("services.html", "Services"),
+            ("signature-initiative.html", "Initiative phare"),
+            ("collaboration-opportunities.html", "Opportunités de collaboration"),
+            ("blog.html", "Blog"),
+            ("contact.html", "Contact"),
+        ],
+        "foot_contact": "Contact",
+        "foot_loc": "Naples, Floride, États-Unis",
+        "foot_disclaimer": ("Une collaboration potentielle n'implique pas un partenariat confirmé sauf accord formel écrit. "
+                            "AGRILEAD ne se présente pas comme représentant officiel, affilié ou partenaire d'une agence "
+                            "publique, d'une université, d'un service de vulgarisation (Extension) ou d'une institution "
+                            "externe, sauf si une telle relation est formellement documentée par écrit."),
+        "rights": "Tous droits réservés.",
+        "privacy": "Politique de confidentialité",
+    },
+}
+
+
+def header(active, lang, switch_href):
+    t = TR[lang]
+    other = "fr" if lang == "en" else "en"
     links = ""
-    for href, label in NAV_ITEMS:
+    for href, label in t["nav"]:
         cur = ' aria-current="page"' if href == active else ""
         links += f'<a href="{href}"{cur}>{label}</a>'
-    return f'''<a class="skip-link" href="#main">Skip to content</a>
+    switch = (f'<a class="lang-switch" href="{switch_href}" hreflang="{other}" '
+              f'aria-label="{t["switch_aria"]}">{t["switch_label"]}</a>')
+    return f'''<a class="skip-link" href="#main">{t["skip"]}</a>
 <header class="site-header">
   <div class="container header-inner">
     {BRAND}
-    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+    <button class="nav-toggle" aria-label="{t["menu"]}" aria-expanded="false" aria-controls="primary-nav">
       {ICONS["list"]}
     </button>
-    <nav class="nav" id="primary-nav" aria-label="Primary">
+    <nav class="nav" id="primary-nav" aria-label="{t["nav_aria"]}">
       {links}
-      <a class="btn btn--primary" href="collaboration-opportunities.html">Discuss a Potential Collaboration</a>
+      {switch}
+      <a class="btn btn--primary" href="collaboration-opportunities.html">{t["cta"]}</a>
     </nav>
     <div class="header-actions">
-      <a class="btn btn--primary" href="collaboration-opportunities.html">Discuss a Potential Collaboration</a>
+      {switch}
+      <a class="btn btn--primary" href="collaboration-opportunities.html">{t["cta"]}</a>
     </div>
   </div>
 </header>'''
 
-FOOTER = f'''<footer class="site-footer">
+
+def footer(lang, prefix):
+    t = TR[lang]
+    quick = "".join(f'<li><a href="{href}">{label}</a></li>' for href, label in t["foot_quick_links"])
+    return f'''<footer class="site-footer">
   <div class="container">
     <div class="footer-top">
       <div class="footer-brand">
         {BRAND}
-        <p class="footer-tag">Practical Training for Resilient Agriculture</p>
-        <p class="footer-desc">AGRILEAD Training &amp; Consulting LLC is a Florida-based agricultural training and consulting company focused on practical agricultural education, applied agronomy support, bilingual outreach, technical assistance, curriculum development, and farmer capacity-building.</p>
+        <p class="footer-tag">{t["foot_tag"]}</p>
+        <p class="footer-desc">{t["foot_desc"]}</p>
       </div>
       <div class="footer">
-        <h4>Quick links</h4>
+        <h4>{t["foot_quick"]}</h4>
         <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="signature-initiative.html">Signature Initiative</a></li>
-          <li><a href="collaboration-opportunities.html">Collaboration Opportunities</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          {quick}
         </ul>
       </div>
       <div class="footer">
-        <h4>Contact</h4>
+        <h4>{t["foot_contact"]}</h4>
         <ul class="footer-contact">
           <li>{ICONS["phone"]}<span>[Phone]</span></li>
           <li>{ICONS["mail"]}<span>[Email]</span></li>
           <li>{ICONS["globe"]}<span>[Website]</span></li>
-          <li>{ICONS["pin"]}<span>Naples, Florida, United States</span></li>
+          <li>{ICONS["pin"]}<span>{t["foot_loc"]}</span></li>
         </ul>
       </div>
     </div>
-    <p class="footer-disclaimer">Potential collaboration does not imply a confirmed partnership unless formally documented. AGRILEAD is not presenting itself as an official representative, affiliate, or partner of any public agency, university, Extension office, or external institution unless such a relationship is formally documented in writing.</p>
+    <p class="footer-disclaimer">{t["foot_disclaimer"]}</p>
     <div class="footer-bottom">
-      <p>&copy; <span id="year">2025</span> AGRILEAD Training &amp; Consulting LLC. All rights reserved.</p>
-      <p><a href="privacy.html">Privacy Policy</a></p>
+      <p>&copy; <span id="year">2025</span> AGRILEAD Training &amp; Consulting LLC. {t["rights"]}</p>
+      <p><a href="privacy.html">{t["privacy"]}</a></p>
     </div>
   </div>
 </footer>
-<script src="assets/js/main.js"></script>
+<script src="{prefix}assets/js/main.js"></script>
 <script>document.getElementById("year").textContent = new Date().getFullYear();</script>'''
 
-def page(filename, title, description, active, main_html):
+
+def page(filename, title, description, active, main_html, lang="en"):
+    t = TR[lang]
+    prefix = "" if lang == "en" else "../"
+    outdir = OUT if lang == "en" else os.path.join(OUT, "fr")
+    # Alternate-language URLs (relative) for hreflang + switcher
+    if lang == "en":
+        alt_en, alt_fr = filename, "fr/" + filename
+        switch_href = "fr/" + filename
+    else:
+        alt_en, alt_fr = "../" + filename, filename
+        switch_href = "../" + filename
+    hreflang = (f'<link rel="alternate" hreflang="en" href="{alt_en}">\n'
+                f'  <link rel="alternate" hreflang="fr" href="{alt_fr}">\n'
+                f'  <link rel="alternate" hreflang="x-default" href="{alt_en}">')
     html = f'''<!DOCTYPE html>
-<html lang="en">
+<html lang="{t["html_lang"]}">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{title}</title>
   <meta name="description" content="{description}">
-  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  {hreflang}
+  <link rel="icon" type="image/svg+xml" href="{prefix}assets/img/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Lato:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="{prefix}assets/css/styles.css">
 </head>
 <body>
-{header(active)}
+{header(active, lang, switch_href)}
 <main id="main">
 {main_html}
 </main>
-{FOOTER}
+{footer(lang, prefix)}
 </body>
 </html>'''
-    with open(os.path.join(OUT, filename), "w", encoding="utf-8") as f:
+    with open(os.path.join(outdir, filename), "w", encoding="utf-8") as f:
         f.write(html)
-    print("wrote", filename)
+    print("wrote", lang, filename)
+
 
 # ---------------------------------------------------------------------------
-# Reusable content blocks
+# Reusable content blocks (data passed in per language)
 # ---------------------------------------------------------------------------
 
-VALUES = [
-    ("leaf",  "Practical Knowledge", "Clear, useful, field-oriented learning."),
-    ("group", "Farmer-Centered Training", "Training adapted to producer needs and realities."),
-    ("shield","Integrity", "Professional, transparent, and responsible communication."),
-    ("globe", "Inclusion &amp; Language Access", "Support for bilingual and multilingual learning."),
-    ("soil",  "Sustainability", "Emphasis on soil health, resilience, and long-term farm viability."),
-]
-
-def values_block():
+def values_block(values):
     out = '<div class="values">'
-    for icon, title, desc in VALUES:
+    for icon, title, desc in values:
         out += (f'<div class="value"><span class="icon">{ICONS[icon]}</span>'
                 f'<div><h4>{title}</h4><p>{desc}</p></div></div>')
     out += '</div>'
     return out
 
-WHO_WE_SERVE = [
-    "Beginning farmers", "Small-scale producers", "Immigrant &amp; multilingual producers",
-    "Haitian / Creole-speaking communities", "Hispanic agricultural communities",
-    "Underserved rural communities", "Farmworker communities", "Producer groups",
-    "Agricultural nonprofits", "Community-based organizations", "Training stakeholders",
-]
 
 def pills_block(items):
     return '<div class="pills">' + "".join(f'<span class="pill">{i}</span>' for i in items) + '</div>'
 
-DISCLAIMER_COLLAB = (
-    'AGRILEAD Training &amp; Consulting LLC is available to discuss potential collaboration '
-    'opportunities with agricultural organizations, community-based institutions, producer groups, '
-    'and training stakeholders. Any collaboration would be subject to each organization&rsquo;s policies, '
-    'priorities, resources, timelines, and formal agreements. References to potential collaboration do '
-    'not imply confirmed partnership, endorsement, funding, contract, official affiliation, or guaranteed '
-    'results unless documented in writing.'
-)
+
 print("blocks ready")

@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Replace YOURDOMAIN with the final domain before launch
-Sitemap: https://YOURDOMAIN.com/sitemap.xml
+Sitemap: https://agrilead.netlify.app/sitemap.xml
