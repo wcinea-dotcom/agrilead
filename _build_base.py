@@ -10,12 +10,26 @@ import os
 
 # Bump ASSET_VER whenever CSS/JS changes — it cache-busts the year-long
 # immutable asset cache so returning visitors get the new styles.
-ASSET_VER = "20260702c"
+ASSET_VER = "20260702d"
+
+# Supported languages: English (root), French (/fr/), Spanish (/es/).
+LANGS = ("en", "fr", "es")
+LANG_DIR = {"en": "", "fr": "fr/", "es": "es/"}
+LANG_LABEL = {"en": "English", "fr": "Français", "es": "Español"}
+
+
+def url_for(cur, target, filename):
+    """Relative URL to `target` language's copy of `filename`, from a page in `cur`."""
+    if target == cur:
+        return filename
+    up = "" if cur == "en" else "../"
+    return up + LANG_DIR[target] + filename
+
 
 # The publishable site lives in public/ (Netlify's publish directory).
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "public")
-os.makedirs(OUT, exist_ok=True)
-os.makedirs(os.path.join(OUT, "fr"), exist_ok=True)
+for _d in LANG_DIR.values():
+    os.makedirs(os.path.join(OUT, _d) if _d else OUT, exist_ok=True)
 
 # ---- Shared bits -----------------------------------------------------------
 
@@ -192,6 +206,49 @@ TR = {
         "rights": "Tous droits réservés.",
         "privacy": "Politique de confidentialité",
     },
+    "es": {
+        "html_lang": "es",
+        "skip": "Ir al contenido",
+        "menu": "Abrir el menú",
+        "nav_aria": "Principal",
+        "nav_tree": [
+            ("index.html", "Inicio", [
+                ("about.html", "Acerca de"),
+                ("collaboration-opportunities.html", "Colaboración"),
+            ]),
+            ("services.html", "Servicios", [
+                ("signature-initiative.html", "Iniciativa insignia"),
+            ]),
+            ("blog.html", "Medios", [
+                ("blog.html", "Blog"),
+            ]),
+            ("contact.html", "Contacto", []),
+        ],
+        "cta": "Hablar de una posible colaboración",
+        "foot_tag": "Formación práctica para una agricultura resiliente",
+        "foot_desc": ("AGRILEAD Training &amp; Consulting LLC es una empresa de formación y consultoría "
+                      "agrícola con sede en Florida, enfocada en la educación agrícola práctica, el apoyo en "
+                      "agronomía aplicada, la divulgación bilingüe, la asistencia técnica, el desarrollo de "
+                      "programas y el fortalecimiento de capacidades de los agricultores."),
+        "foot_quick": "Enlaces rápidos",
+        "foot_quick_links": [
+            ("index.html", "Inicio"),
+            ("about.html", "Acerca de"),
+            ("services.html", "Servicios"),
+            ("signature-initiative.html", "Iniciativa insignia"),
+            ("collaboration-opportunities.html", "Oportunidades de colaboración"),
+            ("blog.html", "Blog"),
+            ("contact.html", "Contacto"),
+        ],
+        "foot_contact": "Contacto",
+        "foot_loc": "Naples, Florida, Estados Unidos",
+        "foot_disclaimer": ("Una posible colaboración no implica una alianza confirmada salvo acuerdo formal por "
+                            "escrito. AGRILEAD no se presenta como representante oficial, afiliado o socio de ninguna "
+                            "agencia pública, universidad, oficina de extensión (Extension) o institución externa, "
+                            "salvo que dicha relación esté formalmente documentada por escrito."),
+        "rights": "Todos los derechos reservados.",
+        "privacy": "Política de privacidad",
+    },
 }
 
 
@@ -216,17 +273,14 @@ def _nav_links(t, active):
 
 
 def lang_toggle(lang, filename):
-    """Language toggle: globe + EN | FR text links (nature.org style)."""
-    if lang == "en":
-        en_url, fr_url = filename, "fr/" + filename
-    else:
-        en_url, fr_url = "../" + filename, filename
-    en_cls = ' class="is-active"' if lang == "en" else ""
-    fr_cls = ' class="is-active"' if lang == "fr" else ""
-    return (f'<div class="lang-toggle">{ICONS["globe"]}'
-            f'<a href="{en_url}"{en_cls} hreflang="en">English</a>'
-            f'<span class="sep">|</span>'
-            f'<a href="{fr_url}"{fr_cls} hreflang="fr">Français</a></div>')
+    """Language toggle: globe + English | Français | Español (nature.org style)."""
+    parts = []
+    for code in LANGS:
+        cls = ' class="is-active"' if code == lang else ""
+        url = url_for(lang, code, filename)
+        parts.append(f'<a href="{url}"{cls} hreflang="{code}">{LANG_LABEL[code]}</a>')
+    links = '<span class="sep">|</span>'.join(parts)
+    return f'<div class="lang-toggle">{ICONS["globe"]}{links}</div>'
 
 
 def header(active, lang, filename):
@@ -295,15 +349,12 @@ def footer(lang, prefix):
 def page(filename, title, description, active, main_html, lang="en"):
     t = TR[lang]
     prefix = "" if lang == "en" else "../"
-    outdir = OUT if lang == "en" else os.path.join(OUT, "fr")
-    # Alternate-language URLs (relative) for hreflang + switcher
-    if lang == "en":
-        alt_en, alt_fr = filename, "fr/" + filename
-    else:
-        alt_en, alt_fr = "../" + filename, filename
-    hreflang = (f'<link rel="alternate" hreflang="en" href="{alt_en}">\n'
-                f'  <link rel="alternate" hreflang="fr" href="{alt_fr}">\n'
-                f'  <link rel="alternate" hreflang="x-default" href="{alt_en}">')
+    outdir = os.path.join(OUT, LANG_DIR[lang]) if LANG_DIR[lang] else OUT
+    # Alternate-language URLs (relative) for hreflang
+    hl = [f'<link rel="alternate" hreflang="{code}" href="{url_for(lang, code, filename)}">'
+          for code in LANGS]
+    hl.append(f'<link rel="alternate" hreflang="x-default" href="{url_for(lang, "en", filename)}">')
+    hreflang = "\n  ".join(hl)
     html = f'''<!DOCTYPE html>
 <html lang="{t["html_lang"]}">
 <head>
