@@ -18,6 +18,13 @@ def notice(text):
     return f'<div class="notice reveal">{text}</div>'
 
 
+def banner(eyebrow, title, img, alt):
+    return (f'<section class="hero hero--banner">'
+            f'<div class="hero-banner-media"><img src="{img}" alt="{alt}" loading="eager" decoding="async"></div>'
+            f'<div class="container hero-banner-inner"><p class="eyebrow">{eyebrow}</p><h1>{title}</h1></div>'
+            f'</section>')
+
+
 def post_cards(posts, read_label):
     out = '<div class="grid grid-3">'
     for fn, cat, title, date, read, excerpt in posts:
@@ -858,7 +865,7 @@ def build(lang):
     home = f'''
 <section class="hero hero--banner">
   <div class="hero-banner-media">
-    <img src="https://images.pexels.com/photos/4944058/pexels-photo-4944058.jpeg?auto=compress&cs=tinysrgb&w=1900" alt="{h["hero_alt"]}" loading="eager" decoding="async">
+    <img src="/assets/img/home_hero.jpg" alt="{h["hero_alt"]}" loading="eager" decoding="async">
   </div>
   <div class="container hero-banner-inner">
     <p class="eyebrow">{h["eyebrow"]}</p>
@@ -975,11 +982,11 @@ def build(lang):
     # ---- ABOUT ----
     a = d["about"]
     about = f'''
+{banner(a["eyebrow"], a["h1"], "/assets/img/about_banner.jpg", a["h1"])}
+
 <section class="section section--tight">
-  <div class="container">
-    <p class="eyebrow reveal">{a["eyebrow"]}</p>
-    <h1 class="reveal" style="max-width:16ch">{a["h1"]}</h1>
-    <p class="hero-lead reveal" style="max-width:60ch">{a["lead"]}</p>
+  <div class="container narrow center">
+    <p class="hero-lead reveal" style="margin-inline:auto">{a["lead"]}</p>
   </div>
 </section>
 
@@ -990,7 +997,7 @@ def build(lang):
       <p>{a["company_p1"]}</p>
       <p>{a["company_p2"]}</p>
     </div>
-    <div class="reveal">{field_panel(a["panel_cap"], img="https://images.pexels.com/photos/27176769/pexels-photo-27176769.jpeg?auto=compress&cs=tinysrgb&w=1400", alt=a["panel_cap"])}</div>
+    <div class="reveal">{field_panel(a["panel_cap"], img="/assets/img/about_side.jpg", alt=a["panel_cap"])}</div>
   </div>
 </section>
 
@@ -1012,7 +1019,7 @@ def build(lang):
   <div class="container">
     <div class="section-head reveal"><p class="eyebrow">{a["founder_eyebrow"]}</p><h2>{a["founder_h2"]}</h2></div>
     <div class="founder">
-      <div class="reveal">{field_panel(a["founder_cap"], note=a["founder_note"])}</div>
+      <div class="reveal">{field_panel(a["founder_cap"], img="/assets/img/founder.jpg", alt=a["founder_name"])}</div>
       <div class="reveal">
         <h3>{a["founder_name"]}</h3>
         <p class="role">{a["founder_role"]}</p>
@@ -1042,11 +1049,11 @@ def build(lang):
         svc_items += (f'<div class="svc-item reveal"><span class="icon">{ICONS[icon]}</span>'
                       f'<div><h3>{title}</h3><p>{body}</p></div></div>')
     services = f'''
+{banner(s["eyebrow"], s["h1"], "/assets/img/services_banner.jpg", s["h1"])}
+
 <section class="section section--tight">
-  <div class="container">
-    <p class="eyebrow reveal">{s["eyebrow"]}</p>
-    <h1 class="reveal" style="max-width:18ch">{s["h1"]}</h1>
-    <p class="hero-lead reveal" style="max-width:60ch">{s["lead"]}</p>
+  <div class="container narrow center">
+    <p class="hero-lead reveal" style="margin-inline:auto">{s["lead"]}</p>
   </div>
 </section>
 
@@ -1088,11 +1095,11 @@ def build(lang):
                       f'<h3 style="font-size:1.02rem;margin:0">{label}</h3></div>')
     act_cards += '</div>'
     initiative = f'''
+{banner(i["eyebrow"], i["h1"], "/assets/img/signature_banner.jpg", i["h1"])}
+
 <section class="section section--tight">
-  <div class="container">
-    <p class="eyebrow reveal">{i["eyebrow"]}</p>
-    <h1 class="reveal">{i["h1"]}</h1>
-    <p class="hero-lead reveal" style="max-width:62ch">{i["lead"]}</p>
+  <div class="container narrow center">
+    <p class="hero-lead reveal" style="margin-inline:auto">{i["lead"]}</p>
   </div>
 </section>
 
@@ -1104,7 +1111,7 @@ def build(lang):
       <p>{i["purpose_p1"]}</p>
       <p>{i["purpose_p2"]}</p>
     </div>
-    <div class="reveal">{field_panel(i["panel_cap"], img="https://images.pexels.com/photos/9890612/pexels-photo-9890612.jpeg?auto=compress&cs=tinysrgb&w=1400", alt=i["panel_cap"])}</div>
+    <div class="reveal">{field_panel(i["panel_cap"], img="/assets/img/signature_side.jpg", alt=i["panel_cap"])}</div>
   </div>
 </section>
 
@@ -1152,11 +1159,11 @@ def build(lang):
         collab_items += (f'<div class="svc-item reveal"><span class="icon">{ICONS[icon]}</span>'
                          f'<div><h3>{title}</h3><p>{body}</p></div></div>')
     collaboration = f'''
+{banner(c["eyebrow"], c["h1"], "/assets/img/collab_banner.jpg", c["h1"])}
+
 <section class="section section--tight">
-  <div class="container">
-    <p class="eyebrow reveal">{c["eyebrow"]}</p>
-    <h1 class="reveal">{c["h1"]}</h1>
-    <p class="hero-lead reveal" style="max-width:60ch">{c["lead"]}</p>
+  <div class="container narrow center">
+    <p class="hero-lead reveal" style="margin-inline:auto">{c["lead"]}</p>
   </div>
 </section>
 
@@ -1205,17 +1212,18 @@ def build(lang):
     topics_list = "".join(f'<li>{ICONS["check"]}<span>{t}</span></li>' for t in ct["topics"])
     followup_opts = "".join(f'<option>{x}</option>' for x in ct["followups"])
     contact = f'''
+{banner(ct["eyebrow"], ct["h1"], "/assets/img/contact_banner.jpg", ct["h1"])}
+
 <section class="section section--tight">
-  <div class="container">
-    <p class="eyebrow reveal">{ct["eyebrow"]}</p>
-    <h1 class="reveal">{ct["h1"]}</h1>
-    <p class="hero-lead reveal" style="max-width:62ch">{ct["lead"]}</p>
+  <div class="container narrow center">
+    <p class="hero-lead reveal" style="margin-inline:auto">{ct["lead"]}</p>
   </div>
 </section>
 
 <section class="section">
   <div class="container contact-grid">
     <div class="reveal">
+      <img class="contact-photo" src="/assets/img/contact_vertical.jpg" alt="{ct["eyebrow"]} AGRILEAD" loading="lazy" decoding="async">
       <h2 style="font-size:1.35rem">{ct["info_h2"]}</h2>
       <div class="info-row"><span class="icon icon--navy">{ICONS["pin"]}</span><div><p class="label">{ct["l_location"]}</p><p class="val">{ct["v_location"]}</p></div></div>
       <div class="info-row"><span class="icon icon--navy">{ICONS["phone"]}</span><div><p class="label">{ct["l_phone"]}</p><p class="val">[Phone]</p></div></div>
@@ -1309,13 +1317,11 @@ def build(lang):
     # ---- BLOG ----
     bl = d["blog"]
     blog = f'''
+{banner(bl["eyebrow"], bl["h1"], "/assets/img/blog_banner.jpg", bl["h1"])}
+
 <section class="section section--tight">
   <div class="container">
-    <div class="section-head reveal">
-      <p class="eyebrow">{bl["eyebrow"]}</p>
-      <h1>{bl["h1"]}</h1>
-      <p>{bl["intro"]}</p>
-    </div>
+    <p class="hero-lead reveal" style="max-width:70ch">{bl["intro"]}</p>
     {post_cards(bl["posts"], d["read_article"])}
     <div class="notice reveal" style="margin-top:2.2rem">{bl["more"]}</div>
   </div>

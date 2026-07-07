@@ -606,3 +606,6 @@ h1{font-weight:700}
 .lg-title svg{width:18px;height:18px}
 .lg-title:hover{text-decoration:underline}
 @media(max-width:700px){.linkgrid{grid-template-columns:1fr;gap:1.6rem}}
+
+/* Vertical photo in the contact info column */
+.contact-photo{width:100%;max-width:340px;aspect-ratio:3/4;object-fit:cover;border-radius:12px;display:block;margin:0 0 1.4rem}
