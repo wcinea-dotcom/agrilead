@@ -7,15 +7,19 @@ All contact details use [Phone] / [Email] / [Website] placeholders
 until final details are confirmed, per the brand handoff."""
 
 import os
+import time
 
 # Bump ASSET_VER whenever CSS/JS changes — it cache-busts the year-long
 # immutable asset cache so returning visitors get the new styles.
-ASSET_VER = "20260702e"
+ASSET_VER = "20260702f"
 
 # Supported languages: English (root), French (/fr/), Spanish (/es/).
 LANGS = ("en", "fr", "es")
 LANG_DIR = {"en": "", "fr": "fr/", "es": "es/"}
 LANG_LABEL = {"en": "English", "fr": "Français", "es": "Español"}
+
+# When AGRI_COLLECT is set, page() collects (target, bytes) here instead of writing.
+_PENDING = []
 
 
 def url_for(cur, target, filename):
@@ -138,7 +142,7 @@ TR = {
         "cta": "Discuss a Potential Collaboration",
         "switch_label": "FR",
         "switch_aria": "Passer en français",
-        "foot_tag": "Practical Training for Resilient Agriculture",
+        "foot_tag": "Practical Agricultural Training for Resilient Communities",
         "foot_desc": ("AGRILEAD Training &amp; Consulting LLC is a Florida-based agricultural training and "
                       "consulting company focused on practical agricultural education, applied agronomy support, "
                       "bilingual outreach, technical assistance, curriculum development, and farmer capacity-building."),
@@ -182,7 +186,7 @@ TR = {
         "cta": "Discuter d'une collaboration",
         "switch_label": "EN",
         "switch_aria": "Switch to English",
-        "foot_tag": "Formation pratique pour une agriculture résiliente",
+        "foot_tag": "Formation agricole pratique pour des communautés résilientes",
         "foot_desc": ("AGRILEAD Training &amp; Consulting LLC est une société de formation et de conseil agricoles "
                       "basée en Floride, axée sur l'éducation agricole pratique, l'appui en agronomie appliquée, la "
                       "sensibilisation bilingue, l'assistance technique, l'élaboration de programmes et le renforcement "
@@ -225,7 +229,7 @@ TR = {
             ("contact.html", "Contacto", []),
         ],
         "cta": "Hablar de una posible colaboración",
-        "foot_tag": "Formación práctica para una agricultura resiliente",
+        "foot_tag": "Formación agrícola práctica para comunidades resilientes",
         "foot_desc": ("AGRILEAD Training &amp; Consulting LLC es una empresa de formación y consultoría "
                       "agrícola con sede en Florida, enfocada en la educación agrícola práctica, el apoyo en "
                       "agronomía aplicada, la divulgación bilingüe, la asistencia técnica, el desarrollo de "
@@ -377,8 +381,25 @@ def page(filename, title, description, active, main_html, lang="en"):
 {footer(lang, prefix)}
 </body>
 </html>'''
-    with open(os.path.join(outdir, filename), "w", encoding="utf-8") as f:
-        f.write(html)
+    target = os.path.join(outdir, filename)
+    data = html.encode("utf-8")
+    if os.environ.get("AGRI_COLLECT"):
+        _PENDING.append((target, data))
+        return
+    for attempt in range(4):
+        try:
+            fd = os.open(target, os.O_WRONLY | os.O_CREAT, 0o644)
+            try:
+                os.write(fd, data)
+                os.ftruncate(fd, len(data))
+            finally:
+                os.close(fd)
+            break
+        except OSError:
+            time.sleep(0.4)
+    else:
+        print("LOCKED (skipped):", lang, filename)
+        return
     print("wrote", lang, filename)
 
 

@@ -61,8 +61,8 @@ CONTENT = {
     "title": "AGRILEAD Training & Consulting LLC | Agricultural Training in Florida",
     "desc": "AGRILEAD Training & Consulting LLC provides practical agricultural training, applied agronomy support, bilingual outreach, technical assistance, and farmer capacity-building services.",
     "eyebrow": "Naples, Florida &middot; Agricultural Training",
-    "h1": "Practical Agricultural Training for Resilient Producers",
-    "lead": "AGRILEAD Training &amp; Consulting LLC provides practical agricultural training, applied agronomy support, bilingual outreach, and farmer capacity-building for beginning farmers, small-scale producers, multilingual producers, and underserved agricultural communities.",
+    "h1": "Practical agricultural training for resilient communities",
+    "lead": "A Florida-based agricultural training and consulting company that strengthens agricultural capacity through practical training, applied agronomy, and implementation support — working with universities, Extension services, cooperatives, nonprofits, and underserved farming communities.",
     "meta1": "Based in Naples, Florida",
     "meta2": "Bilingual &amp; multilingual outreach",
     "meta3": "Field-oriented, practical learning",
@@ -70,8 +70,8 @@ CONTENT = {
     "hero_alt": "Garden in bloom",
     "who_eyebrow": "Who we are",
     "who_h2": "Practical, field-oriented agricultural learning",
-    "who_p1": "AGRILEAD Training &amp; Consulting LLC is based in Naples, Florida, United States. The company is designed to support accessible, practical, and field-oriented agricultural learning through training, technical assistance, curriculum development, bilingual outreach, and community-centered capacity-building.",
-    "who_p2": "AGRILEAD focuses on helping producers, organizations, and training stakeholders discuss practical learning needs in areas such as soil health, crop diversification, climate-smart agriculture, applied agronomy, and farmer-centered education.",
+    "who_p1": "Founded by Wilbert Georges, AGRILEAD Training &amp; Consulting LLC provides agricultural training and consulting services focused on applied agronomy, climate-smart agriculture, bilingual outreach, producer capacity building, and agricultural workforce development. It supports beginning farmers, small-scale producers, and underserved communities through practical, evidence-informed services that adapt to local conditions and institutional goals.",
+    "who_p2": "AGRILEAD's approach is built around field-based learning, technical assistance, and implementation support. Rather than offering general advice, AGRILEAD helps organizations and communities translate knowledge into action through structured training, documentation, and learning tools that strengthen long-term capacity.",
     "do_eyebrow": "What we do",
     "do_h2": "Core areas of support",
     "cards": [
@@ -112,11 +112,14 @@ CONTENT = {
 
   "who_we_serve": ["Beginning farmers","Small-scale producers","Immigrant &amp; multilingual producers","Haitian / Creole-speaking communities","Hispanic agricultural communities","Underserved rural communities","Farmworker communities","Producer groups","Agricultural nonprofits","Community-based organizations","Training stakeholders"],
   "values": [
-    ("leaf","Practical Knowledge","Clear, useful, field-oriented learning."),
-    ("group","Farmer-Centered Training","Training adapted to producer needs and realities."),
-    ("shield","Integrity","Professional, transparent, and responsible communication."),
-    ("globe","Inclusion &amp; Language Access","Support for bilingual and multilingual learning."),
-    ("soil","Sustainability","Emphasis on soil health, resilience, and long-term farm viability."),
+    ("leaf","Practical Impact","Field-based solutions producers and communities can apply and translate into measurable results."),
+    ("check","Accountability","Clear commitments, responsible execution, transparent communication, and consistent follow-through."),
+    ("group","Community Relevance","Services designed around real needs, local conditions, and producer realities."),
+    ("chart","Evidence, Learning &amp; Adaptation","We use data, feedback, and documented lessons to improve delivery and outcomes."),
+    ("globe","Inclusivity &amp; Accessibility","Bilingual, culturally responsive engagement for diverse and underserved producers."),
+    ("wrench","Technical Excellence","Sound agronomy, structured training methods, and professional standards."),
+    ("shield","Integrity","Honesty, consistency, professionalism, and respect for partners and communities."),
+    ("hands","Collaboration &amp; Partnership","Sustainable progress through strong collaboration with institutions and communities."),
   ],
 
   "about": {
@@ -130,9 +133,9 @@ CONTENT = {
     "company_p2": "Its work focuses on applied agronomy, technical assistance, bilingual and multilingual outreach, curriculum development, training materials, and farmer capacity-building &mdash; designed to make agricultural knowledge more accessible, practical, and adaptable to producer and community needs.",
     "panel_cap": "Agricultural learning setting",
     "mission_h3": "Mission",
-    "mission_p": "AGRILEAD Training &amp; Consulting LLC provides practical, field-oriented agricultural training and applied agronomy support to strengthen the capacity of beginning farmers, small-scale producers, and underserved agricultural communities through bilingual and multilingual education focused on sustainability, productivity, and resilience.",
+    "mission_p": "To strengthen agricultural capacity among beginning farmers, small-scale producers, immigrant and multilingual producers, and underserved agricultural communities through practical, bilingual, evidence-informed education, technical assistance, and sustainable farming solutions that support more resilient farming systems.",
     "vision_h3": "Vision",
-    "vision_p": "To contribute to stronger agricultural communities where beginning farmers, small-scale producers, and underserved growers have access to practical knowledge, technical support, and adaptable training models that support local and regional food systems.",
+    "vision_p": "A more resilient, inclusive, and sustainable agricultural sector where producers and communities have the knowledge, tools, and support needed to succeed.",
     "values_eyebrow": "Core values",
     "values_h2": "What guides our work",
     "founder_eyebrow": "Founder",
@@ -156,16 +159,13 @@ CONTENT = {
     "core_eyebrow": "Core services",
     "core_h2": "Areas of support available for discussion",
     "list": [
-      ("book","Agricultural Training","Workshops, short courses, and field-oriented learning activities for farmers, producer groups, and community-based organizations."),
-      ("sprout","Applied Agronomy Support","Guidance on crop production, soil fertility, crop management, and sustainable agricultural practices."),
-      ("soil","Soil Health &amp; Fertility Education","Training on organic matter, composting, nutrient management, soil conservation, and basic fertility planning."),
-      ("leaf","Crop Diversification","Educational support for diversified production, farm planning, risk reduction, and sustainable crop systems."),
-      ("climate","Climate-Smart Agriculture","Training and discussion topics related to climate adaptation, resource stewardship, and resilient production practices."),
-      ("wrench","Technical Assistance","Support for agricultural organizations, producer groups, and community-based initiatives seeking practical agricultural guidance."),
-      ("globe","Bilingual &amp; Multilingual Training Materials","Farmer handouts, outreach tools, workshop materials, and practical learning resources designed to support language access."),
-      ("group","Train-the-Trainer Support","Capacity-building for facilitators, community leaders, and agricultural outreach workers."),
-      ("doc","Curriculum Development","Training modules, lesson plans, facilitator guides, and farmer education materials."),
-      ("chart","Monitoring, Evaluation &amp; Learning","Basic tools to document training activities, gather feedback, and support learning improvement."),
+      ("book","Agricultural Training &amp; Capacity Building","Practical training for producers, producer groups, and community organizations seeking stronger technical and operational capacity."),
+      ("sprout","Applied Agronomy Support","Guidance on soil health, crop planning, production systems, and field-based problem solving."),
+      ("climate","Climate-Smart Agriculture","Support for resilient practices that help producers adapt to changing environmental and production conditions."),
+      ("globe","Bilingual Outreach &amp; Producer Education","Accessible communication for multilingual and underserved audiences."),
+      ("group","Producer Group Strengthening","Support for coordination, participation, leadership, and organizational development in producer groups and cooperatives."),
+      ("chart","MEAL &amp; Documentation Tools","Monitoring, evaluation, accountability, and learning tools to track activities, capture evidence, and strengthen implementation."),
+      ("list","Planning &amp; Implementation Support","Assistance with program design, work planning, activity sequencing, and implementation readiness for agricultural initiatives."),
     ],
     "note": "<strong>Please note.</strong> Services may include the areas above and are available to discuss depending on scope and resources. Descriptions do not imply confirmed partnership, funding, contract, official affiliation, or guaranteed results unless documented in writing.",
     "cta_h2": "Request a services discussion",
@@ -196,6 +196,19 @@ CONTENT = {
     "model_h2": "A flexible, modular platform",
     "model_p": "The initiative is designed as a flexible and modular training platform. Materials and activities may be adapted based on audience needs, language access, geographic context, agricultural priorities, available resources, and agreed scope of work.",
     "model_note": "<strong>Important note.</strong> This initiative does not imply confirmed partnerships, endorsements, funding, contracts, official affiliations, or guaranteed results unless documented in writing. Any collaboration would be subject to organizational policies, priorities, resources, timelines, and formal agreements.",
+    "geo_eyebrow": "Geographic focus",
+    "geo_h2": "Starting in Southwest Florida",
+    "geo_p": "AGRILEAD's initial focus is Southwest Florida, with priority attention to Collier, Lee, and Hendry counties and agricultural and underserved communities near Immokalee — an initial testing ground for a practical, transferable training model.",
+    "outputs_eyebrow": "Projected outputs &middot; 2026&ndash;2029",
+    "outputs_h2": "What the initiative aims to deliver",
+    "outputs": [
+      ("4&ndash;6","training module outlines &amp; materials"),
+      ("6&ndash;12","pilot workshops &amp; learning sessions"),
+      ("75&ndash;150","producers &amp; community members reached"),
+      ("10&ndash;20","trainers &amp; facilitators engaged"),
+      ("1","practical replication toolkit"),
+    ],
+    "outputs_note": "These are planning targets shared for discussion — not commitments, funding requests, or guaranteed results.",
     "cta_h2": "Discuss a potential training activity",
   },
 
@@ -207,8 +220,8 @@ CONTENT = {
     "lead": "Explore potential training, outreach, and technical assistance opportunities with AGRILEAD Training &amp; Consulting LLC.",
     "plat_eyebrow": "A professional platform",
     "plat_h2": "Available to discuss practical agricultural learning",
-    "plat_p1": "AGRILEAD Training &amp; Consulting LLC is available to discuss potential collaboration opportunities with agricultural organizations, community-based institutions, producer groups, and training stakeholders interested in practical agricultural education, applied agronomy support, bilingual outreach, and farmer capacity-building.",
-    "plat_p2": "Any collaboration would be subject to organizational policies, priorities, resources, timelines, and formal agreements.",
+    "plat_p1": "AGRILEAD approaches collaboration with respect for institutional expertise, local knowledge, and the operational realities of agricultural communities. Effective partnerships are built on shared goals, clearly defined roles, practical communication, mutual accountability, and a common commitment to measurable results.",
+    "plat_p2": "AGRILEAD's role is to complement — not replace — the work of universities, Cooperative Extension services, producer associations, cooperatives, nonprofits, and community-based institutions. Through practical training, bilingual outreach, technical assistance, curriculum support, and field-informed program design, AGRILEAD adds value where additional capacity or culturally responsive engagement is needed.",
     "for_eyebrow": "Who this page is for",
     "for_h2": "Organizations and groups we may work with",
     "for_p": "This page is intended for organizations and groups that may be interested in practical agricultural training, technical assistance, bilingual outreach, or farmer-centered learning.",
@@ -327,8 +340,8 @@ CONTENT = {
     "title": "AGRILEAD Training & Consulting LLC | Formation agricole en Floride",
     "desc": "AGRILEAD Training & Consulting LLC propose une formation agricole pratique, un appui en agronomie appliquée, une sensibilisation bilingue, une assistance technique et le renforcement des capacités des agriculteurs.",
     "eyebrow": "Naples, Floride &middot; Formation agricole",
-    "h1": "Une formation agricole pratique pour des producteurs résilients",
-    "lead": "AGRILEAD Training &amp; Consulting LLC propose une formation agricole pratique, un appui en agronomie appliquée, une sensibilisation bilingue et le renforcement des capacités pour les agriculteurs débutants, les petits producteurs, les producteurs multilingues et les communautés agricoles mal desservies.",
+    "h1": "Une formation agricole pratique pour des communautés résilientes",
+    "lead": "Une société de formation et de conseil agricoles basée en Floride, qui renforce les capacités agricoles par la formation pratique, l'agronomie appliquée et l'appui à la mise en œuvre — en travaillant avec les universités, les services de vulgarisation, les coopératives, les ONG et les communautés agricoles mal desservies.",
     "meta1": "Basée à Naples, Floride",
     "meta2": "Sensibilisation bilingue et multilingue",
     "meta3": "Apprentissage pratique, orienté terrain",
@@ -336,8 +349,8 @@ CONTENT = {
     "hero_alt": "Jardin en fleurs",
     "who_eyebrow": "Qui nous sommes",
     "who_h2": "Un apprentissage agricole pratique et orienté terrain",
-    "who_p1": "AGRILEAD Training &amp; Consulting LLC est basée à Naples, en Floride (États-Unis). La société vise à soutenir un apprentissage agricole accessible, pratique et orienté terrain, à travers la formation, l'assistance technique, l'élaboration de programmes, la sensibilisation bilingue et le renforcement des capacités centré sur la communauté.",
-    "who_p2": "AGRILEAD aide les producteurs, les organisations et les acteurs de la formation à définir leurs besoins d'apprentissage pratiques dans des domaines tels que la santé des sols, la diversification des cultures, l'agriculture intelligente face au climat, l'agronomie appliquée et l'éducation centrée sur l'agriculteur.",
+    "who_p1": "Fondée par Wilbert Georges, AGRILEAD Training &amp; Consulting LLC offre des services de formation et de conseil agricoles axés sur l'agronomie appliquée, l'agriculture climato-intelligente, la sensibilisation bilingue, le renforcement des capacités des producteurs et le développement de la main-d'œuvre agricole. Elle soutient les agriculteurs débutants, les petits producteurs et les communautés mal desservies par des services pratiques et fondés sur des données probantes, adaptables aux conditions locales et aux objectifs des institutions.",
+    "who_p2": "L'approche d'AGRILEAD repose sur l'apprentissage de terrain, l'assistance technique et l'appui à la mise en œuvre. Plutôt que des conseils généraux, AGRILEAD aide les organisations et les communautés à transformer le savoir en action grâce à des formations structurées, de la documentation et des outils d'apprentissage qui renforcent les capacités à long terme.",
     "do_eyebrow": "Ce que nous faisons",
     "do_h2": "Nos principaux domaines d'appui",
     "cards": [
@@ -378,11 +391,14 @@ CONTENT = {
 
   "who_we_serve": ["Agriculteurs débutants","Petits producteurs","Producteurs immigrants et multilingues","Communautés créolophones / haïtiennes","Communautés agricoles hispaniques","Communautés rurales mal desservies","Communautés de travailleurs agricoles","Groupes de producteurs","Associations agricoles à but non lucratif","Organisations communautaires","Acteurs de la formation"],
   "values": [
-    ("leaf","Connaissances pratiques","Un apprentissage clair, utile et orienté terrain."),
-    ("group","Formation centrée sur l'agriculteur","Une formation adaptée aux besoins et réalités des producteurs."),
-    ("shield","Intégrité","Une communication professionnelle, transparente et responsable."),
-    ("globe","Inclusion et accès linguistique","Un appui à l'apprentissage bilingue et multilingue."),
-    ("soil","Durabilité","L'accent sur la santé des sols, la résilience et la viabilité à long terme des exploitations."),
+    ("leaf","Impact concret","Des solutions de terrain que les producteurs et les communautés peuvent appliquer et traduire en résultats mesurables."),
+    ("check","Redevabilité","Des engagements clairs, une exécution responsable, une communication transparente et un suivi constant."),
+    ("group","Pertinence communautaire","Des services conçus autour des besoins réels, des conditions locales et des réalités des producteurs."),
+    ("chart","Preuves, apprentissage et adaptation","Nous utilisons les données, les retours et les leçons documentées pour améliorer la mise en œuvre et les résultats."),
+    ("globe","Inclusion et accessibilité","Une approche bilingue et culturellement adaptée pour des producteurs divers et mal desservis."),
+    ("wrench","Excellence technique","Une agronomie solide, des méthodes de formation structurées et des standards professionnels."),
+    ("shield","Intégrité","Honnêteté, cohérence, professionnalisme et respect des partenaires et des communautés."),
+    ("hands","Collaboration et partenariat","Un progrès durable grâce à une forte collaboration avec les institutions et les communautés."),
   ],
 
   "about": {
@@ -396,9 +412,9 @@ CONTENT = {
     "company_p2": "Son travail porte sur l'agronomie appliquée, l'assistance technique, la sensibilisation bilingue et multilingue, l'élaboration de programmes, les supports de formation et le renforcement des capacités des agriculteurs &mdash; afin de rendre le savoir agricole plus accessible, pratique et adaptable aux besoins des producteurs et des communautés.",
     "panel_cap": "Cadre d'apprentissage agricole",
     "mission_h3": "Mission",
-    "mission_p": "AGRILEAD Training &amp; Consulting LLC offre une formation agricole pratique et orientée terrain ainsi qu'un appui en agronomie appliquée pour renforcer les capacités des agriculteurs débutants, des petits producteurs et des communautés agricoles mal desservies, à travers une éducation bilingue et multilingue axée sur la durabilité, la productivité et la résilience.",
+    "mission_p": "Renforcer les capacités agricoles des agriculteurs débutants, des petits producteurs, des producteurs immigrants et multilingues et des communautés agricoles mal desservies, grâce à une éducation pratique, bilingue et fondée sur des données probantes, une assistance technique et des solutions agricoles durables qui soutiennent des systèmes de production plus résilients.",
     "vision_h3": "Vision",
-    "vision_p": "Contribuer à des communautés agricoles plus fortes où les agriculteurs débutants, les petits producteurs et les cultivateurs mal desservis ont accès à des connaissances pratiques, à un appui technique et à des modèles de formation adaptables qui soutiennent les systèmes alimentaires locaux et régionaux.",
+    "vision_p": "Un secteur agricole plus résilient, inclusif et durable, où les producteurs et les communautés disposent des connaissances, des outils et de l'accompagnement nécessaires pour réussir.",
     "values_eyebrow": "Valeurs fondamentales",
     "values_h2": "Ce qui guide notre travail",
     "founder_eyebrow": "Fondateur",
@@ -422,16 +438,13 @@ CONTENT = {
     "core_eyebrow": "Services principaux",
     "core_h2": "Domaines d'appui disponibles pour discussion",
     "list": [
-      ("book","Formation agricole","Ateliers, courtes formations et activités d'apprentissage orientées terrain pour les agriculteurs, les groupes de producteurs et les organisations communautaires."),
-      ("sprout","Appui en agronomie appliquée","Conseils sur la production, la fertilité des sols, la gestion des cultures et les pratiques agricoles durables."),
-      ("soil","Éducation à la santé et à la fertilité des sols","Formation sur la matière organique, le compostage, la gestion des nutriments, la conservation des sols et la planification de base de la fertilité."),
-      ("leaf","Diversification des cultures","Appui éducatif à la production diversifiée, à la planification des exploitations, à la réduction des risques et aux systèmes de culture durables."),
-      ("climate","Agriculture intelligente face au climat","Formations et sujets de discussion sur l'adaptation au climat, la gestion des ressources et des pratiques de production résilientes."),
-      ("wrench","Assistance technique","Appui aux organisations agricoles, groupes de producteurs et initiatives communautaires cherchant des conseils agricoles pratiques."),
-      ("globe","Supports de formation bilingues et multilingues","Fiches pour agriculteurs, outils de sensibilisation, supports d'ateliers et ressources d'apprentissage conçus pour favoriser l'accès linguistique."),
-      ("group","Appui à la formation de formateurs","Renforcement des capacités des facilitateurs, des leaders communautaires et des agents de sensibilisation agricole."),
-      ("doc","Élaboration de programmes","Modules de formation, plans de cours, guides de facilitateur et supports d'éducation pour agriculteurs."),
-      ("chart","Suivi, évaluation et apprentissage","Outils de base pour documenter les activités de formation, recueillir les retours et soutenir l'amélioration de l'apprentissage."),
+      ("book","Formation agricole et renforcement des capacités","Formation pratique pour les producteurs, les groupes de producteurs et les organisations communautaires cherchant à renforcer leurs capacités techniques et opérationnelles."),
+      ("sprout","Appui en agronomie appliquée","Conseils sur la santé des sols, la planification des cultures, les systèmes de production et la résolution de problèmes sur le terrain."),
+      ("climate","Agriculture climato-intelligente","Appui aux pratiques résilientes qui aident les producteurs à s'adapter à l'évolution des conditions environnementales et de production."),
+      ("globe","Sensibilisation bilingue et éducation des producteurs","Une communication accessible pour les publics multilingues et mal desservis."),
+      ("group","Renforcement des groupes de producteurs","Appui à la coordination, la participation, le leadership et le développement organisationnel des groupes de producteurs et des coopératives."),
+      ("chart","Outils MEAL et de documentation","Outils de suivi, d'évaluation, de redevabilité et d'apprentissage pour suivre les activités, recueillir des preuves et renforcer la mise en œuvre."),
+      ("list","Appui à la planification et à la mise en œuvre","Aide à la conception de programmes, à la planification du travail, au séquencement des activités et à la préparation à la mise en œuvre des initiatives agricoles."),
     ],
     "note": "<strong>À noter.</strong> Les services peuvent inclure les domaines ci-dessus et sont disponibles pour discussion selon l'étendue et les ressources. Les descriptions n'impliquent aucun partenariat confirmé, financement, contrat, affiliation officielle ou résultat garanti, sauf accord écrit.",
     "cta_h2": "Demander un échange sur les services",
@@ -462,6 +475,19 @@ CONTENT = {
     "model_h2": "Une plateforme flexible et modulaire",
     "model_p": "L'initiative est conçue comme une plateforme de formation flexible et modulaire. Les supports et activités peuvent être adaptés selon les besoins du public, l'accès linguistique, le contexte géographique, les priorités agricoles, les ressources disponibles et l'étendue des travaux convenue.",
     "model_note": "<strong>Note importante.</strong> Cette initiative n'implique aucun partenariat confirmé, soutien, financement, contrat, affiliation officielle ou résultat garanti, sauf accord écrit. Toute collaboration serait soumise aux politiques, priorités, ressources, calendriers et accords formels des organisations.",
+    "geo_eyebrow": "Zone d'intervention",
+    "geo_h2": "Démarrage en Floride du Sud-Ouest",
+    "geo_p": "AGRILEAD se concentre d'abord sur la Floride du Sud-Ouest, avec une attention prioritaire aux comtés de Collier, Lee et Hendry et aux communautés agricoles et mal desservies près d'Immokalee — un terrain d'essai initial pour un modèle de formation pratique et transférable.",
+    "outputs_eyebrow": "Résultats projetés &middot; 2026&ndash;2029",
+    "outputs_h2": "Ce que l'initiative vise à produire",
+    "outputs": [
+      ("4&ndash;6","canevas et supports de modules de formation"),
+      ("6&ndash;12","ateliers pilotes et sessions d'apprentissage"),
+      ("75&ndash;150","producteurs et membres de la communauté touchés"),
+      ("10&ndash;20","formateurs et facilitateurs mobilisés"),
+      ("1","boîte à outils de réplication"),
+    ],
+    "outputs_note": "Ce sont des objectifs de planification partagés à titre de discussion — non des engagements, demandes de financement ou résultats garantis.",
     "cta_h2": "Discuter d'une activité de formation potentielle",
   },
 
@@ -473,8 +499,8 @@ CONTENT = {
     "lead": "Explorez des opportunités de formation, de sensibilisation et d'assistance technique avec AGRILEAD Training &amp; Consulting LLC.",
     "plat_eyebrow": "Une plateforme professionnelle",
     "plat_h2": "Disponible pour échanger sur l'apprentissage agricole pratique",
-    "plat_p1": "AGRILEAD Training &amp; Consulting LLC est disponible pour discuter d'opportunités de collaboration avec des organisations agricoles, des institutions communautaires, des groupes de producteurs et des acteurs de la formation intéressés par l'éducation agricole pratique, l'appui en agronomie appliquée, la sensibilisation bilingue et le renforcement des capacités.",
-    "plat_p2": "Toute collaboration serait soumise aux politiques, priorités, ressources, calendriers et accords formels des organisations.",
+    "plat_p1": "AGRILEAD aborde la collaboration avec respect pour l'expertise institutionnelle, les savoirs locaux et les réalités opérationnelles des communautés agricoles. Les partenariats efficaces reposent sur des objectifs partagés, des rôles clairement définis, une communication pratique, une redevabilité mutuelle et un engagement commun envers des résultats mesurables.",
+    "plat_p2": "Le rôle d'AGRILEAD est de compléter — et non de remplacer — le travail des universités, des services de vulgarisation coopérative, des associations de producteurs, des coopératives, des ONG et des institutions communautaires. Par la formation pratique, la sensibilisation bilingue, l'assistance technique, l'appui aux programmes et une conception éclairée par le terrain, AGRILEAD apporte de la valeur là où des capacités supplémentaires ou un engagement culturellement adapté sont nécessaires.",
     "for_eyebrow": "À qui s'adresse cette page",
     "for_h2": "Organisations et groupes avec lesquels nous pouvons travailler",
     "for_p": "Cette page s'adresse aux organisations et groupes susceptibles d'être intéressés par la formation agricole pratique, l'assistance technique, la sensibilisation bilingue ou l'apprentissage centré sur l'agriculteur.",
@@ -593,8 +619,8 @@ CONTENT = {
     "title": "AGRILEAD Training & Consulting LLC | Formación agrícola en Florida",
     "desc": "AGRILEAD Training & Consulting LLC ofrece formación agrícola práctica, apoyo en agronomía aplicada, divulgación bilingüe, asistencia técnica y fortalecimiento de capacidades de los agricultores.",
     "eyebrow": "Naples, Florida &middot; Formación agrícola",
-    "h1": "Formación agrícola práctica para productores resilientes",
-    "lead": "AGRILEAD Training &amp; Consulting LLC ofrece formación agrícola práctica, apoyo en agronomía aplicada, divulgación bilingüe y fortalecimiento de capacidades para agricultores principiantes, pequeños productores, productores multilingües y comunidades agrícolas desatendidas.",
+    "h1": "Formación agrícola práctica para comunidades resilientes",
+    "lead": "Una empresa de formación y consultoría agrícola con sede en Florida que fortalece las capacidades agrícolas mediante formación práctica, agronomía aplicada y apoyo a la implementación, trabajando con universidades, servicios de extensión, cooperativas, organizaciones sin fines de lucro y comunidades agrícolas desatendidas.",
     "meta1": "Con sede en Naples, Florida",
     "meta2": "Divulgación bilingüe y multilingüe",
     "meta3": "Aprendizaje práctico, orientado al campo",
@@ -602,8 +628,8 @@ CONTENT = {
     "hero_alt": "Jardín en flor",
     "who_eyebrow": "Quiénes somos",
     "who_h2": "Un aprendizaje agrícola práctico y orientado al campo",
-    "who_p1": "AGRILEAD Training &amp; Consulting LLC tiene su sede en Naples, Florida (Estados Unidos). La empresa busca apoyar un aprendizaje agrícola accesible, práctico y orientado al campo mediante formación, asistencia técnica, desarrollo de programas, divulgación bilingüe y fortalecimiento de capacidades centrado en la comunidad.",
-    "who_p2": "AGRILEAD ayuda a productores, organizaciones y actores de la formación a definir sus necesidades prácticas de aprendizaje en áreas como la salud del suelo, la diversificación de cultivos, la agricultura climáticamente inteligente, la agronomía aplicada y la educación centrada en el agricultor.",
+    "who_p1": "Fundada por Wilbert Georges, AGRILEAD Training &amp; Consulting LLC ofrece servicios de formación y consultoría agrícola centrados en la agronomía aplicada, la agricultura climáticamente inteligente, la divulgación bilingüe, el fortalecimiento de capacidades de los productores y el desarrollo de la fuerza laboral agrícola. Apoya a los agricultores principiantes, los pequeños productores y las comunidades desatendidas mediante servicios prácticos y basados en evidencia, adaptables a las condiciones locales y a los objetivos institucionales.",
+    "who_p2": "El enfoque de AGRILEAD se basa en el aprendizaje en el campo, la asistencia técnica y el apoyo a la implementación. En lugar de ofrecer consejos generales, AGRILEAD ayuda a las organizaciones y comunidades a convertir el conocimiento en acción mediante formación estructurada, documentación y herramientas de aprendizaje que fortalecen las capacidades a largo plazo.",
     "do_eyebrow": "Lo que hacemos",
     "do_h2": "Nuestras principales áreas de apoyo",
     "explore": [
@@ -639,11 +665,14 @@ CONTENT = {
 
   "who_we_serve": ["Agricultores principiantes","Pequeños productores","Productores inmigrantes y multilingües","Comunidades criollo/haitianas","Comunidades agrícolas hispanas","Comunidades rurales desatendidas","Comunidades de trabajadores agrícolas","Grupos de productores","Organizaciones agrícolas sin fines de lucro","Organizaciones comunitarias","Actores de la formación"],
   "values": [
-    ("leaf","Conocimiento práctico","Un aprendizaje claro, útil y orientado al campo."),
-    ("group","Formación centrada en el agricultor","Formación adaptada a las necesidades y realidades de los productores."),
-    ("shield","Integridad","Una comunicación profesional, transparente y responsable."),
-    ("globe","Inclusión y acceso lingüístico","Apoyo al aprendizaje bilingüe y multilingüe."),
-    ("soil","Sostenibilidad","Énfasis en la salud del suelo, la resiliencia y la viabilidad a largo plazo de las explotaciones."),
+    ("leaf","Impacto práctico","Soluciones de campo que los productores y las comunidades pueden aplicar y convertir en resultados medibles."),
+    ("check","Rendición de cuentas","Compromisos claros, ejecución responsable, comunicación transparente y seguimiento constante."),
+    ("group","Relevancia comunitaria","Servicios diseñados en torno a las necesidades reales, las condiciones locales y las realidades de los productores."),
+    ("chart","Evidencia, aprendizaje y adaptación","Usamos datos, comentarios y lecciones documentadas para mejorar la ejecución y los resultados."),
+    ("globe","Inclusión y accesibilidad","Un enfoque bilingüe y culturalmente receptivo para productores diversos y desatendidos."),
+    ("wrench","Excelencia técnica","Agronomía sólida, métodos de formación estructurados y estándares profesionales."),
+    ("shield","Integridad","Honestidad, coherencia, profesionalismo y respeto por los socios y las comunidades."),
+    ("hands","Colaboración y alianzas","Progreso sostenible mediante una fuerte colaboración con instituciones y comunidades."),
   ],
 
   "about": {
@@ -657,9 +686,9 @@ CONTENT = {
     "company_p2": "Su trabajo se centra en la agronomía aplicada, la asistencia técnica, la divulgación bilingüe y multilingüe, el desarrollo de programas, los materiales de formación y el fortalecimiento de capacidades &mdash; con el fin de hacer que el conocimiento agrícola sea más accesible, práctico y adaptable a las necesidades de los productores y las comunidades.",
     "panel_cap": "Entorno de aprendizaje agrícola",
     "mission_h3": "Misión",
-    "mission_p": "AGRILEAD Training &amp; Consulting LLC ofrece formación agrícola práctica y orientada al campo, así como apoyo en agronomía aplicada, para fortalecer las capacidades de los agricultores principiantes, los pequeños productores y las comunidades agrícolas desatendidas, mediante una educación bilingüe y multilingüe centrada en la sostenibilidad, la productividad y la resiliencia.",
+    "mission_p": "Fortalecer las capacidades agrícolas de los agricultores principiantes, los pequeños productores, los productores inmigrantes y multilingües y las comunidades agrícolas desatendidas, mediante una educación práctica, bilingüe y basada en evidencia, asistencia técnica y soluciones agrícolas sostenibles que apoyen sistemas de producción más resilientes.",
     "vision_h3": "Visión",
-    "vision_p": "Contribuir a comunidades agrícolas más fuertes donde los agricultores principiantes, los pequeños productores y los cultivadores desatendidos tengan acceso a conocimientos prácticos, apoyo técnico y modelos de formación adaptables que apoyen los sistemas alimentarios locales y regionales.",
+    "vision_p": "Un sector agrícola más resiliente, inclusivo y sostenible, donde los productores y las comunidades cuenten con los conocimientos, las herramientas y el apoyo necesarios para tener éxito.",
     "values_eyebrow": "Valores fundamentales",
     "values_h2": "Lo que guía nuestro trabajo",
     "founder_eyebrow": "Fundador",
@@ -683,16 +712,13 @@ CONTENT = {
     "core_eyebrow": "Servicios principales",
     "core_h2": "Áreas de apoyo disponibles para conversar",
     "list": [
-      ("book","Formación agrícola","Talleres, cursos cortos y actividades de aprendizaje orientadas al campo para agricultores, grupos de productores y organizaciones comunitarias."),
-      ("sprout","Apoyo en agronomía aplicada","Orientación sobre producción de cultivos, fertilidad del suelo, manejo de cultivos y prácticas agrícolas sostenibles."),
-      ("soil","Educación sobre salud y fertilidad del suelo","Formación sobre materia orgánica, compostaje, manejo de nutrientes, conservación del suelo y planificación básica de la fertilidad."),
-      ("leaf","Diversificación de cultivos","Apoyo educativo para la producción diversificada, la planificación de fincas, la reducción de riesgos y los sistemas de cultivo sostenibles."),
-      ("climate","Agricultura climáticamente inteligente","Formación y temas de conversación sobre adaptación al clima, gestión de recursos y prácticas de producción resilientes."),
-      ("wrench","Asistencia técnica","Apoyo a organizaciones agrícolas, grupos de productores e iniciativas comunitarias que buscan orientación agrícola práctica."),
-      ("globe","Materiales de formación bilingües y multilingües","Fichas para agricultores, herramientas de divulgación, materiales de taller y recursos de aprendizaje diseñados para favorecer el acceso lingüístico."),
-      ("group","Apoyo a la formación de formadores","Fortalecimiento de capacidades de facilitadores, líderes comunitarios y agentes de divulgación agrícola."),
-      ("doc","Desarrollo de programas","Módulos de formación, planes de clase, guías para facilitadores y materiales de educación para agricultores."),
-      ("chart","Seguimiento, evaluación y aprendizaje","Herramientas básicas para documentar las actividades de formación, recoger comentarios y apoyar la mejora del aprendizaje."),
+      ("book","Formación agrícola y fortalecimiento de capacidades","Formación práctica para productores, grupos de productores y organizaciones comunitarias que buscan fortalecer sus capacidades técnicas y operativas."),
+      ("sprout","Apoyo en agronomía aplicada","Orientación sobre salud del suelo, planificación de cultivos, sistemas de producción y resolución de problemas en el campo."),
+      ("climate","Agricultura climáticamente inteligente","Apoyo a prácticas resilientes que ayudan a los productores a adaptarse a las cambiantes condiciones ambientales y de producción."),
+      ("globe","Divulgación bilingüe y educación de productores","Comunicación accesible para públicos multilingües y desatendidos."),
+      ("group","Fortalecimiento de grupos de productores","Apoyo a la coordinación, la participación, el liderazgo y el desarrollo organizativo de los grupos de productores y las cooperativas."),
+      ("chart","Herramientas MEAL y de documentación","Herramientas de seguimiento, evaluación, rendición de cuentas y aprendizaje para registrar actividades, recoger evidencia y fortalecer la implementación."),
+      ("list","Apoyo a la planificación y la implementación","Asistencia en el diseño de programas, la planificación del trabajo, la secuenciación de actividades y la preparación para la implementación de iniciativas agrícolas."),
     ],
     "note": "<strong>Nota.</strong> Los servicios pueden incluir las áreas anteriores y están disponibles para conversar según el alcance y los recursos. Las descripciones no implican alianza confirmada, financiamiento, contrato, afiliación oficial ni resultados garantizados, salvo acuerdo por escrito.",
     "cta_h2": "Solicitar una conversación sobre servicios",
@@ -723,6 +749,19 @@ CONTENT = {
     "model_h2": "Una plataforma flexible y modular",
     "model_p": "La iniciativa está concebida como una plataforma de formación flexible y modular. Los materiales y las actividades pueden adaptarse según las necesidades del público, el acceso lingüístico, el contexto geográfico, las prioridades agrícolas, los recursos disponibles y el alcance del trabajo acordado.",
     "model_note": "<strong>Nota importante.</strong> Esta iniciativa no implica alianzas confirmadas, respaldos, financiamiento, contratos, afiliaciones oficiales ni resultados garantizados, salvo acuerdo por escrito. Toda colaboración estaría sujeta a las políticas, prioridades, recursos, cronogramas y acuerdos formales de las organizaciones.",
+    "geo_eyebrow": "Zona de intervención",
+    "geo_h2": "Comenzando en el suroeste de Florida",
+    "geo_p": "El enfoque inicial de AGRILEAD es el suroeste de Florida, con atención prioritaria a los condados de Collier, Lee y Hendry y a las comunidades agrícolas y desatendidas cerca de Immokalee — un terreno de prueba inicial para un modelo de formación práctico y transferible.",
+    "outputs_eyebrow": "Resultados proyectados &middot; 2026&ndash;2029",
+    "outputs_h2": "Lo que la iniciativa busca lograr",
+    "outputs": [
+      ("4&ndash;6","esquemas y materiales de módulos de formación"),
+      ("6&ndash;12","talleres piloto y sesiones de aprendizaje"),
+      ("75&ndash;150","productores y miembros de la comunidad alcanzados"),
+      ("10&ndash;20","formadores y facilitadores involucrados"),
+      ("1","kit práctico de replicación"),
+    ],
+    "outputs_note": "Son metas de planificación compartidas con fines de conversación — no compromisos, solicitudes de financiamiento ni resultados garantizados.",
     "cta_h2": "Hablar de una posible actividad de formación",
   },
 
@@ -734,8 +773,8 @@ CONTENT = {
     "lead": "Explore oportunidades de formación, divulgación y asistencia técnica con AGRILEAD Training &amp; Consulting LLC.",
     "plat_eyebrow": "Una plataforma profesional",
     "plat_h2": "Disponible para conversar sobre el aprendizaje agrícola práctico",
-    "plat_p1": "AGRILEAD Training &amp; Consulting LLC está disponible para hablar de posibles oportunidades de colaboración con organizaciones agrícolas, instituciones comunitarias, grupos de productores y actores de la formación interesados en la educación agrícola práctica, el apoyo en agronomía aplicada, la divulgación bilingüe y el fortalecimiento de capacidades.",
-    "plat_p2": "Toda colaboración estaría sujeta a las políticas, prioridades, recursos, cronogramas y acuerdos formales de las organizaciones.",
+    "plat_p1": "AGRILEAD aborda la colaboración con respeto por la experiencia institucional, el conocimiento local y las realidades operativas de las comunidades agrícolas. Las alianzas eficaces se basan en objetivos compartidos, funciones claramente definidas, una comunicación práctica, la rendición de cuentas mutua y un compromiso común con resultados medibles.",
+    "plat_p2": "El papel de AGRILEAD es complementar — no reemplazar — el trabajo de las universidades, los servicios de extensión cooperativa, las asociaciones de productores, las cooperativas, las organizaciones sin fines de lucro y las instituciones comunitarias. Mediante formación práctica, divulgación bilingüe, asistencia técnica, apoyo curricular y un diseño de programas informado por el campo, AGRILEAD aporta valor donde se necesitan capacidades adicionales o una participación culturalmente receptiva.",
     "for_eyebrow": "A quién está dirigida esta página",
     "for_h2": "Organizaciones y grupos con los que podemos trabajar",
     "for_p": "Esta página está dirigida a organizaciones y grupos que puedan estar interesados en la formación agrícola práctica, la asistencia técnica, la divulgación bilingüe o el aprendizaje centrado en el agricultor.",
@@ -1094,6 +1133,7 @@ def build(lang):
                       f'<span class="icon" style="width:40px;height:40px;margin-bottom:.7rem">{ICONS[icon]}</span>'
                       f'<h3 style="font-size:1.02rem;margin:0">{label}</h3></div>')
     act_cards += '</div>'
+    stats = "".join(f'<div class="stat"><span class="stat-num">{n}</span><span class="stat-label">{l}</span></div>' for n, l in i["outputs"])
     initiative = f'''
 {banner(i["eyebrow"], i["h1"], "/assets/img/signature_banner.jpg", i["h1"])}
 
@@ -1137,6 +1177,22 @@ def build(lang):
       <p>{i["model_p"]}</p>
     </div>
     <div class="reveal">{notice(i["model_note"])}</div>
+  </div>
+</section>
+
+<section class="section section--field">
+  <div class="container narrow">
+    <p class="eyebrow reveal">{i["geo_eyebrow"]}</p>
+    <h2 class="reveal">{i["geo_h2"]}</h2>
+    <p class="reveal">{i["geo_p"]}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal"><p class="eyebrow">{i["outputs_eyebrow"]}</p><h2>{i["outputs_h2"]}</h2></div>
+    <div class="stats reveal">{stats}</div>
+    <p class="form-note reveal" style="text-align:center;margin-top:1.6rem">{i["outputs_note"]}</p>
   </div>
 </section>
 
