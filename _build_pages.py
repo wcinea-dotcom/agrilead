@@ -1290,7 +1290,7 @@ def build(lang):
 <section class="section">
   <div class="container contact-grid">
     <div class="reveal">
-      <img class="contact-photo" src="/assets/img/contact_vertical.jpg" alt="{ct["eyebrow"]} AGRILEAD" loading="lazy" decoding="async">
+      <img class="contact-photo" src="/assets/img/contact_georges.jpg" alt="Wilbert Georges — AGRILEAD" loading="lazy" decoding="async">
       <h2 style="font-size:1.35rem">{ct["info_h2"]}</h2>
       <div class="info-row"><span class="icon icon--navy">{ICONS["pin"]}</span><div><p class="label">{ct["l_location"]}</p><p class="val">{ct["v_location"]}</p></div></div>
       <div class="info-row"><span class="icon icon--navy">{ICONS["phone"]}</span><div><p class="label">{ct["l_phone"]}</p><p class="val">[Phone]</p></div></div>
@@ -1384,7 +1384,7 @@ def build(lang):
     # ---- BLOG ----
     bl = d["blog"]
     blog = f'''
-{banner(bl["eyebrow"], bl["h1"], "/assets/img/blog_banner.jpg", bl["h1"])}
+{banner(bl["eyebrow"], bl["h1"], "/assets/img/media_banner.jpg", bl["h1"])}
 
 <section class="section section--tight">
   <div class="container">
