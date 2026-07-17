@@ -3,7 +3,7 @@
 """Static site generator for AGRILEAD Training & Consulting LLC.
 Bilingual (English + French). English pages live in public/, French pages in
 public/fr/. A language switcher (EN/FR) and hreflang tags link the two.
-All contact details use <a href="tel:+17863937333">+1 (786) 393 7333</a> / <a href="mailto:ingwilbert@agrileadtraining.com">ingwilbert@agrileadtraining.com</a> / <a href="https://www.agrileadtraining.com">www.agrileadtraining.com</a> placeholders
+All contact details use <a href='tel:+17863937333'>+1 (786) 393 7333</a> / <a href='mailto:ingwilbert@agrileadtraining.com'>ingwilbert@agrileadtraining.com</a> / <a href='https://www.agrileadtraining.com'>www.agrileadtraining.com</a> placeholders
 until final details are confirmed, per the brand handoff."""
 
 import os
@@ -325,9 +325,9 @@ def footer(lang, prefix):
       <div class="footer">
         <h4>{t["foot_contact"]}</h4>
         <ul class="footer-contact">
-          <li>{ICONS["phone"]}<span><a href="tel:+17863937333">+1 (786) 393 7333</a></span></li>
-          <li>{ICONS["mail"]}<span><a href="mailto:ingwilbert@agrileadtraining.com">ingwilbert@agrileadtraining.com</a></span></li>
-          <li>{ICONS["globe"]}<span><a href="https://www.agrileadtraining.com">www.agrileadtraining.com</a></span></li>
+          <li>{ICONS["phone"]}<span><a href='tel:+17863937333'>+1 (786) 393 7333</a></span></li>
+          <li>{ICONS["mail"]}<span><a href='mailto:ingwilbert@agrileadtraining.com'>ingwilbert@agrileadtraining.com</a></span></li>
+          <li>{ICONS["globe"]}<span><a href='https://www.agrileadtraining.com'>www.agrileadtraining.com</a></span></li>
           <li>{ICONS["pin"]}<span>{t["foot_loc"]}</span></li>
         </ul>
       </div>

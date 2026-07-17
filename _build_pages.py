@@ -288,9 +288,9 @@ CONTENT = {
     "s3_h": "How the form works",
     "s3_p": "This site&rsquo;s contact form is processed through the website hosting provider&rsquo;s form service. Submissions may be stored by that provider to deliver your message to AGRILEAD.",
     "s4_h": "Your choices",
-    "s4_p": "You may request that AGRILEAD update or delete the information you submitted by contacting us at <a href="mailto:ingwilbert@agrileadtraining.com">ingwilbert@agrileadtraining.com</a>.",
+    "s4_p": "You may request that AGRILEAD update or delete the information you submitted by contacting us at <a href='mailto:ingwilbert@agrileadtraining.com'>ingwilbert@agrileadtraining.com</a>.",
     "s5_h": "Contact",
-    "s5_p": "Questions about this policy can be sent to <a href="mailto:ingwilbert@agrileadtraining.com">ingwilbert@agrileadtraining.com</a>, AGRILEAD Training &amp; Consulting LLC, Naples, Florida, United States.",
+    "s5_p": "Questions about this policy can be sent to <a href='mailto:ingwilbert@agrileadtraining.com'>ingwilbert@agrileadtraining.com</a>, AGRILEAD Training &amp; Consulting LLC, Naples, Florida, United States.",
     "locale": "en-US",
   },
 
@@ -568,9 +568,9 @@ CONTENT = {
     "s3_h": "Fonctionnement du formulaire",
     "s3_p": "Le formulaire de contact de ce site est traité via le service de formulaires de l'hébergeur du site. Les soumissions peuvent être stockées par ce prestataire afin de transmettre votre message à AGRILEAD.",
     "s4_h": "Vos choix",
-    "s4_p": "Vous pouvez demander à AGRILEAD de mettre à jour ou de supprimer les informations que vous avez soumises en nous écrivant à <a href="mailto:ingwilbert@agrileadtraining.com">ingwilbert@agrileadtraining.com</a>.",
+    "s4_p": "Vous pouvez demander à AGRILEAD de mettre à jour ou de supprimer les informations que vous avez soumises en nous écrivant à <a href='mailto:ingwilbert@agrileadtraining.com'>ingwilbert@agrileadtraining.com</a>.",
     "s5_h": "Contact",
-    "s5_p": "Toute question relative à cette politique peut être envoyée à <a href="mailto:ingwilbert@agrileadtraining.com">ingwilbert@agrileadtraining.com</a>, AGRILEAD Training &amp; Consulting LLC, Naples, Floride, États-Unis.",
+    "s5_p": "Toute question relative à cette politique peut être envoyée à <a href='mailto:ingwilbert@agrileadtraining.com'>ingwilbert@agrileadtraining.com</a>, AGRILEAD Training &amp; Consulting LLC, Naples, Floride, États-Unis.",
     "locale": "fr-FR",
   },
 
@@ -843,9 +843,9 @@ CONTENT = {
     "s3_h": "Cómo funciona el formulario",
     "s3_p": "El formulario de contacto de este sitio se procesa a través del servicio de formularios del proveedor de alojamiento del sitio. Las solicitudes pueden ser almacenadas por dicho proveedor para entregar su mensaje a AGRILEAD.",
     "s4_h": "Sus opciones",
-    "s4_p": "Puede solicitar a AGRILEAD que actualice o elimine la información que envió escribiéndonos a <a href="mailto:ingwilbert@agrileadtraining.com">ingwilbert@agrileadtraining.com</a>.",
+    "s4_p": "Puede solicitar a AGRILEAD que actualice o elimine la información que envió escribiéndonos a <a href='mailto:ingwilbert@agrileadtraining.com'>ingwilbert@agrileadtraining.com</a>.",
     "s5_h": "Contacto",
-    "s5_p": "Las preguntas sobre esta política pueden enviarse a <a href="mailto:ingwilbert@agrileadtraining.com">ingwilbert@agrileadtraining.com</a>, AGRILEAD Training &amp; Consulting LLC, Naples, Florida, Estados Unidos.",
+    "s5_p": "Las preguntas sobre esta política pueden enviarse a <a href='mailto:ingwilbert@agrileadtraining.com'>ingwilbert@agrileadtraining.com</a>, AGRILEAD Training &amp; Consulting LLC, Naples, Florida, Estados Unidos.",
     "locale": "es-ES",
   },
 
@@ -1293,9 +1293,9 @@ def build(lang):
       <img class="contact-photo" src="/assets/img/contact_georges.jpg" alt="Wilbert Georges — AGRILEAD" loading="lazy" decoding="async">
       <h2 style="font-size:1.35rem">{ct["info_h2"]}</h2>
       <div class="info-row"><span class="icon icon--navy">{ICONS["pin"]}</span><div><p class="label">{ct["l_location"]}</p><p class="val">{ct["v_location"]}</p></div></div>
-      <div class="info-row"><span class="icon icon--navy">{ICONS["phone"]}</span><div><p class="label">{ct["l_phone"]}</p><p class="val"><a href="tel:+17863937333">+1 (786) 393 7333</a></p></div></div>
-      <div class="info-row"><span class="icon icon--navy">{ICONS["mail"]}</span><div><p class="label">{ct["l_email"]}</p><p class="val"><a href="mailto:ingwilbert@agrileadtraining.com">ingwilbert@agrileadtraining.com</a></p></div></div>
-      <div class="info-row"><span class="icon icon--navy">{ICONS["globe"]}</span><div><p class="label">{ct["l_website"]}</p><p class="val"><a href="https://www.agrileadtraining.com">www.agrileadtraining.com</a></p></div></div>
+      <div class="info-row"><span class="icon icon--navy">{ICONS["phone"]}</span><div><p class="label">{ct["l_phone"]}</p><p class="val"><a href='tel:+17863937333'>+1 (786) 393 7333</a></p></div></div>
+      <div class="info-row"><span class="icon icon--navy">{ICONS["mail"]}</span><div><p class="label">{ct["l_email"]}</p><p class="val"><a href='mailto:ingwilbert@agrileadtraining.com'>ingwilbert@agrileadtraining.com</a></p></div></div>
+      <div class="info-row"><span class="icon icon--navy">{ICONS["globe"]}</span><div><p class="label">{ct["l_website"]}</p><p class="val"><a href='https://www.agrileadtraining.com'>www.agrileadtraining.com</a></p></div></div>
 
       <h3 style="margin-top:2rem;font-size:1.1rem">{ct["topics_h3"]}</h3>
       <ul class="footer-contact" style="gap:.55rem;margin-top:.8rem">{topics_list}</ul>
