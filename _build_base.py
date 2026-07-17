@@ -3,7 +3,7 @@
 """Static site generator for AGRILEAD Training & Consulting LLC.
 Bilingual (English + French). English pages live in public/, French pages in
 public/fr/. A language switcher (EN/FR) and hreflang tags link the two.
-All contact details use [Phone] / [Email] / [Website] placeholders
+All contact details use <a href="tel:+17863937333">+1 (786) 393 7333</a> / <a href="mailto:ingwilbert@agrileadtraining.com">ingwilbert@agrileadtraining.com</a> / <a href="https://www.agrileadtraining.com">www.agrileadtraining.com</a> placeholders
 until final details are confirmed, per the brand handoff."""
 
 import os
@@ -11,7 +11,7 @@ import time
 
 # Bump ASSET_VER whenever CSS/JS changes — it cache-busts the year-long
 # immutable asset cache so returning visitors get the new styles.
-ASSET_VER = "20260702f"
+ASSET_VER = "20260702g"
 
 # Supported languages: English (root), French (/fr/), Spanish (/es/).
 LANGS = ("en", "fr", "es")
@@ -39,14 +39,7 @@ for _d in LANG_DIR.values():
 
 BRAND = (
     '<a class="brand" href="index.html" aria-label="AGRILEAD Training and Consulting home">'
-    '<svg class="mark" viewBox="0 0 64 64" aria-hidden="true">'
-    '<rect width="64" height="64" rx="13" fill="#0D2B4D"/>'
-    '<path d="M32 50V30" fill="none" stroke="#F3F4F6" stroke-width="3.4" stroke-linecap="round"/>'
-    '<path d="M32 34c-9 0-15-4-16-13 9-1 15 3 16 13z" fill="#2E7D32"/>'
-    '<path d="M32 30c7-1 12-5 13-12-7 0-12 3-13 12z" fill="#4a9d4e"/>'
-    '<path d="M18 50h28" fill="none" stroke="#7A4E24" stroke-width="3.4" stroke-linecap="round"/>'
-    '</svg>'
-    '<span class="brand-word">AGRI<span class="lead">LEAD</span></span>'
+    '<img class="brand-logo" src="/assets/img/logo.png" alt="AGRILEAD Training &amp; Consulting" width="330" height="97">'
     '</a>'
 )
 
@@ -332,9 +325,9 @@ def footer(lang, prefix):
       <div class="footer">
         <h4>{t["foot_contact"]}</h4>
         <ul class="footer-contact">
-          <li>{ICONS["phone"]}<span>[Phone]</span></li>
-          <li>{ICONS["mail"]}<span>[Email]</span></li>
-          <li>{ICONS["globe"]}<span>[Website]</span></li>
+          <li>{ICONS["phone"]}<span><a href="tel:+17863937333">+1 (786) 393 7333</a></span></li>
+          <li>{ICONS["mail"]}<span><a href="mailto:ingwilbert@agrileadtraining.com">ingwilbert@agrileadtraining.com</a></span></li>
+          <li>{ICONS["globe"]}<span><a href="https://www.agrileadtraining.com">www.agrileadtraining.com</a></span></li>
           <li>{ICONS["pin"]}<span>{t["foot_loc"]}</span></li>
         </ul>
       </div>
