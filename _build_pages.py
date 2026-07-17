@@ -144,8 +144,9 @@ CONTENT = {
     "founder_note": "Replace with photo",
     "founder_name": "Wilbert Georges",
     "founder_role": "Founder &amp; Executive Lead",
-    "founder_p1": "Wilbert Georges is the Founder and Executive Lead of AGRILEAD Training &amp; Consulting LLC. He is an agricultural development professional with experience in farmer training, applied agronomy, rural capacity-building, climate-smart agriculture, cooperative strengthening, and agricultural project implementation.",
-    "founder_p2": "His work has focused on supporting producer groups and rural communities through practical training, multilingual communication, and field-oriented capacity-building. Through AGRILEAD, he is developing a professional platform to support agricultural training, bilingual outreach, technical assistance, and curriculum development.",
+    "founder_p1": "Wilbert Georges is the Founder and Executive Lead of AGRILEAD Training &amp; Consulting LLC. An agronomist and agricultural development professional, he brings more than 20 years of experience in agricultural development, agricultural education, program leadership, and rural development.",
+    "founder_p2": "He currently serves as Program Director at Heifer International Haiti, where he coordinates agricultural and rural development programs and supervises project managers and multidisciplinary teams. Earlier in his career, he served as dean of two university faculties of agronomy. His professional experience includes farmer training, applied agronomy, climate resilience, livestock development, curriculum development, producer capacity-building, cooperative strengthening, and agricultural project implementation.",
+    "founder_p3": "Through AGRILEAD, Wilbert is developing a professional platform for practical agricultural training, bilingual outreach, technical assistance, curriculum development, and rural capacity-building. His approach combines technical agricultural knowledge, field-based learning, accountable program management, and accessible support for farmers, producer organizations, and rural communities.",
     "cta_h2": "Learn about our services",
   },
 
@@ -423,8 +424,9 @@ CONTENT = {
     "founder_note": "Photo à venir",
     "founder_name": "Wilbert Georges",
     "founder_role": "Fondateur et Directeur exécutif",
-    "founder_p1": "Wilbert Georges est le fondateur et le directeur exécutif d'AGRILEAD Training &amp; Consulting LLC. C'est un professionnel du développement agricole ayant une expérience en formation des agriculteurs, agronomie appliquée, renforcement des capacités rurales, agriculture intelligente face au climat, renforcement des coopératives et mise en œuvre de projets agricoles.",
-    "founder_p2": "Son travail a consisté à accompagner des groupes de producteurs et des communautés rurales par la formation pratique, la communication multilingue et le renforcement des capacités orienté terrain. À travers AGRILEAD, il développe une plateforme professionnelle pour soutenir la formation agricole, la sensibilisation bilingue, l'assistance technique et l'élaboration de programmes.",
+    "founder_p1": "Wilbert Georges est le fondateur et le directeur exécutif d'AGRILEAD Training &amp; Consulting LLC. Agronome et professionnel du développement agricole, il apporte plus de 20 ans d'expérience en développement agricole, en éducation agricole, en direction de programmes et en développement rural.",
+    "founder_p2": "Il est actuellement directeur de programme chez Heifer International Haïti, où il coordonne des programmes de développement agricole et rural et supervise des chefs de projet et des équipes pluridisciplinaires. Plus tôt dans sa carrière, il a été doyen de deux facultés universitaires d'agronomie. Son expérience professionnelle couvre la formation des agriculteurs, l'agronomie appliquée, la résilience climatique, le développement de l'élevage, l'élaboration de programmes, le renforcement des capacités des producteurs, le renforcement des coopératives et la mise en œuvre de projets agricoles.",
+    "founder_p3": "À travers AGRILEAD, Wilbert développe une plateforme professionnelle de formation agricole pratique, de sensibilisation bilingue, d'assistance technique, d'élaboration de programmes et de renforcement des capacités rurales. Son approche allie connaissances agricoles techniques, apprentissage de terrain, gestion de programme responsable et accompagnement accessible pour les agriculteurs, les organisations de producteurs et les communautés rurales.",
     "cta_h2": "Découvrez nos services",
   },
 
@@ -697,8 +699,9 @@ CONTENT = {
     "founder_note": "Foto próximamente",
     "founder_name": "Wilbert Georges",
     "founder_role": "Fundador y Director ejecutivo",
-    "founder_p1": "Wilbert Georges es el fundador y director ejecutivo de AGRILEAD Training &amp; Consulting LLC. Es un profesional del desarrollo agrícola con experiencia en formación de agricultores, agronomía aplicada, fortalecimiento de capacidades rurales, agricultura climáticamente inteligente, fortalecimiento de cooperativas e implementación de proyectos agrícolas.",
-    "founder_p2": "Su trabajo se ha centrado en acompañar a grupos de productores y comunidades rurales mediante la formación práctica, la comunicación multilingüe y el fortalecimiento de capacidades orientado al campo. A través de AGRILEAD, está desarrollando una plataforma profesional para apoyar la formación agrícola, la divulgación bilingüe, la asistencia técnica y el desarrollo de programas.",
+    "founder_p1": "Wilbert Georges es el fundador y director ejecutivo de AGRILEAD Training &amp; Consulting LLC. Agrónomo y profesional del desarrollo agrícola, aporta más de 20 años de experiencia en desarrollo agrícola, educación agrícola, dirección de programas y desarrollo rural.",
+    "founder_p2": "Actualmente se desempeña como director de programa en Heifer International Haití, donde coordina programas de desarrollo agrícola y rural y supervisa a gerentes de proyecto y equipos multidisciplinarios. Anteriormente en su carrera, fue decano de dos facultades universitarias de agronomía. Su experiencia profesional incluye la formación de agricultores, la agronomía aplicada, la resiliencia climática, el desarrollo pecuario, el desarrollo de programas, el fortalecimiento de capacidades de los productores, el fortalecimiento de cooperativas y la implementación de proyectos agrícolas.",
+    "founder_p3": "A través de AGRILEAD, Wilbert está desarrollando una plataforma profesional de formación agrícola práctica, divulgación bilingüe, asistencia técnica, desarrollo de programas y fortalecimiento de capacidades rurales. Su enfoque combina conocimientos agrícolas técnicos, aprendizaje en el campo, una gestión de programas responsable y un apoyo accesible para los agricultores, las organizaciones de productores y las comunidades rurales.",
     "cta_h2": "Conozca nuestros servicios",
   },
 
@@ -951,13 +954,14 @@ def build(lang):
 </section>
 
 <section class="section">
-  <div class="container">
-    <div class="section-head reveal">
+  <div class="container grid grid-2" style="gap:clamp(2rem,5vw,4rem);align-items:center">
+    <div class="reveal">
       <p class="eyebrow">{h["serve_eyebrow"]}</p>
       <h2>{h["serve_h2"]}</h2>
       <p>{h["serve_p"]}</p>
+      <div style="margin-top:1.4rem">{pills_block(d["who_we_serve"])}</div>
     </div>
-    <div class="reveal">{pills_block(d["who_we_serve"])}</div>
+    <div class="reveal">{field_panel(h["serve_h2"], img="/assets/img/serve_side.jpg", alt=h["serve_h2"])}</div>
   </div>
 </section>
 
@@ -1064,6 +1068,7 @@ def build(lang):
         <p class="role">{a["founder_role"]}</p>
         <p>{a["founder_p1"]}</p>
         <p>{a["founder_p2"]}</p>
+        <p>{a["founder_p3"]}</p>
       </div>
     </div>
   </div>
@@ -1224,19 +1229,25 @@ def build(lang):
 </section>
 
 <section class="section section--field">
-  <div class="container narrow">
-    <p class="eyebrow reveal">{c["plat_eyebrow"]}</p>
-    <h2 class="reveal">{c["plat_h2"]}</h2>
-    <p class="reveal">{c["plat_p1"]}</p>
-    <p class="reveal">{c["plat_p2"]}</p>
+  <div class="container grid grid-2" style="gap:clamp(2rem,5vw,4rem);align-items:center">
+    <div class="reveal">
+      <p class="eyebrow">{c["plat_eyebrow"]}</p>
+      <h2>{c["plat_h2"]}</h2>
+      <p>{c["plat_p1"]}</p>
+      <p>{c["plat_p2"]}</p>
+    </div>
+    <div class="reveal">{field_panel(c["plat_h2"], img="/assets/img/collab_band.jpg", alt=c["plat_h2"])}</div>
   </div>
 </section>
 
 <section class="section">
-  <div class="container">
-    <div class="section-head reveal"><p class="eyebrow">{c["for_eyebrow"]}</p><h2>{c["for_h2"]}</h2>
-    <p>{c["for_p"]}</p></div>
-    <div class="reveal">{pills_block(c["for_whom"])}</div>
+  <div class="container grid grid-2" style="gap:clamp(2rem,5vw,4rem);align-items:center">
+    <div class="reveal">
+      <p class="eyebrow">{c["for_eyebrow"]}</p><h2>{c["for_h2"]}</h2>
+      <p>{c["for_p"]}</p>
+      <div style="margin-top:1.4rem">{pills_block(c["for_whom"])}</div>
+    </div>
+    <div class="reveal">{field_panel(c["for_h2"], img="/assets/img/collab_who.jpg", alt=c["for_h2"])}</div>
   </div>
 </section>
 
