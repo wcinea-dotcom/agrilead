@@ -907,7 +907,7 @@ def build(lang):
     home = f'''
 <section class="hero hero--banner">
   <div class="hero-banner-media">
-    <img src="/assets/img/home_hero.jpg" alt="{h["hero_alt"]}" loading="eager" decoding="async">
+    <img src="/assets/img/home_hero_pres.jpg" alt="{h["hero_alt"]}" loading="eager" decoding="async">
   </div>
   <div class="container hero-banner-inner">
     <p class="eyebrow">{h["eyebrow"]}</p>
