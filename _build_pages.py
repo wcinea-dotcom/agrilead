@@ -961,7 +961,7 @@ def build(lang):
       <p>{h["serve_p"]}</p>
       <div style="margin-top:1.4rem">{pills_block(d["who_we_serve"])}</div>
     </div>
-    <div class="reveal">{field_panel(h["serve_h2"], img="/assets/img/serve_side.jpg", alt=h["serve_h2"])}</div>
+    <div class="reveal">{field_panel(h["serve_h2"], img="/assets/img/serve_side2.jpg", alt=h["serve_h2"])}</div>
   </div>
 </section>
 
