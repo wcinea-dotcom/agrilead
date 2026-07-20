@@ -302,6 +302,7 @@ CONTENT = {
     "intro": "Practical notes on agricultural training, applied agronomy, and language-accessible learning for beginning farmers, small-scale producers, and the organizations that support them.",
     "more": "More articles are on the way. Have a topic you would like us to cover? <a href=\"contact.html\">Get in touch</a>.",
     "posts": [
+      ("blog-decentralisation-haiti.html","Governance & Territories","Decentralization and Haiti's communes: rebuilding the State from the territories","June 2026","Institutional contribution","A reflection by Wilbert Georges on decentralization, local governance, citizen participation, and the strategic role of communes in rebuilding the Haitian State."),
       ("blog-soil-health-starter.html","Applied Agronomy","Five Practical Habits for Healthier Farm Soil","July 1, 2026","4 min read","Simple, low-cost practices — keeping soil covered, reducing tillage, building organic matter, testing before treating, and keeping living roots in the ground — that beginning and small-scale producers can start this season."),
     ],
   },
@@ -324,6 +325,23 @@ CONTENT = {
     "h1_5": "5. Keep living roots in the ground",
     "p_5": "Living roots feed the microbes that build healthy soil. Rotations and cover crops that keep something growing for more of the year support that underground community and help break pest and disease cycles.",
     "disclaimer": "This article is general educational information and is not a substitute for site-specific technical advice. Practices and results vary by soil type, climate, crop, and management.",
+    "back": "&larr; Back to all articles",
+  },
+  "article2": {
+    "title": "Decentralization and Haiti's communes: rebuilding the State from the territories | AGRILEAD",
+    "desc": "An institutional essay by Wilbert Georges on decentralization, local governance, citizen participation, and the strategic role of communes in rebuilding the Haitian State.",
+    "cat": "Governance &amp; Territories",
+    "h1": "Decentralization and Haiti's communes: rebuilding the State from the territories",
+    "meta": "By Wilbert Georges &middot; June 2026 &middot; Institutional contribution",
+    "intro": "In an institutional essay, Wilbert Georges — agronomist and founder of AGRILEAD — offers a reflection on decentralization, local governance, and the strategic role of communes in rebuilding the Haitian State.",
+    "sections": [
+      ("The commune: a strategic space of proximity","Far from being a mere administrative tier, the commune is where access to public services, local planning, accountability, and the coordination of local actors are decided. It is the meeting point between the State, citizens, and territories."),
+      ("A legacy of centralization","The essay traces the historical evolution of the commune since 1804 and highlights the lasting effects of concentrating power and services around Port-au-Prince: rural exodus, territorial marginalization, a deficit of local public services, and a loss of institutional credibility."),
+      ("The 1987 Constitution and the effectiveness gap","The 1987 Constitution enshrined a territorial architecture — communal section, commune, department — and a decentralized vision of the State. Yet a persistent gap remains between the legal recognition of local governments and their institutional, administrative, and financial effectiveness."),
+      ("Conditions for effective decentralization","The essay identifies several essential conditions: clarifying responsibilities, strengthening local administrations, adequate resources, institutionalized citizen participation, accountability mechanisms, better territorial coordination, and the development of inter-communal cooperation."),
+      ("2021&ndash;2026 crisis: rebuilding from the territories","A dedicated section examines the political, security, and institutional crisis of 2021&ndash;2026. It shows how this context reinforces the urgency of rebuilding the State from the territories, relying on strengthened communes able to support the continuity of public services, human security, and territorial resilience."),
+    ],
+    "disclaimer": "This publication is a personal contribution to the institutional, professional, and academic debate on decentralization and local governance in Haiti. It is analytical in nature and does not constitute legal advice.",
     "back": "&larr; Back to all articles",
   },
  },
@@ -582,6 +600,7 @@ CONTENT = {
     "intro": "Des notes pratiques sur la formation agricole, l'agronomie appliquée et l'apprentissage accessible sur le plan linguistique, pour les agriculteurs débutants, les petits producteurs et les organisations qui les accompagnent.",
     "more": "D'autres articles arrivent bientôt. Un sujet que vous aimeriez voir traité ? <a href=\"contact.html\">Contactez-nous</a>.",
     "posts": [
+      ("blog-decentralisation-haiti.html","Gouvernance &amp; territoires","Décentralisation et communes d'Haïti : reconstruire l'État à partir des territoires","Juin 2026","Contribution institutionnelle","Une réflexion de Wilbert Georges sur la décentralisation, la gouvernance locale, la participation citoyenne et le rôle stratégique des communes dans la reconstruction de l'État haïtien."),
       ("blog-soil-health-starter.html","Agronomie appliquée","Cinq habitudes pratiques pour des sols agricoles plus sains","1 juillet 2026","4 min de lecture","Des pratiques simples et peu coûteuses — garder le sol couvert, réduire le travail du sol, enrichir la matière organique, analyser avant de traiter et maintenir des racines vivantes — que les producteurs débutants et petits producteurs peuvent adopter dès cette saison."),
     ],
   },
@@ -604,6 +623,23 @@ CONTENT = {
     "h1_5": "5. Maintenir des racines vivantes dans le sol",
     "p_5": "Les racines vivantes nourrissent les micro-organismes qui construisent un sol sain. Les rotations et les cultures de couverture qui maintiennent une végétation une plus grande partie de l'année soutiennent cette communauté souterraine et aident à briser les cycles de ravageurs et de maladies.",
     "disclaimer": "Cet article fournit des informations éducatives générales et ne remplace pas un conseil technique adapté au site. Les pratiques et les résultats varient selon le type de sol, le climat, la culture et la gestion.",
+    "back": "&larr; Retour à tous les articles",
+  },
+  "article2": {
+    "title": "Décentralisation et communes d'Haïti : reconstruire l'État à partir des territoires | AGRILEAD",
+    "desc": "Un essai institutionnel de Wilbert Georges sur la décentralisation, la gouvernance locale, la participation citoyenne et le rôle stratégique des communes dans la reconstruction de l'État haïtien.",
+    "cat": "Gouvernance &amp; territoires",
+    "h1": "Décentralisation et communes d'Haïti : reconstruire l'État à partir des territoires",
+    "meta": "Par Wilbert Georges &middot; Juin 2026 &middot; Contribution institutionnelle",
+    "intro": "Dans un essai institutionnel, Wilbert Georges — agronome et fondateur d'AGRILEAD — propose une réflexion sur la décentralisation, la gouvernance locale et le rôle stratégique des communes dans la reconstruction de l'État haïtien.",
+    "sections": [
+      ("La commune, un espace stratégique de proximité","Loin d'être un simple échelon administratif, la commune est l'espace où se jouent l'accès aux services publics, la planification locale, la redevabilité et la coordination des acteurs du territoire. C'est le point de rencontre entre l'État, les citoyens et les territoires."),
+      ("Un héritage de centralisation","L'essai retrace l'évolution historique de la commune depuis 1804 et met en évidence les effets durables de la concentration des pouvoirs et des services autour de Port-au-Prince : exode rural, marginalisation territoriale, déficit de services publics locaux et perte de crédibilité institutionnelle."),
+      ("La Constitution de 1987 et l'écart d'effectivité","La Constitution de 1987 a consacré une architecture territoriale — section communale, commune, département — et une vision décentralisée de l'État. Mais un écart persistant demeure entre la reconnaissance juridique des collectivités territoriales et leur effectivité institutionnelle, administrative et financière."),
+      ("Les conditions d'une décentralisation effective","L'essai identifie plusieurs conditions essentielles : la clarification des compétences, le renforcement des administrations locales, des ressources adaptées, une participation citoyenne institutionnalisée, des mécanismes de redevabilité, une meilleure coordination territoriale et le développement de l'intercommunalité."),
+      ("Crise 2021&ndash;2026 : reconstruire à partir des territoires","Une section est consacrée à la crise politique, sécuritaire et institutionnelle de 2021&ndash;2026. Elle montre combien ce contexte renforce l'urgence de penser la reconstruction de l'État à partir des territoires, en s'appuyant sur des communes renforcées, capables de contribuer à la continuité des services publics, à la sécurité humaine et à la résilience territoriale."),
+    ],
+    "disclaimer": "Cette publication constitue une contribution personnelle au débat institutionnel, professionnel et académique sur la décentralisation et la gouvernance locale en Haïti. De nature analytique, elle ne constitue pas un avis juridique.",
     "back": "&larr; Retour à tous les articles",
   },
  },
@@ -857,6 +893,7 @@ CONTENT = {
     "intro": "Notas prácticas sobre formación agrícola, agronomía aplicada y aprendizaje accesible lingüísticamente, para agricultores principiantes, pequeños productores y las organizaciones que los apoyan.",
     "more": "Pronto habrá más artículos. ¿Hay algún tema que le gustaría que tratáramos? <a href=\"contact.html\">Contáctenos</a>.",
     "posts": [
+      ("blog-decentralisation-haiti.html","Gobernanza y territorios","Descentralización y las comunas de Haití: reconstruir el Estado desde los territorios","Junio de 2026","Contribución institucional","Una reflexión de Wilbert Georges sobre la descentralización, la gobernanza local, la participación ciudadana y el papel estratégico de las comunas en la reconstrucción del Estado haitiano."),
       ("blog-soil-health-starter.html","Agronomía aplicada","Cinco hábitos prácticos para un suelo agrícola más sano","1 de julio de 2026","4 min de lectura","Prácticas sencillas y de bajo costo — mantener el suelo cubierto, reducir la labranza, aumentar la materia orgánica, analizar antes de tratar y mantener raíces vivas — que los productores principiantes y pequeños pueden adoptar esta temporada."),
     ],
   },
@@ -879,6 +916,23 @@ CONTENT = {
     "h1_5": "5. Mantener raíces vivas en el suelo",
     "p_5": "Las raíces vivas alimentan a los microorganismos que construyen un suelo sano. Las rotaciones y los cultivos de cobertura que mantienen algo creciendo durante más tiempo del año apoyan a esa comunidad subterránea y ayudan a romper los ciclos de plagas y enfermedades.",
     "disclaimer": "Este artículo ofrece información educativa general y no sustituye el asesoramiento técnico adaptado al sitio. Las prácticas y los resultados varían según el tipo de suelo, el clima, el cultivo y el manejo.",
+    "back": "&larr; Volver a todos los artículos",
+  },
+  "article2": {
+    "title": "Descentralización y las comunas de Haití: reconstruir el Estado desde los territorios | AGRILEAD",
+    "desc": "Un ensayo institucional de Wilbert Georges sobre la descentralización, la gobernanza local, la participación ciudadana y el papel estratégico de las comunas en la reconstrucción del Estado haitiano.",
+    "cat": "Gobernanza y territorios",
+    "h1": "Descentralización y las comunas de Haití: reconstruir el Estado desde los territorios",
+    "meta": "Por Wilbert Georges &middot; Junio de 2026 &middot; Contribución institucional",
+    "intro": "En un ensayo institucional, Wilbert Georges — agrónomo y fundador de AGRILEAD — ofrece una reflexión sobre la descentralización, la gobernanza local y el papel estratégico de las comunas en la reconstrucción del Estado haitiano.",
+    "sections": [
+      ("La comuna, un espacio estratégico de proximidad","Lejos de ser un simple nivel administrativo, la comuna es el espacio donde se deciden el acceso a los servicios públicos, la planificación local, la rendición de cuentas y la coordinación de los actores del territorio. Es el punto de encuentro entre el Estado, los ciudadanos y los territorios."),
+      ("Una herencia de centralización","El ensayo repasa la evolución histórica de la comuna desde 1804 y pone de relieve los efectos duraderos de la concentración del poder y de los servicios en torno a Puerto Príncipe: éxodo rural, marginación territorial, déficit de servicios públicos locales y pérdida de credibilidad institucional."),
+      ("La Constitución de 1987 y la brecha de efectividad","La Constitución de 1987 consagró una arquitectura territorial — sección comunal, comuna, departamento — y una visión descentralizada del Estado. Sin embargo, persiste una brecha entre el reconocimiento jurídico de las colectividades territoriales y su efectividad institucional, administrativa y financiera."),
+      ("Las condiciones de una descentralización efectiva","El ensayo identifica varias condiciones esenciales: la clarificación de competencias, el fortalecimiento de las administraciones locales, recursos adecuados, una participación ciudadana institucionalizada, mecanismos de rendición de cuentas, una mejor coordinación territorial y el desarrollo de la intercomunalidad."),
+      ("Crisis 2021&ndash;2026: reconstruir desde los territorios","Una sección se dedica a la crisis política, de seguridad e institucional de 2021&ndash;2026. Muestra cómo este contexto refuerza la urgencia de pensar la reconstrucción del Estado desde los territorios, apoyándose en comunas fortalecidas, capaces de contribuir a la continuidad de los servicios públicos, a la seguridad humana y a la resiliencia territorial."),
+    ],
+    "disclaimer": "Esta publicación es una contribución personal al debate institucional, profesional y académico sobre la descentralización y la gobernanza local en Haití. Es de naturaleza analítica y no constituye asesoramiento jurídico.",
     "back": "&larr; Volver a todos los artículos",
   },
  },
@@ -1429,6 +1483,23 @@ def build(lang):
 </article>
 '''
     page("blog-soil-health-starter.html", ar["title"], ar["desc"], "blog.html", article, lang)
+
+    ar2 = d["article2"]
+    secs2 = "".join(f'<h3>{hh}</h3><p>{pp}</p>' for hh, pp in ar2["sections"])
+    article2 = f'''
+{banner(ar2["cat"], ar2["h1"], "/assets/img/serve_side.jpg", ar2["h1"])}
+
+<article class="section section--tight">
+  <div class="container narrow">
+    <p class="form-note">{ar2["meta"]}</p>
+    <p class="hero-lead" style="max-width:none">{ar2["intro"]}</p>
+    {secs2}
+    <p class="footer-disclaimer" style="margin-top:2.2rem">{ar2["disclaimer"]}</p>
+    <p style="margin-top:1.6rem"><a href="blog.html">{ar2["back"]}</a></p>
+  </div>
+</article>
+'''
+    page("blog-decentralisation-haiti.html", ar2["title"], ar2["desc"], "blog.html", article2, lang)
 
 
 for _lang in ("en", "fr", "es"):
