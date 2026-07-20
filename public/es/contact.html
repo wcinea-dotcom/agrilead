@@ -62,9 +62,9 @@
 
     <div class="reveal">
       <h2 style="font-size:1.35rem">Enviar una solicitud</h2>
-      <form class="form" name="contact-es" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/es/thank-you.html">
-        <input type="hidden" name="form-name" value="contact-es">
-        <p class="hp"><label>Do not fill this out: <input name="bot-field"></label></p>
+      <form class="form" id="agrilead-contact" method="POST" action="/es/thank-you.html" data-endpoint="https://script.google.com/macros/s/AKfycby2d1vpfF1RMcOWHqyJdU98f_nnDxD7vRlKYyq4ID4LaA-Ooo3pt7ADEzcgSwaKuRuXpw/exec" data-redirect="/es/thank-you.html">
+        <input type="hidden" name="lang" value="es">
+        <p class="hp" style="position:absolute;left:-9999px" aria-hidden="true"><label>Do not fill this out: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
 
         <div class="form-row">
           <div class="field"><label for="name">Nombre</label><input id="name" name="name" type="text" required></div>
@@ -88,6 +88,20 @@
         <button class="btn btn--primary" type="submit">Enviar una solicitud</button>
         <p class="form-note">El envío de una solicitud no crea ninguna alianza, contrato, compromiso de financiamiento ni afiliación formal.</p>
       </form>
+      <script>
+      (function(){
+        var f=document.getElementById('agrilead-contact');
+        if(!f) return;
+        f.addEventListener('submit', function(ev){
+          ev.preventDefault();
+          var hp=f.querySelector('[name=bot-field]'); if(hp && hp.value) return;
+          var btn=f.querySelector('button[type=submit]'); if(btn){ btn.disabled=true; }
+          fetch(f.dataset.endpoint, { method:'POST', mode:'no-cors', body:new URLSearchParams(new FormData(f)) })
+            .then(function(){ window.location.href=f.dataset.redirect; })
+            .catch(function(){ window.location.href=f.dataset.redirect; });
+        });
+      })();
+      </script>
     </div>
   </div>
 </section>

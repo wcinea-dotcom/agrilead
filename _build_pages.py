@@ -5,6 +5,9 @@ in _build_base. English pages -> public/ ; French pages -> public/fr/."""
 from _build_base import page, field_panel, values_block, pills_block, ICONS
 
 
+SHEET_URL = "https://script.google.com/macros/s/AKfycby2d1vpfF1RMcOWHqyJdU98f_nnDxD7vRlKYyq4ID4LaA-Ooo3pt7ADEzcgSwaKuRuXpw/exec"
+
+
 def cards3(items):
     out = '<div class="grid grid-3">'
     for icon, title, body in items:
@@ -1366,9 +1369,9 @@ def build(lang):
 
     <div class="reveal">
       <h2 style="font-size:1.35rem">{ct["form_h2"]}</h2>
-      <form class="form" name="{form_name}" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="{form_action}">
-        <input type="hidden" name="form-name" value="{form_name}">
-        <p class="hp"><label>Do not fill this out: <input name="bot-field"></label></p>
+      <form class="form" id="agrilead-contact" method="POST" action="{form_action}" data-endpoint="{SHEET_URL}" data-redirect="{form_action}">
+        <input type="hidden" name="lang" value="{lang}">
+        <p class="hp" style="position:absolute;left:-9999px" aria-hidden="true"><label>Do not fill this out: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
 
         <div class="form-row">
           <div class="field"><label for="name">{ct["f_name"]}</label><input id="name" name="name" type="text" required></div>
@@ -1392,6 +1395,20 @@ def build(lang):
         <button class="btn btn--primary" type="submit">{ct["submit"]}</button>
         <p class="form-note">{ct["form_note"]}</p>
       </form>
+      <script>
+      (function(){{
+        var f=document.getElementById('agrilead-contact');
+        if(!f) return;
+        f.addEventListener('submit', function(ev){{
+          ev.preventDefault();
+          var hp=f.querySelector('[name=bot-field]'); if(hp && hp.value) return;
+          var btn=f.querySelector('button[type=submit]'); if(btn){{ btn.disabled=true; }}
+          fetch(f.dataset.endpoint, {{ method:'POST', mode:'no-cors', body:new URLSearchParams(new FormData(f)) }})
+            .then(function(){{ window.location.href=f.dataset.redirect; }})
+            .catch(function(){{ window.location.href=f.dataset.redirect; }});
+        }});
+      }})();
+      </script>
     </div>
   </div>
 </section>
