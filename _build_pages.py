@@ -1166,7 +1166,7 @@ def build(lang):
 <section class="section section--field">
   <div class="container grid grid-2" style="gap:clamp(2rem,5vw,4rem);align-items:center">
     <div class="reveal"><p style="margin:0">{s["intro"]}</p></div>
-    <div class="reveal">{field_panel(s["core_h2"], img="/assets/img/services_side.jpg", alt=s["core_h2"])}</div>
+    <div class="reveal">{field_panel(s["core_h2"], img="/assets/img/services_lego.jpg", alt=s["core_h2"])}</div>
   </div>
 </section>
 
