@@ -269,8 +269,10 @@ CONTENT = {
   "thankyou": {
     "title": "Thank You | AGRILEAD Training & Consulting LLC",
     "desc": "Your inquiry to AGRILEAD Training & Consulting LLC has been received.",
-    "h1": "Thank you &mdash; your inquiry was received",
-    "p": "We appreciate your message. AGRILEAD will review your inquiry and follow up as appropriate. Submitting an inquiry does not create a partnership, contract, funding commitment, or formal affiliation.",
+    "h1": "Thank you for reaching out",
+    "p": "We've received your message and truly appreciate your interest in AGRILEAD. Our team will review your inquiry and get back to you within 3 business days.",
+    "signature": "Warm regards,<br>Wilbert Georges &mdash; Founder &amp; Executive Lead<br>AGRILEAD Training &amp; Consulting LLC",
+    "note": "Submitting an inquiry does not create a partnership, contract, funding commitment, or formal affiliation.",
     "back": "Back to Home",
   },
 
@@ -332,16 +334,17 @@ CONTENT = {
     "desc": "An institutional essay by Wilbert Georges on decentralization, local governance, citizen participation, and the strategic role of communes in rebuilding the Haitian State.",
     "cat": "Governance &amp; Territories",
     "h1": "Decentralization and Haiti's communes: rebuilding the State from the territories",
-    "meta": "By Wilbert Georges &middot; June 2026 &middot; Institutional contribution",
-    "intro": "In an institutional essay, Wilbert Georges — agronomist and founder of AGRILEAD — offers a reflection on decentralization, local governance, and the strategic role of communes in rebuilding the Haitian State.",
-    "sections": [
-      ("The commune: a strategic space of proximity","Far from being a mere administrative tier, the commune is where access to public services, local planning, accountability, and the coordination of local actors are decided. It is the meeting point between the State, citizens, and territories."),
-      ("A legacy of centralization","The essay traces the historical evolution of the commune since 1804 and highlights the lasting effects of concentrating power and services around Port-au-Prince: rural exodus, territorial marginalization, a deficit of local public services, and a loss of institutional credibility."),
-      ("The 1987 Constitution and the effectiveness gap","The 1987 Constitution enshrined a territorial architecture — communal section, commune, department — and a decentralized vision of the State. Yet a persistent gap remains between the legal recognition of local governments and their institutional, administrative, and financial effectiveness."),
-      ("Conditions for effective decentralization","The essay identifies several essential conditions: clarifying responsibilities, strengthening local administrations, adequate resources, institutionalized citizen participation, accountability mechanisms, better territorial coordination, and the development of inter-communal cooperation."),
-      ("2021&ndash;2026 crisis: rebuilding from the territories","A dedicated section examines the political, security, and institutional crisis of 2021&ndash;2026. It shows how this context reinforces the urgency of rebuilding the State from the territories, relying on strengthened communes able to support the continuity of public services, human security, and territorial resilience."),
+    "meta": "June 2026 &middot; Governance &amp; territories",
+    "intro": "Since 2021, Haiti has been going through a political, security, and institutional crisis of exceptional scale. The weakening of central institutions, widespread insecurity, and the interruption of many public services are a reminder of something too often overlooked: a State does not hold together through its summit alone, but also through its territories. It is in this context that this reflection on decentralization and the communes was written — not as an abstract academic exercise, but as an orientation for rebuilding the Haitian State from the ground up.",
+    "paragraphs": [
+      "The commune appears here as far more than a mere administrative tier. It is the space of proximity where access to public services, local planning, the coordination of actors, and accountability to citizens are concretely decided. It is there, closest to the population, that the State becomes tangible — or, on the contrary, fades away.",
+      "Yet Haitian administrative history, since 1804, has been built around a growing centralization of powers and resources, today largely concentrated in Port-au-Prince. This concentration has fueled rural exodus, the marginalization of the regions, a chronic deficit of local services, and an erosion of trust in institutions. The territories farthest from the capital are also, too often, the most neglected.",
+      "The 1987 Constitution had nonetheless opened another path. It enshrined a clear territorial architecture — communal section, commune, department — and a resolutely decentralized vision of the State, based on elected councils and local participation. But nearly four decades later, a persistent gap remains between this legal recognition of local governments and their actual effectiveness. Without clearly distributed responsibilities, solid local administrations, and adequate resources, communal autonomy remains largely theoretical.",
+      "Making decentralization effective therefore requires meeting several conditions. Responsibilities between the central State and local governments must be clarified, communal administrations strengthened, and communes given predictable financial resources; citizen participation must be institutionalized beyond mere information-sharing. Credible decentralization also calls for accountability and citizen-oversight mechanisms to prevent clientelism and the local capture of resources.",
+      "To these conditions are added territorial coordination and inter-communal cooperation. Many challenges — water, roads, waste, watersheds, or markets — reach beyond the boundaries of a single commune and call for cooperation between neighboring territories. Better coordinating the action of communes, communal sections, and partners, including NGOs and international cooperation, would help avoid scattered efforts and strengthen local impact.",
+      "The 2021&ndash;2026 crisis gives this reflection particular urgency. Where the central State struggles to ensure the continuity of its functions, strengthened communes could help maintain essential services, support human security, and build territorial resilience. Rebuilding from the territories is not a fallback: it is a way of rebuilding the State on foundations closer to citizens, more inclusive and more durable.",
     ],
-    "disclaimer": "This publication is a personal contribution to the institutional, professional, and academic debate on decentralization and local governance in Haiti. It is analytical in nature and does not constitute legal advice.",
+    "closing": "This text is intended as a contribution to the debate, an invitation to place the communes back at the heart of the national project. It does not claim to offer definitive answers, but to open avenues. A personal contribution by Wilbert Georges — agronomist and development professional, founder of AGRILEAD Training &amp; Consulting LLC — to the institutional, professional, and academic debate on decentralization and local governance in Haiti; it is analytical in nature and does not constitute legal advice.",
     "back": "&larr; Back to all articles",
   },
  },
@@ -567,8 +570,10 @@ CONTENT = {
   "thankyou": {
     "title": "Merci | AGRILEAD Training & Consulting LLC",
     "desc": "Votre demande à AGRILEAD Training & Consulting LLC a bien été reçue.",
-    "h1": "Merci &mdash; votre demande a bien été reçue",
-    "p": "Nous vous remercions de votre message. AGRILEAD examinera votre demande et y donnera suite le cas échéant. L'envoi d'une demande ne crée aucun partenariat, contrat, engagement de financement ni affiliation formelle.",
+    "h1": "Merci de nous avoir contactés",
+    "p": "Nous avons bien reçu votre message et vous remercions de votre intérêt pour AGRILEAD. Notre équipe examinera votre demande et vous répondra sous 3 jours ouvrables.",
+    "signature": "Bien cordialement,<br>Wilbert Georges &mdash; Fondateur et Directeur exécutif<br>AGRILEAD Training &amp; Consulting LLC",
+    "note": "L'envoi d'une demande ne crée aucun partenariat, contrat, engagement de financement ni affiliation formelle.",
     "back": "Retour à l'accueil",
   },
 
@@ -630,16 +635,17 @@ CONTENT = {
     "desc": "Un essai institutionnel de Wilbert Georges sur la décentralisation, la gouvernance locale, la participation citoyenne et le rôle stratégique des communes dans la reconstruction de l'État haïtien.",
     "cat": "Gouvernance &amp; territoires",
     "h1": "Décentralisation et communes d'Haïti : reconstruire l'État à partir des territoires",
-    "meta": "Par Wilbert Georges &middot; Juin 2026 &middot; Contribution institutionnelle",
-    "intro": "Dans un essai institutionnel, Wilbert Georges — agronome et fondateur d'AGRILEAD — propose une réflexion sur la décentralisation, la gouvernance locale et le rôle stratégique des communes dans la reconstruction de l'État haïtien.",
-    "sections": [
-      ("La commune, un espace stratégique de proximité","Loin d'être un simple échelon administratif, la commune est l'espace où se jouent l'accès aux services publics, la planification locale, la redevabilité et la coordination des acteurs du territoire. C'est le point de rencontre entre l'État, les citoyens et les territoires."),
-      ("Un héritage de centralisation","L'essai retrace l'évolution historique de la commune depuis 1804 et met en évidence les effets durables de la concentration des pouvoirs et des services autour de Port-au-Prince : exode rural, marginalisation territoriale, déficit de services publics locaux et perte de crédibilité institutionnelle."),
-      ("La Constitution de 1987 et l'écart d'effectivité","La Constitution de 1987 a consacré une architecture territoriale — section communale, commune, département — et une vision décentralisée de l'État. Mais un écart persistant demeure entre la reconnaissance juridique des collectivités territoriales et leur effectivité institutionnelle, administrative et financière."),
-      ("Les conditions d'une décentralisation effective","L'essai identifie plusieurs conditions essentielles : la clarification des compétences, le renforcement des administrations locales, des ressources adaptées, une participation citoyenne institutionnalisée, des mécanismes de redevabilité, une meilleure coordination territoriale et le développement de l'intercommunalité."),
-      ("Crise 2021&ndash;2026 : reconstruire à partir des territoires","Une section est consacrée à la crise politique, sécuritaire et institutionnelle de 2021&ndash;2026. Elle montre combien ce contexte renforce l'urgence de penser la reconstruction de l'État à partir des territoires, en s'appuyant sur des communes renforcées, capables de contribuer à la continuité des services publics, à la sécurité humaine et à la résilience territoriale."),
+    "meta": "Juin 2026 &middot; Gouvernance &amp; territoires",
+    "intro": "Depuis 2021, Haïti traverse une crise politique, sécuritaire et institutionnelle d'une ampleur exceptionnelle. L'affaiblissement des institutions centrales, l'insécurité et la rupture de nombreux services publics rappellent une évidence trop longtemps négligée : un État ne tient pas seulement par son sommet, mais aussi par ses territoires. C'est dans ce contexte qu'a été rédigée cette réflexion sur la décentralisation et les communes, conçue non comme un exercice académique abstrait, mais comme une orientation pour reconstruire l'État haïtien à partir de la base.",
+    "paragraphs": [
+      "La commune y apparaît comme bien plus qu'un simple échelon administratif. Elle est l'espace de proximité où se décident concrètement l'accès aux services publics, la planification locale, la coordination des acteurs et la redevabilité envers les citoyens. C'est là, au plus près des populations, que l'État devient tangible — ou, au contraire, qu'il s'efface.",
+      "Or, l'histoire administrative haïtienne, depuis 1804, s'est construite autour d'une centralisation croissante des pouvoirs et des ressources, aujourd'hui largement concentrés à Port-au-Prince. Cette concentration a nourri l'exode rural, la marginalisation des régions, le déficit chronique de services locaux et une érosion de la confiance envers les institutions. Les territoires les plus éloignés de la capitale sont aussi, trop souvent, les plus délaissés.",
+      "La Constitution de 1987 avait pourtant ouvert une autre voie. Elle a consacré une architecture territoriale claire — section communale, commune, département — et une vision résolument décentralisée de l'État, appuyée sur des conseils élus et une participation locale. Mais près de quatre décennies plus tard, un écart persistant demeure entre cette reconnaissance juridique des collectivités et leur effectivité réelle. Faute de compétences clairement réparties, d'administrations locales solides et de ressources adaptées, l'autonomie communale reste largement théorique.",
+      "Rendre la décentralisation effective suppose donc de réunir plusieurs conditions. Il s'agit de clarifier les compétences entre l'État central et les collectivités, de renforcer les administrations communales, de doter les communes de ressources financières prévisibles, et d'institutionnaliser une participation citoyenne qui aille au-delà de la simple information. Une décentralisation crédible exige aussi des mécanismes de redevabilité et de contrôle citoyen, pour prévenir le clientélisme et la captation locale des ressources.",
+      "À ces conditions s'ajoutent la coordination territoriale et l'intercommunalité. De nombreux défis — l'eau, les routes, les déchets, les bassins versants ou les marchés — dépassent les frontières d'une seule commune et appellent des coopérations entre territoires voisins. Mieux coordonner l'action des communes, des sections communales et des partenaires, y compris les ONG et la coopération internationale, permettrait d'éviter la dispersion des efforts et de renforcer l'impact local.",
+      "La crise de 2021&ndash;2026 donne à cette réflexion une acuité particulière. Là où l'État central peine à assurer la continuité de ses fonctions, des communes renforcées pourraient contribuer à maintenir des services essentiels, à soutenir la sécurité humaine et à bâtir une résilience territoriale. Penser la reconstruction à partir des territoires n'est pas un repli : c'est une manière de reconstruire l'État sur des fondations plus proches des citoyens, plus inclusives et plus durables.",
     ],
-    "disclaimer": "Cette publication constitue une contribution personnelle au débat institutionnel, professionnel et académique sur la décentralisation et la gouvernance locale en Haïti. De nature analytique, elle ne constitue pas un avis juridique.",
+    "closing": "Ce texte se veut une contribution au débat, une invitation à replacer les communes au cœur du projet national. Il ne prétend pas apporter de réponses définitives, mais ouvrir des pistes. Contribution personnelle de Wilbert Georges — agronome et professionnel du développement, fondateur d'AGRILEAD Training &amp; Consulting LLC — au débat institutionnel, professionnel et académique sur la décentralisation et la gouvernance locale en Haïti, ce texte est de nature analytique et ne constitue pas un avis juridique.",
     "back": "&larr; Retour à tous les articles",
   },
  },
@@ -860,8 +866,10 @@ CONTENT = {
   "thankyou": {
     "title": "Gracias | AGRILEAD Training & Consulting LLC",
     "desc": "Su solicitud a AGRILEAD Training & Consulting LLC se ha recibido correctamente.",
-    "h1": "Gracias &mdash; su solicitud se ha recibido",
-    "p": "Le agradecemos su mensaje. AGRILEAD revisará su solicitud y le dará seguimiento según corresponda. El envío de una solicitud no crea ninguna alianza, contrato, compromiso de financiamiento ni afiliación formal.",
+    "h1": "Gracias por contactarnos",
+    "p": "Hemos recibido su mensaje y agradecemos su interés en AGRILEAD. Nuestro equipo revisará su solicitud y le responderá en un plazo de 3 días hábiles.",
+    "signature": "Un cordial saludo,<br>Wilbert Georges &mdash; Fundador y Director ejecutivo<br>AGRILEAD Training &amp; Consulting LLC",
+    "note": "El envío de una solicitud no crea ninguna alianza, contrato, compromiso de financiamiento ni afiliación formal.",
     "back": "Volver al inicio",
   },
 
@@ -923,16 +931,17 @@ CONTENT = {
     "desc": "Un ensayo institucional de Wilbert Georges sobre la descentralización, la gobernanza local, la participación ciudadana y el papel estratégico de las comunas en la reconstrucción del Estado haitiano.",
     "cat": "Gobernanza y territorios",
     "h1": "Descentralización y las comunas de Haití: reconstruir el Estado desde los territorios",
-    "meta": "Por Wilbert Georges &middot; Junio de 2026 &middot; Contribución institucional",
-    "intro": "En un ensayo institucional, Wilbert Georges — agrónomo y fundador de AGRILEAD — ofrece una reflexión sobre la descentralización, la gobernanza local y el papel estratégico de las comunas en la reconstrucción del Estado haitiano.",
-    "sections": [
-      ("La comuna, un espacio estratégico de proximidad","Lejos de ser un simple nivel administrativo, la comuna es el espacio donde se deciden el acceso a los servicios públicos, la planificación local, la rendición de cuentas y la coordinación de los actores del territorio. Es el punto de encuentro entre el Estado, los ciudadanos y los territorios."),
-      ("Una herencia de centralización","El ensayo repasa la evolución histórica de la comuna desde 1804 y pone de relieve los efectos duraderos de la concentración del poder y de los servicios en torno a Puerto Príncipe: éxodo rural, marginación territorial, déficit de servicios públicos locales y pérdida de credibilidad institucional."),
-      ("La Constitución de 1987 y la brecha de efectividad","La Constitución de 1987 consagró una arquitectura territorial — sección comunal, comuna, departamento — y una visión descentralizada del Estado. Sin embargo, persiste una brecha entre el reconocimiento jurídico de las colectividades territoriales y su efectividad institucional, administrativa y financiera."),
-      ("Las condiciones de una descentralización efectiva","El ensayo identifica varias condiciones esenciales: la clarificación de competencias, el fortalecimiento de las administraciones locales, recursos adecuados, una participación ciudadana institucionalizada, mecanismos de rendición de cuentas, una mejor coordinación territorial y el desarrollo de la intercomunalidad."),
-      ("Crisis 2021&ndash;2026: reconstruir desde los territorios","Una sección se dedica a la crisis política, de seguridad e institucional de 2021&ndash;2026. Muestra cómo este contexto refuerza la urgencia de pensar la reconstrucción del Estado desde los territorios, apoyándose en comunas fortalecidas, capaces de contribuir a la continuidad de los servicios públicos, a la seguridad humana y a la resiliencia territorial."),
+    "meta": "Junio de 2026 &middot; Gobernanza y territorios",
+    "intro": "Desde 2021, Haití atraviesa una crisis política, de seguridad e institucional de una magnitud excepcional. El debilitamiento de las instituciones centrales, la inseguridad y la interrupción de numerosos servicios públicos recuerdan algo demasiado a menudo olvidado: un Estado no se sostiene solo por su cúspide, sino también por sus territorios. En este contexto se redactó esta reflexión sobre la descentralización y las comunas, concebida no como un ejercicio académico abstracto, sino como una orientación para reconstruir el Estado haitiano desde la base.",
+    "paragraphs": [
+      "La comuna aparece aquí como mucho más que un simple nivel administrativo. Es el espacio de proximidad donde se deciden concretamente el acceso a los servicios públicos, la planificación local, la coordinación de los actores y la rendición de cuentas a los ciudadanos. Es allí, lo más cerca posible de la población, donde el Estado se vuelve tangible o, por el contrario, se desvanece.",
+      "Sin embargo, la historia administrativa haitiana, desde 1804, se construyó en torno a una creciente centralización de los poderes y los recursos, hoy en gran medida concentrados en Puerto Príncipe. Esta concentración alimentó el éxodo rural, la marginación de las regiones, el déficit crónico de servicios locales y una erosión de la confianza en las instituciones. Los territorios más alejados de la capital son también, con demasiada frecuencia, los más abandonados.",
+      "La Constitución de 1987 había abierto, no obstante, otro camino. Consagró una arquitectura territorial clara — sección comunal, comuna, departamento — y una visión decididamente descentralizada del Estado, basada en consejos electos y en la participación local. Pero casi cuatro décadas después, persiste una brecha entre este reconocimiento jurídico de las colectividades y su efectividad real. Sin competencias claramente distribuidas, administraciones locales sólidas y recursos adecuados, la autonomía comunal sigue siendo en gran parte teórica.",
+      "Hacer efectiva la descentralización supone, por tanto, reunir varias condiciones. Hay que clarificar las competencias entre el Estado central y las colectividades, fortalecer las administraciones comunales y dotar a las comunas de recursos financieros previsibles; la participación ciudadana debe institucionalizarse más allá de la simple información. Una descentralización creíble exige también mecanismos de rendición de cuentas y de control ciudadano, para prevenir el clientelismo y la captación local de los recursos.",
+      "A estas condiciones se suman la coordinación territorial y la intercomunalidad. Numerosos desafíos — el agua, las carreteras, los residuos, las cuencas hidrográficas o los mercados — rebasan las fronteras de una sola comuna y exigen la cooperación entre territorios vecinos. Coordinar mejor la acción de las comunas, las secciones comunales y los socios, incluidas las ONG y la cooperación internacional, ayudaría a evitar la dispersión de los esfuerzos y a reforzar el impacto local.",
+      "La crisis de 2021&ndash;2026 confiere a esta reflexión una urgencia particular. Allí donde el Estado central tiene dificultades para asegurar la continuidad de sus funciones, unas comunas fortalecidas podrían ayudar a mantener servicios esenciales, a apoyar la seguridad humana y a construir resiliencia territorial. Reconstruir desde los territorios no es un repliegue: es una manera de reconstruir el Estado sobre cimientos más cercanos a los ciudadanos, más inclusivos y más duraderos.",
     ],
-    "disclaimer": "Esta publicación es una contribución personal al debate institucional, profesional y académico sobre la descentralización y la gobernanza local en Haití. Es de naturaleza analítica y no constituye asesoramiento jurídico.",
+    "closing": "Este texto pretende ser una contribución al debate, una invitación a situar de nuevo a las comunas en el centro del proyecto nacional. No pretende ofrecer respuestas definitivas, sino abrir caminos. Contribución personal de Wilbert Georges — agrónomo y profesional del desarrollo, fundador de AGRILEAD Training &amp; Consulting LLC — al debate institucional, profesional y académico sobre la descentralización y la gobernanza local en Haití, este texto es de naturaleza analítica y no constituye asesoramiento jurídico.",
     "back": "&larr; Volver a todos los artículos",
   },
  },
@@ -1396,11 +1405,13 @@ def build(lang):
   <div class="container narrow center">
     <span class="icon" style="width:64px;height:64px;margin-inline:auto">{ICONS["check"]}</span>
     <h1 style="margin-top:1.2rem">{ty["h1"]}</h1>
-    <p>{ty["p"]}</p>
+    <p class="hero-lead" style="margin-inline:auto">{ty["p"]}</p>
+    <p class="thankyou-sign">{ty["signature"]}</p>
     <div class="hero-cta" style="justify-content:center">
       <a class="btn btn--primary" href="index.html">{ty["back"]}</a>
       <a class="btn btn--secondary" href="services.html">{d["cta_services"]}</a>
     </div>
+    <p class="form-note" style="margin-top:1.6rem">{ty["note"]}</p>
   </div>
 </section>
 '''
@@ -1485,16 +1496,16 @@ def build(lang):
     page("blog-soil-health-starter.html", ar["title"], ar["desc"], "blog.html", article, lang)
 
     ar2 = d["article2"]
-    secs2 = "".join(f'<h3>{hh}</h3><p>{pp}</p>' for hh, pp in ar2["sections"])
+    body2 = "".join(f'<p>{pp}</p>' for pp in ar2["paragraphs"])
     article2 = f'''
 {banner(ar2["cat"], ar2["h1"], "/assets/img/serve_side.jpg", ar2["h1"])}
 
 <article class="section section--tight">
-  <div class="container narrow">
+  <div class="container narrow article-body">
     <p class="form-note">{ar2["meta"]}</p>
     <p class="hero-lead" style="max-width:none">{ar2["intro"]}</p>
-    {secs2}
-    <p class="footer-disclaimer" style="margin-top:2.2rem">{ar2["disclaimer"]}</p>
+    {body2}
+    <p class="article-note" style="margin-top:2rem">{ar2["closing"]}</p>
     <p style="margin-top:1.6rem"><a href="blog.html">{ar2["back"]}</a></p>
   </div>
 </article>
