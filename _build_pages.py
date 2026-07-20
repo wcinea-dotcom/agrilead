@@ -994,15 +994,14 @@ def build(lang):
 </section>
 
 <section class="section">
-  <div class="container">
-    <div class="section-head reveal">
+  <div class="container grid grid-2" style="gap:clamp(2rem,5vw,4rem);align-items:center">
+    <div class="reveal">
       <p class="eyebrow">{h["who_eyebrow"]}</p>
       <h2>{h["who_h2"]}</h2>
+      <p>{h["who_p1"]}</p>
+      <p>{h["who_p2"]}</p>
     </div>
-    <div class="grid grid-2">
-      <p class="reveal">{h["who_p1"]}</p>
-      <p class="reveal">{h["who_p2"]}</p>
-    </div>
+    <div class="reveal">{field_panel(h["who_h2"], img="/assets/img/whoweare_side.jpg", alt=h["who_h2"])}</div>
   </div>
 </section>
 
@@ -1164,9 +1163,10 @@ def build(lang):
   </div>
 </section>
 
-<section class="section section--field section--tight">
-  <div class="container narrow">
-    <p class="reveal" style="margin:0">{s["intro"]}</p>
+<section class="section section--field">
+  <div class="container grid grid-2" style="gap:clamp(2rem,5vw,4rem);align-items:center">
+    <div class="reveal"><p style="margin:0">{s["intro"]}</p></div>
+    <div class="reveal">{field_panel(s["core_h2"], img="/assets/img/services_side.jpg", alt=s["core_h2"])}</div>
   </div>
 </section>
 
