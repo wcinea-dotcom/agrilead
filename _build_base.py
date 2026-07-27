@@ -7,11 +7,12 @@ All contact details use <a href='tel:+17863937333'>+1 (786) 393 7333</a> / <a hr
 until final details are confirmed, per the brand handoff."""
 
 import os
+import re
 import time
 
 # Bump ASSET_VER whenever CSS/JS changes — it cache-busts the year-long
 # immutable asset cache so returning visitors get the new styles.
-ASSET_VER = "20260727photos"
+ASSET_VER = "20260727titles"
 
 # Supported languages: English (root), French (/fr/), Spanish (/es/).
 LANGS = ("en", "fr", "es")
@@ -20,6 +21,56 @@ LANG_LABEL = {"en": "English", "fr": "Français", "es": "Español"}
 
 # When AGRI_COLLECT is set, page() collects (target, bytes) here instead of writing.
 _PENDING = []
+
+_H2_SMALL_WORDS = {
+    "en": {"a", "an", "and", "as", "at", "but", "by", "for", "in", "of", "on", "or", "the", "to", "with"},
+    "fr": {"à", "au", "aux", "avec", "ce", "ces", "dans", "de", "des", "du", "en", "et", "la", "le", "lequel", "les", "lesquels", "nos", "notre", "nous", "par", "pour", "que", "qui", "sans", "sur", "un", "une", "vos", "votre"},
+    "es": {"a", "al", "con", "de", "del", "el", "en", "la", "las", "los", "para", "por", "que", "sobre", "un", "una", "y"},
+}
+
+
+def _title_case_h2_text(text, lang):
+    """Use editorial title case for visible H2 headings in all three languages."""
+    words = list(re.finditer(r"[^\W\d_]+(?:['’][^\W\d_]+)?(?:-[^\W\d_]+)*", text, re.UNICODE))
+    if not words:
+        return text
+    small = _H2_SMALL_WORDS[lang]
+    pieces, cursor = [], 0
+    for index, match in enumerate(words):
+        pieces.append(text[cursor:match.start()])
+        word = match.group(0)
+        if word.isupper():
+            replacement = word
+        elif index not in (0, len(words) - 1) and word.lower() in small:
+            replacement = word.lower()
+        else:
+            segments = re.split(r"([-])", word)
+            converted = []
+            for segment in segments:
+                if segment == "-":
+                    converted.append(segment)
+                elif ("'" in segment or "’" in segment) and lang == "fr":
+                    apostrophe = "'" if "'" in segment else "’"
+                    left, right = segment.split(apostrophe, 1)
+                    right_word = right.lower() if right.lower() in small else right[:1].upper() + right[1:]
+                    converted.append(left.lower() + apostrophe + right_word)
+                else:
+                    converted.append(segment[:1].upper() + segment[1:])
+            replacement = "".join(converted)
+        pieces.append(replacement)
+        cursor = match.end()
+    pieces.append(text[cursor:])
+    result = "".join(pieces)
+    return re.sub(r"&([A-Za-z]+);", lambda m: "&" + m.group(1).lower() + ";", result)
+
+
+def title_case_h2s(main_html, lang):
+    return re.sub(
+        r"(<h2(?:\s[^>]*)?>)(.*?)(</h2>)",
+        lambda m: m.group(1) + _title_case_h2_text(m.group(2), lang) + m.group(3),
+        main_html,
+        flags=re.DOTALL,
+    )
 
 
 def url_for(cur, target, filename):
@@ -345,6 +396,7 @@ def footer(lang, prefix):
 
 def page(filename, title, description, active, main_html, lang="en"):
     t = TR[lang]
+    main_html = title_case_h2s(main_html, lang)
     prefix = "" if lang == "en" else "../"
     outdir = os.path.join(OUT, LANG_DIR[lang]) if LANG_DIR[lang] else OUT
     # Alternate-language URLs (relative) for hreflang

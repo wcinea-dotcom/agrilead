@@ -616,3 +616,14 @@ h1{font-weight:700}
 
 /* Vertical photo in the contact info column */
 .contact-photo{width:100%;max-width:340px;aspect-ratio:3/4;object-fit:cover;border-radius:12px;display:block;margin:0 0 1.4rem}
+
+/* Collaboration organizations */
+.partner-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.35rem;margin-top:2rem}
+.partner-card{min-height:245px;padding:1.6rem;background:#fff;border:1px solid var(--border-soft);border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;box-shadow:0 8px 24px rgba(11,33,58,.06)}
+.partner-card h3{font-size:1.05rem;margin:1.1rem 0 0;color:var(--navy)}
+.partner-logo{display:block;width:100%;height:145px;object-fit:contain}
+.partner-logo--wide{height:110px}
+.partner-wordmark{width:145px;height:145px;border-radius:50%;background:linear-gradient(145deg,var(--green),var(--navy));color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:inset 0 0 0 7px rgba(255,255,255,.2)}
+.partner-wordmark span{font-family:var(--font-display);font-size:2.6rem;line-height:1;font-weight:900}
+.partner-wordmark strong{font-family:var(--font-head);font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;margin-top:.55rem}
+@media(max-width:760px){.partner-grid{grid-template-columns:1fr}.partner-card{min-height:220px}}

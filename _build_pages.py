@@ -307,7 +307,7 @@ CONTENT = {
     "intro": "Practical notes on agricultural training, applied agronomy, and language-accessible learning for beginning farmers, small-scale producers, and the organizations that support them.",
     "more": "More articles are on the way. Have a topic you would like us to cover? <a href=\"contact.html\">Get in touch</a>.",
     "posts": [
-      ("blog-decentralisation-haiti.html","Governance & Territories","Decentralization and Haiti's communes: rebuilding the State from the territories","June 2026","Institutional contribution","A reflection by Wilbert Georges on decentralization, local governance, citizen participation, and the strategic role of communes in rebuilding the Haitian State."),
+      ("blog-decentralisation-haiti.html","Governance & Territories","Decentralization and Haiti's communes: rebuilding the State from the communes","June 2026","Institutional contribution","A reflection by Wilbert Georges on decentralization, local governance, citizen participation, and the strategic role of communes in rebuilding the Haitian State."),
       ("blog-soil-health-starter.html","Applied Agronomy","Five Practical Habits for Healthier Farm Soil","July 1, 2026","4 min read","Simple, low-cost practices — keeping soil covered, reducing tillage, building organic matter, testing before treating, and keeping living roots in the ground — that beginning and small-scale producers can start this season."),
     ],
   },
@@ -333,10 +333,10 @@ CONTENT = {
     "back": "&larr; Back to all articles",
   },
   "article2": {
-    "title": "Decentralization and Haiti's communes: rebuilding the State from the territories | AGRILEAD",
+    "title": "Decentralization and Haiti's communes: rebuilding the State from the communes | AGRILEAD",
     "desc": "An institutional essay by Wilbert Georges on decentralization, local governance, citizen participation, and the strategic role of communes in rebuilding the Haitian State.",
     "cat": "Governance &amp; Territories",
-    "h1": "Decentralization and Haiti's communes: rebuilding the State from the territories",
+    "h1": "Decentralization and Haiti's communes: rebuilding the State from the communes",
     "meta": "June 2026 &middot; Governance &amp; territories",
     "intro": "Since 2021, Haiti has been going through a political, security, and institutional crisis of exceptional scale. The weakening of central institutions, widespread insecurity, and the interruption of many public services are a reminder of something too often overlooked: a State does not hold together through its summit alone, but also through its territories. It is in this context that this reflection on decentralization and the communes was written — not as an abstract academic exercise, but as an orientation for rebuilding the Haitian State from the ground up.",
     "paragraphs": [
@@ -608,7 +608,7 @@ CONTENT = {
     "intro": "Des notes pratiques sur la formation agricole, l'agronomie appliquée et l'apprentissage accessible sur le plan linguistique, pour les agriculteurs débutants, les petits producteurs et les organisations qui les accompagnent.",
     "more": "D'autres articles arrivent bientôt. Un sujet que vous aimeriez voir traité ? <a href=\"contact.html\">Contactez-nous</a>.",
     "posts": [
-      ("blog-decentralisation-haiti.html","Gouvernance &amp; territoires","Décentralisation et communes d'Haïti : reconstruire l'État à partir des territoires","Juin 2026","Contribution institutionnelle","Une réflexion de Wilbert Georges sur la décentralisation, la gouvernance locale, la participation citoyenne et le rôle stratégique des communes dans la reconstruction de l'État haïtien."),
+      ("blog-decentralisation-haiti.html","Gouvernance &amp; territoires","Décentralisation et communes d'Haïti : reconstruire l'État à partir des communes","Juin 2026","Contribution institutionnelle","Une réflexion de Wilbert Georges sur la décentralisation, la gouvernance locale, la participation citoyenne et le rôle stratégique des communes dans la reconstruction de l'État haïtien."),
       ("blog-soil-health-starter.html","Agronomie appliquée","Cinq habitudes pratiques pour des sols agricoles plus sains","1 juillet 2026","4 min de lecture","Des pratiques simples et peu coûteuses — garder le sol couvert, réduire le travail du sol, enrichir la matière organique, analyser avant de traiter et maintenir des racines vivantes — que les producteurs débutants et petits producteurs peuvent adopter dès cette saison."),
     ],
   },
@@ -634,10 +634,10 @@ CONTENT = {
     "back": "&larr; Retour à tous les articles",
   },
   "article2": {
-    "title": "Décentralisation et communes d'Haïti : reconstruire l'État à partir des territoires | AGRILEAD",
+    "title": "Décentralisation et communes d'Haïti : reconstruire l'État à partir des communes | AGRILEAD",
     "desc": "Un essai institutionnel de Wilbert Georges sur la décentralisation, la gouvernance locale, la participation citoyenne et le rôle stratégique des communes dans la reconstruction de l'État haïtien.",
     "cat": "Gouvernance &amp; territoires",
-    "h1": "Décentralisation et communes d'Haïti : reconstruire l'État à partir des territoires",
+    "h1": "Décentralisation et communes d'Haïti : reconstruire l'État à partir des communes",
     "meta": "Juin 2026 &middot; Gouvernance &amp; territoires",
     "intro": "Depuis 2021, Haïti traverse une crise politique, sécuritaire et institutionnelle d'une ampleur exceptionnelle. L'affaiblissement des institutions centrales, l'insécurité et la rupture de nombreux services publics rappellent une évidence trop longtemps négligée : un État ne tient pas seulement par son sommet, mais aussi par ses territoires. C'est dans ce contexte qu'a été rédigée cette réflexion sur la décentralisation et les communes, conçue non comme un exercice académique abstrait, mais comme une orientation pour reconstruire l'État haïtien à partir de la base.",
     "paragraphs": [
@@ -904,7 +904,7 @@ CONTENT = {
     "intro": "Notas prácticas sobre formación agrícola, agronomía aplicada y aprendizaje accesible lingüísticamente, para agricultores principiantes, pequeños productores y las organizaciones que los apoyan.",
     "more": "Pronto habrá más artículos. ¿Hay algún tema que le gustaría que tratáramos? <a href=\"contact.html\">Contáctenos</a>.",
     "posts": [
-      ("blog-decentralisation-haiti.html","Gobernanza y territorios","Descentralización y las comunas de Haití: reconstruir el Estado desde los territorios","Junio de 2026","Contribución institucional","Una reflexión de Wilbert Georges sobre la descentralización, la gobernanza local, la participación ciudadana y el papel estratégico de las comunas en la reconstrucción del Estado haitiano."),
+      ("blog-decentralisation-haiti.html","Gobernanza y territorios","Descentralización y las comunas de Haití: reconstruir el Estado desde las comunas","Junio de 2026","Contribución institucional","Una reflexión de Wilbert Georges sobre la descentralización, la gobernanza local, la participación ciudadana y el papel estratégico de las comunas en la reconstrucción del Estado haitiano."),
       ("blog-soil-health-starter.html","Agronomía aplicada","Cinco hábitos prácticos para un suelo agrícola más sano","1 de julio de 2026","4 min de lectura","Prácticas sencillas y de bajo costo — mantener el suelo cubierto, reducir la labranza, aumentar la materia orgánica, analizar antes de tratar y mantener raíces vivas — que los productores principiantes y pequeños pueden adoptar esta temporada."),
     ],
   },
@@ -930,10 +930,10 @@ CONTENT = {
     "back": "&larr; Volver a todos los artículos",
   },
   "article2": {
-    "title": "Descentralización y las comunas de Haití: reconstruir el Estado desde los territorios | AGRILEAD",
+    "title": "Descentralización y las comunas de Haití: reconstruir el Estado desde las comunas | AGRILEAD",
     "desc": "Un ensayo institucional de Wilbert Georges sobre la descentralización, la gobernanza local, la participación ciudadana y el papel estratégico de las comunas en la reconstrucción del Estado haitiano.",
     "cat": "Gobernanza y territorios",
-    "h1": "Descentralización y las comunas de Haití: reconstruir el Estado desde los territorios",
+    "h1": "Descentralización y las comunas de Haití: reconstruir el Estado desde las comunas",
     "meta": "Junio de 2026 &middot; Gobernanza y territorios",
     "intro": "Desde 2021, Haití atraviesa una crisis política, de seguridad e institucional de una magnitud excepcional. El debilitamiento de las instituciones centrales, la inseguridad y la interrupción de numerosos servicios públicos recuerdan algo demasiado a menudo olvidado: un Estado no se sostiene solo por su cúspide, sino también por sus territorios. En este contexto se redactó esta reflexión sobre la descentralización y las comunas, concebida no como un ejercicio académico abstracto, sino como una orientación para reconstruir el Estado haitiano desde la base.",
     "paragraphs": [
@@ -956,6 +956,7 @@ CONTENT = {
 # ===========================================================================
 def build(lang):
     d = CONTENT[lang]
+    prefix = "" if lang == "en" else "../"
     form_name = "contact" if lang == "en" else "contact-" + lang
     form_action = "/thank-you.html" if lang == "en" else f"/{lang}/thank-you.html"
 
@@ -1286,6 +1287,35 @@ def build(lang):
     for icon, title, body in c["ways"]:
         collab_items += (f'<div class="svc-item reveal"><span class="icon">{ICONS[icon]}</span>'
                          f'<div><h3>{title}</h3><p>{body}</p></div></div>')
+    partner_copy = {
+        "en": ("Collaboration network", "Organizations Connected to This Work"),
+        "fr": ("Réseau de collaboration", "Organisations Liées à Ce Travail"),
+        "es": ("Red de colaboración", "Organizaciones Vinculadas a Este Trabajo"),
+    }[lang]
+    partners = f'''
+<section class="section">
+  <div class="container">
+    <div class="section-head center reveal">
+      <p class="eyebrow">{partner_copy[0]}</p>
+      <h2>{partner_copy[1]}</h2>
+    </div>
+    <div class="partner-grid">
+      <article class="partner-card reveal">
+        <img class="partner-logo partner-logo--wide" src="{prefix}assets/img/partners/botapreneurs.svg" alt="Botapreneurs">
+        <h3>Botapreneurs</h3>
+      </article>
+      <article class="partner-card reveal">
+        <img class="partner-logo" src="{prefix}assets/img/partners/jardin-botanique-des-cayes.png" alt="Jardin Botanique des Cayes">
+        <h3>Jardin Botanique des Cayes</h3>
+      </article>
+      <article class="partner-card reveal">
+        <div class="partner-wordmark" role="img" aria-label="Parler et Agir"><span>P&amp;A</span><strong>Parler et Agir</strong></div>
+        <h3>Parler et Agir</h3>
+      </article>
+    </div>
+  </div>
+</section>
+'''
     collaboration = f'''
 {banner(c["eyebrow"], c["h1"], "/assets/img/collab_banner.jpg", c["h1"])}
 
@@ -1328,6 +1358,8 @@ def build(lang):
 <section class="section">
   <div class="container">{notice(c["note"])}</div>
 </section>
+
+{partners}
 
 <section class="section section--field cta-strip">
   <div class="container">
