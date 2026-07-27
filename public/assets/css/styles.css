@@ -267,6 +267,13 @@ strong { color: var(--ink); }
   background: rgba(8,29,54,.55); backdrop-filter: blur(2px);
   padding: .3rem .6rem; border-radius: 6px;
 }
+.section-feature-photo {
+  max-width: 920px;
+  margin: 0 0 clamp(2rem, 4vw, 3rem);
+}
+.section-feature-photo .field-panel {
+  aspect-ratio: 16 / 7;
+}
 /* small "replace with photo" hint, visible only as subtle tag */
 .photo-note {
   position: absolute; top: 12px; right: 12px; z-index: 3;

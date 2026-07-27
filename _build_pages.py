@@ -1158,7 +1158,7 @@ def build(lang):
         svc_items += (f'<div class="svc-item reveal"><span class="icon">{ICONS[icon]}</span>'
                       f'<div><h3>{title}</h3><p>{body}</p></div></div>')
     services = f'''
-{banner(s["eyebrow"], s["h1"], "/assets/img/services_banner.jpg", s["h1"])}
+{banner(s["eyebrow"], s["h1"], "/assets/img/services_banner_new.jpg", s["h1"])}
 
 <section class="section section--tight">
   <div class="container narrow center">
@@ -1169,7 +1169,7 @@ def build(lang):
 <section class="section section--field">
   <div class="container grid grid-2" style="gap:clamp(2rem,5vw,4rem);align-items:center">
     <div class="reveal"><p style="margin:0">{s["intro"]}</p></div>
-    <div class="reveal">{field_panel(s["core_h2"], img="/assets/img/services_lego.jpg", alt=s["core_h2"])}</div>
+    <div class="reveal">{field_panel(s["core_h2"], img="/assets/img/services_core_new.jpg", alt=s["core_h2"])}</div>
   </div>
 </section>
 
@@ -1206,7 +1206,7 @@ def build(lang):
     act_cards += '</div>'
     stats = "".join(f'<div class="stat"><span class="stat-num">{n}</span><span class="stat-label">{l}</span></div>' for n, l in i["outputs"])
     initiative = f'''
-{banner(i["eyebrow"], i["h1"], "/assets/img/signature_banner.jpg", i["h1"])}
+{banner(i["eyebrow"], i["h1"], "/assets/img/signature_banner_new.jpg", i["h1"])}
 
 <section class="section section--tight">
   <div class="container narrow center">
@@ -1236,6 +1236,7 @@ def build(lang):
 <section class="section section--field">
   <div class="container">
     <div class="section-head reveal"><p class="eyebrow">{i["act_eyebrow"]}</p><h2>{i["act_h2"]}</h2></div>
+    <div class="section-feature-photo reveal">{field_panel(i["act_h2"], img="/assets/img/signature_activities_new.jpg", alt=i["act_h2"])}</div>
     {act_cards}
   </div>
 </section>
