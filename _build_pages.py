@@ -1158,7 +1158,7 @@ def build(lang):
         svc_items += (f'<div class="svc-item reveal"><span class="icon">{ICONS[icon]}</span>'
                       f'<div><h3>{title}</h3><p>{body}</p></div></div>')
     services = f'''
-{banner(s["eyebrow"], s["h1"], "/assets/img/services_banner_new.jpg", s["h1"])}
+{banner(s["eyebrow"], s["h1"], "/assets/img/services_banner_v2.jpg", s["h1"])}
 
 <section class="section section--tight">
   <div class="container narrow center">
@@ -1169,7 +1169,7 @@ def build(lang):
 <section class="section section--field">
   <div class="container grid grid-2" style="gap:clamp(2rem,5vw,4rem);align-items:center">
     <div class="reveal"><p style="margin:0">{s["intro"]}</p></div>
-    <div class="reveal">{field_panel(s["core_h2"], img="/assets/img/services_core_new.jpg", alt=s["core_h2"])}</div>
+    <div class="reveal">{field_panel(s["core_h2"], img="/assets/img/services_core_v2.jpg", alt=s["core_h2"])}</div>
   </div>
 </section>
 

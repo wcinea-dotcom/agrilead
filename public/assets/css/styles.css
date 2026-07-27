@@ -548,11 +548,11 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 }
 
 .hero--banner{position:relative;background:var(--navy);overflow:hidden;isolation:isolate}
-.hero--banner .hero-banner-media{position:absolute;inset:0;z-index:-2}
+.hero--banner .hero-banner-media{position:absolute;inset:0;z-index:0}
 .hero--banner .hero-banner-media img{width:100%;height:100%;object-fit:cover;display:block}
-.hero--banner::after{content:"";position:absolute;inset:0;z-index:-1;
+.hero--banner::after{content:"";position:absolute;inset:0;z-index:1;
   background:linear-gradient(100deg,rgba(11,33,58,.90) 0%,rgba(11,33,58,.72) 45%,rgba(11,33,58,.42) 100%)}
-.hero-banner-inner{position:relative;padding:clamp(60px,10vw,132px) 0;max-width:640px}
+.hero-banner-inner{position:relative;z-index:2;padding:clamp(60px,10vw,132px) 0;max-width:640px}
 .hero--banner h1,.hero--banner .hero-lead{color:#fff}
 .hero--banner .eyebrow{color:#bfe0c1}
 .hero--banner .hero-lead{max-width:52ch}
