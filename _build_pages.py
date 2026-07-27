@@ -64,7 +64,7 @@ CONTENT = {
     "title": "AGRILEAD Training & Consulting LLC | Agricultural Training in Florida",
     "desc": "AGRILEAD Training & Consulting LLC provides practical agricultural training, applied agronomy support, bilingual outreach, technical assistance, and farmer capacity-building services.",
     "eyebrow": "Naples, Florida &middot; Agricultural Training",
-    "h1": "Practical agricultural training for resilient communities",
+    "h1": "Practical Agricultural Training for Resilient Communities",
     "lead": "A Florida-based agricultural training and consulting company that strengthens agricultural capacity through practical training, applied agronomy, and implementation support — working with universities, Extension services, cooperatives, nonprofits, and underserved farming communities.",
     "meta1": "Based in Naples, Florida",
     "meta2": "Bilingual &amp; multilingual outreach",
@@ -365,7 +365,7 @@ CONTENT = {
     "title": "AGRILEAD Training & Consulting LLC | Formation agricole en Floride",
     "desc": "AGRILEAD Training & Consulting LLC propose une formation agricole pratique, un appui en agronomie appliquée, une sensibilisation bilingue, une assistance technique et le renforcement des capacités des agriculteurs.",
     "eyebrow": "Naples, Floride &middot; Formation agricole",
-    "h1": "Une formation agricole pratique pour des communautés résilientes",
+    "h1": "Une Formation Agricole Pratique pour des Communautés Résilientes",
     "lead": "Une société de formation et de conseil agricoles basée en Floride, qui renforce les capacités agricoles par la formation pratique, l'agronomie appliquée et l'appui à la mise en œuvre — en travaillant avec les universités, les services de vulgarisation, les coopératives, les ONG et les communautés agricoles mal desservies.",
     "meta1": "Basée à Naples, Floride",
     "meta2": "Sensibilisation bilingue et multilingue",
@@ -666,7 +666,7 @@ CONTENT = {
     "title": "AGRILEAD Training & Consulting LLC | Formación agrícola en Florida",
     "desc": "AGRILEAD Training & Consulting LLC ofrece formación agrícola práctica, apoyo en agronomía aplicada, divulgación bilingüe, asistencia técnica y fortalecimiento de capacidades de los agricultores.",
     "eyebrow": "Naples, Florida &middot; Formación agrícola",
-    "h1": "Formación agrícola práctica para comunidades resilientes",
+    "h1": "Formación Agrícola Práctica para Comunidades Resilientes",
     "lead": "Una empresa de formación y consultoría agrícola con sede en Florida que fortalece las capacidades agrícolas mediante formación práctica, agronomía aplicada y apoyo a la implementación, trabajando con universidades, servicios de extensión, cooperativas, organizaciones sin fines de lucro y comunidades agrícolas desatendidas.",
     "meta1": "Con sede en Naples, Florida",
     "meta2": "Divulgación bilingüe y multilingüe",
@@ -754,19 +754,19 @@ CONTENT = {
     "title": "Servicios de formación y consultoría agrícola | AGRILEAD",
     "desc": "AGRILEAD ofrece formación agrícola, apoyo en agronomía aplicada, educación sobre salud del suelo, materiales bilingües, asistencia técnica y desarrollo de programas.",
     "eyebrow": "Servicios",
-    "h1": "Servicios de formación y consultoría agrícola",
+    "h1": "Servicios de Formación y Consultoría Agrícola",
     "lead": "AGRILEAD ofrece formación agrícola práctica, apoyo en agronomía aplicada, asistencia técnica, desarrollo de programas y servicios de divulgación bilingüe para productores y organizaciones.",
     "intro": "Los servicios de AGRILEAD están diseñados para apoyar el aprendizaje práctico, el acompañamiento técnico y el fortalecimiento de capacidades de los productores. Pueden adaptarse según las necesidades de las organizaciones, los recursos disponibles y el alcance del trabajo acordado.",
-    "core_eyebrow": "Servicios principales",
+    "core_eyebrow": "Servicios Principales",
     "core_h2": "Áreas de apoyo disponibles para conversar",
     "list": [
-      ("book","Formación agrícola y fortalecimiento de capacidades","Formación práctica para productores, grupos de productores y organizaciones comunitarias que buscan fortalecer sus capacidades técnicas y operativas."),
-      ("sprout","Apoyo en agronomía aplicada","Orientación sobre salud del suelo, planificación de cultivos, sistemas de producción y resolución de problemas en el campo."),
-      ("climate","Agricultura climáticamente inteligente","Apoyo a prácticas resilientes que ayudan a los productores a adaptarse a las cambiantes condiciones ambientales y de producción."),
-      ("globe","Divulgación bilingüe y educación de productores","Comunicación accesible para públicos multilingües y desatendidos."),
-      ("group","Fortalecimiento de grupos de productores","Apoyo a la coordinación, la participación, el liderazgo y el desarrollo organizativo de los grupos de productores y las cooperativas."),
-      ("chart","Herramientas MEAL y de documentación","Herramientas de seguimiento, evaluación, rendición de cuentas y aprendizaje para registrar actividades, recoger evidencia y fortalecer la implementación."),
-      ("list","Apoyo a la planificación y la implementación","Asistencia en el diseño de programas, la planificación del trabajo, la secuenciación de actividades y la preparación para la implementación de iniciativas agrícolas."),
+      ("book","Formación Agrícola y Fortalecimiento de Capacidades","Formación práctica para productores, grupos de productores y organizaciones comunitarias que buscan fortalecer sus capacidades técnicas y operativas."),
+      ("sprout","Apoyo en Agronomía Aplicada","Orientación sobre salud del suelo, planificación de cultivos, sistemas de producción y resolución de problemas en el campo."),
+      ("climate","Agricultura Climáticamente Inteligente","Apoyo a prácticas resilientes que ayudan a los productores a adaptarse a las cambiantes condiciones ambientales y de producción."),
+      ("globe","Divulgación Bilingüe y Educación de Productores","Comunicación accesible para públicos multilingües y desatendidos."),
+      ("group","Fortalecimiento de Grupos de Productores","Apoyo a la coordinación, la participación, el liderazgo y el desarrollo organizativo de los grupos de productores y las cooperativas."),
+      ("chart","Herramientas MEAL y de Documentación","Herramientas de seguimiento, evaluación, rendición de cuentas y aprendizaje para registrar actividades, recoger evidencia y fortalecer la implementación."),
+      ("list","Apoyo a la Planificación y la Implementación","Asistencia en el diseño de programas, la planificación del trabajo, la secuenciación de actividades y la preparación para la implementación de iniciativas agrícolas."),
     ],
     "note": "<strong>Nota.</strong> Los servicios pueden incluir las áreas anteriores y están disponibles para conversar según el alcance y los recursos. Las descripciones no implican alianza confirmada, financiamiento, contrato, afiliación oficial ni resultados garantizados, salvo acuerdo por escrito.",
     "cta_h2": "Solicitar una conversación sobre servicios",
@@ -1177,6 +1177,7 @@ def build(lang):
 <section class="section">
   <div class="container">
     <div class="section-head reveal"><p class="eyebrow">{s["core_eyebrow"]}</p><h2>{s["core_h2"]}</h2></div>
+    <div class="section-feature-photo reveal">{field_panel(s["core_h2"], img="/assets/img/services_lego.jpg", alt=s["core_h2"])}</div>
     <div class="svc">{svc_items}</div>
   </div>
 </section>
