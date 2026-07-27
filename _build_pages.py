@@ -1309,7 +1309,7 @@ def build(lang):
         <h3>Jardin Botanique des Cayes</h3>
       </article>
       <article class="partner-card reveal">
-        <div class="partner-wordmark" role="img" aria-label="Parler et Agir"><span>P&amp;A</span><strong>Parler et Agir</strong></div>
+        <img class="partner-logo" src="{prefix}assets/img/partners/parler-agir.png" alt="Parler Agir">
         <h3>Parler et Agir</h3>
       </article>
     </div>
