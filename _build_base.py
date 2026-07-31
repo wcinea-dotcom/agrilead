@@ -90,7 +90,7 @@ for _d in LANG_DIR.values():
 
 BRAND = (
     '<a class="brand" href="index.html" aria-label="AGRILEAD Training and Consulting home">'
-    '<img class="brand-logo" src="/assets/img/logo.png" alt="AGRILEAD Training &amp; Consulting" width="330" height="97">'
+    '<img class="brand-logo" src="/assets/img/logo.png?v=20260731new" alt="AGRILEAD Training &amp; Consulting" width="300" height="120">'
     '</a>'
 )
 
