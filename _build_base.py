@@ -12,7 +12,7 @@ import time
 
 # Bump ASSET_VER whenever CSS/JS changes — it cache-busts the year-long
 # immutable asset cache so returning visitors get the new styles.
-ASSET_VER = "20260731stats"
+ASSET_VER = "20260731nav2"
 
 # Supported languages: English (root), French (/fr/), Spanish (/es/).
 LANGS = ("en", "fr", "es")
@@ -171,16 +171,12 @@ TR = {
         "menu": "Open menu",
         "nav_aria": "Primary",
         "nav_tree": [
-            ("index.html", "Home", [
-                ("about.html", "About"),
-                ("collaboration-opportunities.html", "Collaboration"),
-            ]),
-            ("services.html", "Services", [
-                ("signature-initiative.html", "Signature Initiative"),
-            ]),
-            ("blog.html", "Media", [
-                ("blog.html", "Blog"),
-            ]),
+            ("index.html", "Home", []),
+            ("about.html", "About", []),
+            ("services.html", "Services", []),
+            ("signature-initiative.html", "Initiative", []),
+            ("blog.html", "Blog", []),
+            ("collaboration-opportunities.html", "Collaboration", []),
             ("contact.html", "Contact", []),
         ],
         "cta": "Discuss a Potential Collaboration",
@@ -215,16 +211,12 @@ TR = {
         "menu": "Ouvrir le menu",
         "nav_aria": "Navigation principale",
         "nav_tree": [
-            ("index.html", "Accueil", [
-                ("about.html", "À propos"),
-                ("collaboration-opportunities.html", "Collaboration"),
-            ]),
-            ("services.html", "Services", [
-                ("signature-initiative.html", "Initiative phare"),
-            ]),
-            ("blog.html", "Médias", [
-                ("blog.html", "Blog"),
-            ]),
+            ("index.html", "Accueil", []),
+            ("about.html", "À propos", []),
+            ("services.html", "Services", []),
+            ("signature-initiative.html", "Initiative", []),
+            ("blog.html", "Blog", []),
+            ("collaboration-opportunities.html", "Collaboration", []),
             ("contact.html", "Contact", []),
         ],
         "cta": "Discuter d'une collaboration",
@@ -260,16 +252,12 @@ TR = {
         "menu": "Abrir el menú",
         "nav_aria": "Principal",
         "nav_tree": [
-            ("index.html", "Inicio", [
-                ("about.html", "Acerca de"),
-                ("collaboration-opportunities.html", "Colaboración"),
-            ]),
-            ("services.html", "Servicios", [
-                ("signature-initiative.html", "Iniciativa insignia"),
-            ]),
-            ("blog.html", "Medios", [
-                ("blog.html", "Blog"),
-            ]),
+            ("index.html", "Inicio", []),
+            ("about.html", "Acerca", []),
+            ("services.html", "Servicios", []),
+            ("signature-initiative.html", "Iniciativa", []),
+            ("blog.html", "Blog", []),
+            ("collaboration-opportunities.html", "Colaboración", []),
             ("contact.html", "Contacto", []),
         ],
         "cta": "Hablar de una posible colaboración",

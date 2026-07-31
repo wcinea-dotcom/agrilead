@@ -614,7 +614,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .hero-banner-inner{padding:clamp(28px,4vw,60px) 0;max-width:600px}
 .hero--banner h1{font-size:clamp(1.7rem,3.4vw,2.5rem)}
 .hero--banner .hero-meta{margin-top:1.6rem;padding-top:1.1rem}
-.nav{gap:1.35rem}
+.nav{gap:clamp(.9rem,1.35vw,1.35rem)}
 .header-actions{gap:.7rem}
 .lang-select{padding:.38rem 1.6rem .38rem .62rem}
 
@@ -637,9 +637,15 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .topbar{background:var(--white);border-bottom:1px solid var(--border-soft)}
 .topbar-inner{display:flex;justify-content:flex-end;align-items:center;min-height:40px}
 .header-inner .nav{margin-left:auto;margin-right:0}
-.nav-top{text-transform:uppercase;letter-spacing:.07em;font-size:.8rem;font-weight:700}
+.nav-top{text-transform:uppercase;letter-spacing:.055em;font-size:.76rem;font-weight:700;white-space:nowrap}
 .submenu a{text-transform:none;letter-spacing:0}
 .nav-lang{display:none}
+@media (min-width:941px) and (max-width:1180px){
+  .brand img{width:220px;height:auto}
+  .header-inner{gap:.8rem}
+  .nav{gap:.7rem}
+  .nav-top{font-size:.68rem;letter-spacing:.025em}
+}
 @media (max-width:940px){
   .topbar{display:none}
   .header-inner .nav{margin:0}
