@@ -594,7 +594,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 /* === TNC model: utility topbar + uppercase nav + bigger banner === */
 .topbar{background:var(--white);border-bottom:1px solid var(--border-soft)}
 .topbar-inner{display:flex;justify-content:flex-end;align-items:center;min-height:40px}
-.header-inner .nav{margin-right:auto;margin-left:.5rem}
+.header-inner .nav{margin-left:auto;margin-right:0}
 .nav-top{text-transform:uppercase;letter-spacing:.07em;font-size:.8rem;font-weight:700}
 .submenu a{text-transform:none;letter-spacing:0}
 .nav-lang{display:none}
