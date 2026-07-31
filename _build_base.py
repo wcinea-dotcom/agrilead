@@ -12,7 +12,7 @@ import time
 
 # Bump ASSET_VER whenever CSS/JS changes — it cache-busts the year-long
 # immutable asset cache so returning visitors get the new styles.
-ASSET_VER = "20260727titles"
+ASSET_VER = "20260731approach"
 
 # Supported languages: English (root), French (/fr/), Spanish (/es/).
 LANGS = ("en", "fr", "es")

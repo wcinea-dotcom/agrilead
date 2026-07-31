@@ -1039,6 +1039,7 @@ def build(lang):
         <h2>{h["approach_h2"]}</h2>
         <p>{h["approach_p1"]}</p>
         <p>{h["approach_p2"]}</p>
+        <img class="approach-photo" src="/assets/img/approach_field_visit.jpg" alt="{h["approach_h2"]}" loading="lazy" decoding="async">
       </div>
       <div class="reveal">{values_block(d["values"])}</div>
     </div>

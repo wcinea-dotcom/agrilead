@@ -322,6 +322,10 @@ strong { color: var(--ink); }
 .value .icon { width: 40px; height: 40px; }
 .value h4 { margin: 0 0 .2rem; color: var(--navy); }
 .value p { margin: 0; font-size: .95rem; }
+.approach-photo {
+  width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center;
+  display: block; margin-top: 1.6rem; border-radius: 12px; box-shadow: var(--shadow-md);
+}
 
 /* Tag / pill list (Who We Serve) */
 .pills { display: flex; flex-wrap: wrap; gap: .6rem; }
