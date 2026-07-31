@@ -57,6 +57,7 @@ CONTENT = {
   "cta_contact": "Contact AGRILEAD",
   "cta_submit": "Submit an Inquiry",
   "read_article": "Read article",
+  "download": "Download PDF",
   "download_soon": "Download &mdash; coming soon",
   "see_all_services": "See all services",
 
@@ -104,9 +105,9 @@ CONTENT = {
     "dl_h2": "Informational overviews",
     "dl_p": "These materials are informational only. They do not represent confirmed partnerships, endorsements, funding, contracts, official affiliations, or guaranteed results.",
     "docs": [
-      ("One-Page Project Summary","A concise overview of the initiative, target audiences, training areas, and potential outreach discussion topics."),
-      ("Company Brochure","A brief institutional brochure presenting the company, services, approach, and contact information."),
-      ("Signature Initiative Overview","A short introduction to the AgriLead Bilingual Agricultural Workforce and Extension Training Initiative."),
+      ("One-Page Project Summary","A concise overview of the initiative, target audiences, training areas, and potential outreach discussion topics.","/assets/docs/agrilead-one-page-summary.pdf"),
+      ("Company Brochure","A brief institutional brochure presenting the company, services, approach, and contact information.",None),
+      ("Signature Initiative Overview","A short introduction to the AgriLead Bilingual Agricultural Workforce and Extension Training Initiative.",None),
     ],
     "cta_eyebrow": "Collaboration",
     "cta_h2": "Interested in practical agricultural training?",
@@ -358,6 +359,7 @@ CONTENT = {
   "cta_contact": "Contacter AGRILEAD",
   "cta_submit": "Envoyer une demande",
   "read_article": "Lire l'article",
+  "download": "Télécharger le PDF",
   "download_soon": "Télécharger &mdash; bientôt disponible",
   "see_all_services": "Voir tous les services",
 
@@ -405,9 +407,9 @@ CONTENT = {
     "dl_h2": "Présentations informatives",
     "dl_p": "Ces documents sont fournis à titre informatif uniquement. Ils ne représentent aucun partenariat confirmé, soutien, financement, contrat, affiliation officielle ou résultat garanti.",
     "docs": [
-      ("Résumé du projet (1 page)","Un aperçu concis de l'initiative, des publics cibles, des domaines de formation et des sujets de discussion possibles."),
-      ("Brochure de l'entreprise","Une brève brochure institutionnelle présentant la société, les services, l'approche et les coordonnées."),
-      ("Présentation de l'initiative phare","Une courte introduction à l'Initiative AgriLead de formation bilingue de la main-d'œuvre agricole et de vulgarisation."),
+      ("Résumé du projet (1 page)","Un aperçu concis de l'initiative, des publics cibles, des domaines de formation et des sujets de discussion possibles.","/assets/docs/agrilead-one-page-summary.pdf"),
+      ("Brochure de l'entreprise","Une brève brochure institutionnelle présentant la société, les services, l'approche et les coordonnées.",None),
+      ("Présentation de l'initiative phare","Une courte introduction à l'Initiative AgriLead de formation bilingue de la main-d'œuvre agricole et de vulgarisation.",None),
     ],
     "cta_eyebrow": "Collaboration",
     "cta_h2": "Intéressé par une formation agricole pratique ?",
@@ -659,6 +661,7 @@ CONTENT = {
   "cta_contact": "Contactar a AGRILEAD",
   "cta_submit": "Enviar una solicitud",
   "read_article": "Leer el artículo",
+  "download": "Descargar el PDF",
   "download_soon": "Descargar &mdash; próximamente",
   "see_all_services": "Ver todos los servicios",
 
@@ -701,9 +704,9 @@ CONTENT = {
     "dl_h2": "Resúmenes informativos",
     "dl_p": "Estos materiales son solo informativos. No representan alianzas confirmadas, respaldos, financiamiento, contratos, afiliaciones oficiales ni resultados garantizados.",
     "docs": [
-      ("Resumen del proyecto (1 página)","Una visión concisa de la iniciativa, los públicos objetivo, las áreas de formación y posibles temas de conversación."),
-      ("Folleto de la empresa","Un breve folleto institucional que presenta la empresa, los servicios, el enfoque y los datos de contacto."),
-      ("Presentación de la iniciativa insignia","Una breve introducción a la Iniciativa AgriLead de formación bilingüe de la fuerza laboral agrícola y de extensión."),
+      ("Resumen del proyecto (1 página)","Una visión concisa de la iniciativa, los públicos objetivo, las áreas de formación y posibles temas de conversación.","/assets/docs/agrilead-one-page-summary.pdf"),
+      ("Folleto de la empresa","Un breve folleto institucional que presenta la empresa, los servicios, el enfoque y los datos de contacto.",None),
+      ("Presentación de la iniciativa insignia","Una breve introducción a la Iniciativa AgriLead de formación bilingüe de la fuerza laboral agrícola y de extensión.",None),
     ],
     "cta_eyebrow": "Colaboración",
     "cta_h2": "¿Le interesa una formación agrícola práctica?",
@@ -969,8 +972,9 @@ def build(lang):
     docs = "".join(
         f'<div class="doc-card reveal"><span class="icon icon--navy">{ICONS["doc"]}</span>'
         f'<h3>{t}</h3><p>{b}</p>'
-        f'<a class="link-arrow" href="#" aria-disabled="true">{d["download_soon"]}</a></div>'
-        for t, b in h["docs"])
+        + (f'<a class="link-arrow" href="{href}" target="_blank" rel="noopener">{d["download"]}</a></div>'
+           if href else f'<a class="link-arrow" href="#" aria-disabled="true">{d["download_soon"]}</a></div>')
+        for t, b, href in h["docs"])
     home = f'''
 <section class="hero hero--banner">
   <div class="hero-banner-media">
