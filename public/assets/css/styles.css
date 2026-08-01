@@ -614,7 +614,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .hero-banner-inner{padding:clamp(28px,4vw,60px) 0;max-width:600px}
 .hero--banner h1{font-size:clamp(1.7rem,3.4vw,2.5rem)}
 .hero--banner .hero-meta{margin-top:1.6rem;padding-top:1.1rem}
-.nav{gap:clamp(.9rem,1.35vw,1.35rem)}
+.nav{gap:clamp(1rem,1.5vw,1.55rem)}
 .header-actions{gap:.7rem}
 .lang-select{padding:.38rem 1.6rem .38rem .62rem}
 
@@ -634,22 +634,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .hero--banner h1{color:#fff;font-size:clamp(2rem,4.6vw,3.25rem);margin:0;max-width:22ch;margin-inline:auto}
 
 /* === TNC model: utility topbar + uppercase nav + bigger banner === */
-.topbar{background:var(--white);border-bottom:1px solid var(--border-soft)}
+.topbar{display:none}
 .topbar-inner{display:flex;justify-content:flex-end;align-items:center;min-height:40px}
 .header-inner .nav{margin-left:auto;margin-right:0}
-.nav-top{text-transform:uppercase;letter-spacing:.055em;font-size:.76rem;font-weight:700;white-space:nowrap}
+.nav-top{text-transform:uppercase;letter-spacing:.07em;font-size:.8rem;font-weight:700;white-space:nowrap}
 .submenu a{text-transform:none;letter-spacing:0}
-.nav-lang{display:none}
+.nav-lang{display:flex;align-items:center;margin-left:.1rem;padding-left:1rem;border-left:1px solid var(--border)}
+.nav-lang .lang-toggle{gap:.2rem;font-size:.72rem;letter-spacing:.05em}
+.nav-lang .lang-toggle svg{display:none}
+.nav-lang .lang-toggle a{padding:.35rem .18rem}
+.nav-lang .lang-toggle a::after{display:none}
 @media (min-width:941px) and (max-width:1180px){
-  .brand img{width:220px;height:auto}
+  .brand img{width:240px;height:auto}
   .header-inner{gap:.8rem}
-  .nav{gap:.7rem}
-  .nav-top{font-size:.68rem;letter-spacing:.025em}
+  .nav{gap:.9rem}
+  .nav-top{font-size:.75rem;letter-spacing:.05em}
 }
 @media (max-width:940px){
   .topbar{display:none}
   .header-inner .nav{margin:0}
-  .nav-lang{display:flex;padding-top:.9rem;justify-content:flex-start}
+  .nav-lang{display:flex;margin-left:0;padding:.9rem 0 0;border-left:0;justify-content:flex-start}
+  .nav-lang .lang-toggle svg{display:block}
 }
 .hero--banner{min-height:clamp(380px,46vw,560px)}
 

@@ -12,12 +12,12 @@ import time
 
 # Bump ASSET_VER whenever CSS/JS changes — it cache-busts the year-long
 # immutable asset cache so returning visitors get the new styles.
-ASSET_VER = "20260731nav2"
+ASSET_VER = "20260731nav3"
 
 # Supported languages: English (root), French (/fr/), Spanish (/es/).
 LANGS = ("en", "fr", "es")
 LANG_DIR = {"en": "", "fr": "fr/", "es": "es/"}
-LANG_LABEL = {"en": "English", "fr": "Français", "es": "Español"}
+LANG_LABEL = {"en": "EN", "fr": "FR", "es": "ES"}
 
 # When AGRI_COLLECT is set, page() collects (target, bytes) here instead of writing.
 _PENDING = []
@@ -171,12 +171,16 @@ TR = {
         "menu": "Open menu",
         "nav_aria": "Primary",
         "nav_tree": [
-            ("index.html", "Home", []),
-            ("about.html", "About", []),
-            ("services.html", "Services", []),
-            ("signature-initiative.html", "Initiative", []),
-            ("blog.html", "Blog", []),
-            ("collaboration-opportunities.html", "Collaboration", []),
+            ("index.html", "Home", [
+                ("about.html", "About"),
+                ("collaboration-opportunities.html", "Collaboration"),
+            ]),
+            ("services.html", "Services", [
+                ("signature-initiative.html", "Signature Initiative"),
+            ]),
+            ("blog.html", "Media", [
+                ("blog.html", "Blog"),
+            ]),
             ("contact.html", "Contact", []),
         ],
         "cta": "Discuss a Potential Collaboration",
@@ -211,12 +215,16 @@ TR = {
         "menu": "Ouvrir le menu",
         "nav_aria": "Navigation principale",
         "nav_tree": [
-            ("index.html", "Accueil", []),
-            ("about.html", "À propos", []),
-            ("services.html", "Services", []),
-            ("signature-initiative.html", "Initiative", []),
-            ("blog.html", "Blog", []),
-            ("collaboration-opportunities.html", "Collaboration", []),
+            ("index.html", "Accueil", [
+                ("about.html", "À propos"),
+                ("collaboration-opportunities.html", "Collaboration"),
+            ]),
+            ("services.html", "Services", [
+                ("signature-initiative.html", "Initiative phare"),
+            ]),
+            ("blog.html", "Médias", [
+                ("blog.html", "Blog"),
+            ]),
             ("contact.html", "Contact", []),
         ],
         "cta": "Discuter d'une collaboration",
@@ -252,12 +260,16 @@ TR = {
         "menu": "Abrir el menú",
         "nav_aria": "Principal",
         "nav_tree": [
-            ("index.html", "Inicio", []),
-            ("about.html", "Acerca", []),
-            ("services.html", "Servicios", []),
-            ("signature-initiative.html", "Iniciativa", []),
-            ("blog.html", "Blog", []),
-            ("collaboration-opportunities.html", "Colaboración", []),
+            ("index.html", "Inicio", [
+                ("about.html", "Acerca de"),
+                ("collaboration-opportunities.html", "Colaboración"),
+            ]),
+            ("services.html", "Servicios", [
+                ("signature-initiative.html", "Iniciativa insignia"),
+            ]),
+            ("blog.html", "Medios", [
+                ("blog.html", "Blog"),
+            ]),
             ("contact.html", "Contacto", []),
         ],
         "cta": "Hablar de una posible colaboración",
@@ -323,11 +335,6 @@ def header(active, lang, filename):
     t = TR[lang]
     links = _nav_links(t, active)
     return f'''<a class="skip-link" href="#main">{t["skip"]}</a>
-<div class="topbar">
-  <div class="container topbar-inner">
-    {lang_toggle(lang, filename)}
-  </div>
-</div>
 <header class="site-header">
   <div class="container header-inner">
     {BRAND}
