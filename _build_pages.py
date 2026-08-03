@@ -106,8 +106,8 @@ CONTENT = {
     "dl_p": "These materials are informational only. They do not represent confirmed partnerships, endorsements, funding, contracts, official affiliations, or guaranteed results.",
     "docs": [
       ("One-Page Project Summary","A concise overview of the initiative, target audiences, training areas, and potential outreach discussion topics.","/assets/docs/agrilead-one-page-summary.pdf"),
-      ("Company Brochure","A brief institutional brochure presenting the company, services, approach, and contact information.",None),
-      ("Signature Initiative Overview","A short introduction to the AgriLead Bilingual Agricultural Workforce and Extension Training Initiative.",None),
+      ("Company Brochure","A brief institutional brochure presenting the company, services, approach, and contact information.","/assets/docs/agrilead-company-brochure-2026.pdf"),
+      ("Signature Initiative Overview","A short introduction to the AgriLead Bilingual Agricultural Workforce and Extension Training Initiative.","/assets/docs/agrilead-signature-initiative-overview.pdf"),
     ],
     "cta_eyebrow": "Collaboration",
     "cta_h2": "Interested in practical agricultural training?",
